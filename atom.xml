@@ -80,9 +80,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
     
@@ -130,13 +130,13 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
-    
       <category term="资料整理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
     
   </entry>
   
@@ -158,9 +158,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="Flutter" scheme="http://yoursite.com/tags/Flutter/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
     
@@ -183,9 +183,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="资料整理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="App瘦身" scheme="http://yoursite.com/tags/App%E7%98%A6%E8%BA%AB/"/>
     
@@ -235,11 +235,11 @@
     </summary>
     
     
+      <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
+    
       <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="持续集成" scheme="http://yoursite.com/tags/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/"/>
-    
-      <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
     
       <category term="Objective-C" scheme="http://yoursite.com/tags/Objective-C/"/>
     
@@ -313,9 +313,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="资料整理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
   </entry>
   
@@ -363,9 +363,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="WebSocket" scheme="http://yoursite.com/tags/WebSocket/"/>
     
@@ -387,9 +387,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="资料整理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="坑点" scheme="http://yoursite.com/tags/%E5%9D%91%E7%82%B9/"/>
     
@@ -471,9 +471,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
       <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
@@ -519,9 +519,9 @@
     </summary>
     
     
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
       <category term="资料整理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"/>
+    
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
       <category term="Cocoapods" scheme="http://yoursite.com/tags/Cocoapods/"/>
     

@@ -21,7 +21,7 @@
 <meta property="og:image" content="http://yoursite.com/assets/images/others/cname1.png">
 <meta property="og:image" content="http://yoursite.com/assets/images/others/host_regex.png">
 <meta property="article:published_time" content="2015-10-14T10:37:52.000Z">
-<meta property="article:modified_time" content="2023-06-25T08:12:17.816Z">
+<meta property="article:modified_time" content="2023-06-25T09:05:37.112Z">
 <meta property="article:author" content="coppco">
 <meta property="article:tag" content="First">
 <meta property="article:tag" content="杂谈">
@@ -438,7 +438,9 @@
 <blockquote>
 <p>hexo d</p>
 </blockquote>
-<h2 id="3、-博客后记-备份"><a href="#3、-博客后记-备份" class="headerlink" title="3、 博客后记: 备份"></a>3、 博客后记: 备份</h2><p>使用hexo+github搭建个人博客的时候,难免遇到使用不同的电脑和操作系统来写博客,我是这样解决的:把博客所在的目录也使用一个git仓库存储,这样一些资源、主题的配置可以得到备份. 以后使用不同的电脑就clone下来,当然环境node、hexo、git等都是需要安装的.  下面是备份整体目录后, 换电脑或者操作系统后的操作~~~<br>有些东西是不需要备份的, 可以添加忽略文件<code>.gitignore</code>, 内容如下:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#过滤node_modules文件夹,过滤public文件夹</span><br><span class="line">#node.js版本不同, 里面内容不同</span><br><span class="line">/node_modules</span><br><span class="line">#这个文件夹是可以生成的</span><br><span class="line">/public</span><br><span class="line">db.json</span><br></pre></td></tr></table></figure></p>
+<h4 id="2-5-1-github不允许用户名和密码授权"><a href="#2-5-1-github不允许用户名和密码授权" class="headerlink" title="2.5.1 github不允许用户名和密码授权"></a>2.5.1 github不允许用户名和密码授权</h4><p>在github账号-<code>Settings</code>-<code>Developer Settings</code>-<code>Personal access tokens</code>-<code>[Generate a personal access token](https://github.com/settings/tokens/new)</code>生成一个token,注意需要勾选对应的类型权限, 授权时使用用户名+token授权</p>
+<h2 id="3、-博客后记-备份"><a href="#3、-博客后记-备份" class="headerlink" title="3、 博客后记: 备份"></a>3、 博客后记: 备份</h2><p>使用hexo+github搭建个人博客的时候,难免遇到使用不同的电脑和操作系统来写博客,我是这样解决的:把博客所在的目录也使用一个git仓库存储,这样一些资源、主题的配置可以得到备份. 以后使用不同的电脑就clone下来,当然环境node、hexo、git等都是需要安装的.  下面是备份整体目录后, 换电脑或者操作系统后的操作~~~<br>有些东西是不需要备份的, 可以添加忽略文件<code>.gitignore</code>, 内容如下: </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#过滤node_modules文件夹,过滤public文件夹</span><br><span class="line">#node.js版本不同, 里面内容不同</span><br><span class="line">/node_modules</span><br><span class="line">#这个文件夹是可以生成的</span><br><span class="line">/public</span><br><span class="line">db.json</span><br></pre></td></tr></table></figure>
 <h3 id="3-1、Windows下"><a href="#3-1、Windows下" class="headerlink" title="3.1、Windows下:"></a>3.1、Windows下:</h3><ul>
 <li><p>安装node.js , 可以去<a target="_blank" rel="noopener" href="https://nodejs.org/en/">官网</a>下载 Windows版本</p>
 </li>
@@ -592,7 +594,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81-Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1、 Markdown的基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81-%E5%85%BC%E5%AE%B9HTML%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.</span> <span class="toc-text">1.1、 兼容HTML代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81-%E5%8C%BA%E5%9D%97%E5%85%83%E7%B4%A0"><span class="toc-number">1.2.</span> <span class="toc-text">1.2、 区块元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1%E3%80%81%E6%AE%B5%E8%90%BD"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1、段落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2%E3%80%81%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2、换行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3%E3%80%81%E6%A0%87%E9%A2%98"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3、标题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-4%E3%80%81%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.2.4、区块引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-5%E3%80%81%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.</span> <span class="toc-text">1.2.5、列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-6%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.2.6.</span> <span class="toc-text">1.2.6、代码块</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81-%E5%8C%BA%E6%AE%B5%E5%85%83%E7%B4%A0"><span class="toc-number">1.3.</span> <span class="toc-text">1.3、 区段元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1%E3%80%81%E5%BC%BA%E8%B0%83"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1、强调</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-2%E3%80%81%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.3.2、链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-3%E3%80%81%E5%9B%BE%E7%89%87"><span class="toc-number">1.3.3.</span> <span class="toc-text">1.3.3、图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-4%E3%80%81%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.4.</span> <span class="toc-text">1.3.4、代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-5%E3%80%81%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="toc-number">1.3.5.</span> <span class="toc-text">1.3.5、反斜杠</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-6%E3%80%81%E5%B0%8F%E5%9E%8B%E6%96%87%E5%AD%97"><span class="toc-number">1.3.6.</span> <span class="toc-text">1.3.6、小型文字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-7%E3%80%81%E5%8D%9A%E5%AE%A2%E5%88%97%E8%A1%A8%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87"><span class="toc-number">1.3.7.</span> <span class="toc-text">1.3.7、博客列表不显示全文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-8%E3%80%81%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="toc-number">1.3.8.</span> <span class="toc-text">1.3.8、转义字符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4%E3%80%81%E5%85%B6%E4%BB%96"><span class="toc-number">1.4.</span> <span class="toc-text">1.4、其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-1%E3%80%81%E5%88%86%E5%89%B2%E7%BA%BF%E5%92%8C%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.4.1、分割线和删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-2%E3%80%81%E8%84%9A%E6%B3%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">1.4.2、脚注</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-3%E3%80%81%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.3.</span> <span class="toc-text">1.4.3、目录</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81-hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">2、 hexo的一些命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0"><span class="toc-number">2.1.</span> <span class="toc-text">2.1、创建新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E6%B8%85%E7%A9%BApublic%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.2.</span> <span class="toc-text">2.2、清空public文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90public%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.</span> <span class="toc-text">2.3、重新生成public静态文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81%E5%BC%80%E5%90%AF%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.4.</span> <span class="toc-text">2.4、开启本地服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E3%80%81%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8Bgit%E4%B8%8A"><span class="toc-number">2.5.</span> <span class="toc-text">2.5、部署到远程git上</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81-%E5%8D%9A%E5%AE%A2%E5%90%8E%E8%AE%B0-%E5%A4%87%E4%BB%BD"><span class="toc-number">3.</span> <span class="toc-text">3、 博客后记: 备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81Windows%E4%B8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">3.1、Windows下:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81Mac%E4%B8%8B"><span class="toc-number">3.2.</span> <span class="toc-text">3.2、Mac下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E3%80%81%E6%9B%B4%E6%8D%A2npm%E9%95%9C%E5%83%8F"><span class="toc-number">3.3.</span> <span class="toc-text">3.3、更换npm镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1%E3%80%81%E9%80%9A%E8%BF%87config%E5%91%BD%E4%BB%A4-%E6%B0%B8%E4%B9%85"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1、通过config命令(永久)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2%E3%80%81%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E5%AE%9A-%E4%B8%B4%E6%97%B6"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2、命令行指定(临时)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3%E3%80%81%E7%BC%96%E8%BE%91-npmrc%E6%96%87%E4%BB%B6"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3.3、编辑.npmrc文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-4%E3%80%81%E6%81%A2%E5%A4%8D%E9%BB%98%E8%AE%A4"><span class="toc-number">3.3.4.</span> <span class="toc-text">3.3.4、恢复默认</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81-%E5%8D%9A%E5%AE%A2%E5%90%8E%E8%AE%B0-%E5%8F%91%E5%B8%83%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text">4、 博客后记: 发布到自己的域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D"><span class="toc-number">4.1.</span> <span class="toc-text">4.1、购买域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81%E9%85%8D%E7%BD%AEGithub-page"><span class="toc-number">4.2.</span> <span class="toc-text">4.2、配置Github page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E3%80%81%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D%E5%88%B0github-page"><span class="toc-number">4.3.</span> <span class="toc-text">4.3、解析域名到github page</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3"><span class="toc-number">5.</span> <span class="toc-text">5、参考文档</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81-Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1、 Markdown的基本语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81-%E5%85%BC%E5%AE%B9HTML%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.</span> <span class="toc-text">1.1、 兼容HTML代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81-%E5%8C%BA%E5%9D%97%E5%85%83%E7%B4%A0"><span class="toc-number">1.2.</span> <span class="toc-text">1.2、 区块元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1%E3%80%81%E6%AE%B5%E8%90%BD"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.2.1、段落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2%E3%80%81%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.2.2、换行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3%E3%80%81%E6%A0%87%E9%A2%98"><span class="toc-number">1.2.3.</span> <span class="toc-text">1.2.3、标题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-4%E3%80%81%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.2.4、区块引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-5%E3%80%81%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.5.</span> <span class="toc-text">1.2.5、列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-6%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.2.6.</span> <span class="toc-text">1.2.6、代码块</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81-%E5%8C%BA%E6%AE%B5%E5%85%83%E7%B4%A0"><span class="toc-number">1.3.</span> <span class="toc-text">1.3、 区段元素</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1%E3%80%81%E5%BC%BA%E8%B0%83"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.3.1、强调</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-2%E3%80%81%E9%93%BE%E6%8E%A5"><span class="toc-number">1.3.2.</span> <span class="toc-text">1.3.2、链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-3%E3%80%81%E5%9B%BE%E7%89%87"><span class="toc-number">1.3.3.</span> <span class="toc-text">1.3.3、图片</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-4%E3%80%81%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.4.</span> <span class="toc-text">1.3.4、代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-5%E3%80%81%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="toc-number">1.3.5.</span> <span class="toc-text">1.3.5、反斜杠</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-6%E3%80%81%E5%B0%8F%E5%9E%8B%E6%96%87%E5%AD%97"><span class="toc-number">1.3.6.</span> <span class="toc-text">1.3.6、小型文字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-7%E3%80%81%E5%8D%9A%E5%AE%A2%E5%88%97%E8%A1%A8%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%85%A8%E6%96%87"><span class="toc-number">1.3.7.</span> <span class="toc-text">1.3.7、博客列表不显示全文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-8%E3%80%81%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="toc-number">1.3.8.</span> <span class="toc-text">1.3.8、转义字符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4%E3%80%81%E5%85%B6%E4%BB%96"><span class="toc-number">1.4.</span> <span class="toc-text">1.4、其他</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-1%E3%80%81%E5%88%86%E5%89%B2%E7%BA%BF%E5%92%8C%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.4.1、分割线和删除线</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-2%E3%80%81%E8%84%9A%E6%B3%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">1.4.2、脚注</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-3%E3%80%81%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.3.</span> <span class="toc-text">1.4.3、目录</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81-hexo%E7%9A%84%E4%B8%80%E4%BA%9B%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">2、 hexo的一些命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0"><span class="toc-number">2.1.</span> <span class="toc-text">2.1、创建新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E6%B8%85%E7%A9%BApublic%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.2.</span> <span class="toc-text">2.2、清空public文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90public%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.3.</span> <span class="toc-text">2.3、重新生成public静态文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81%E5%BC%80%E5%90%AF%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.4.</span> <span class="toc-text">2.4、开启本地服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E3%80%81%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%A8%8Bgit%E4%B8%8A"><span class="toc-number">2.5.</span> <span class="toc-text">2.5、部署到远程git上</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-5-1-github%E4%B8%8D%E5%85%81%E8%AE%B8%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81%E6%8E%88%E6%9D%83"><span class="toc-number">2.5.1.</span> <span class="toc-text">2.5.1 github不允许用户名和密码授权</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81-%E5%8D%9A%E5%AE%A2%E5%90%8E%E8%AE%B0-%E5%A4%87%E4%BB%BD"><span class="toc-number">3.</span> <span class="toc-text">3、 博客后记: 备份</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81Windows%E4%B8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">3.1、Windows下:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81Mac%E4%B8%8B"><span class="toc-number">3.2.</span> <span class="toc-text">3.2、Mac下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E3%80%81%E6%9B%B4%E6%8D%A2npm%E9%95%9C%E5%83%8F"><span class="toc-number">3.3.</span> <span class="toc-text">3.3、更换npm镜像</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1%E3%80%81%E9%80%9A%E8%BF%87config%E5%91%BD%E4%BB%A4-%E6%B0%B8%E4%B9%85"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1、通过config命令(永久)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2%E3%80%81%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%8C%87%E5%AE%9A-%E4%B8%B4%E6%97%B6"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2、命令行指定(临时)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3%E3%80%81%E7%BC%96%E8%BE%91-npmrc%E6%96%87%E4%BB%B6"><span class="toc-number">3.3.3.</span> <span class="toc-text">3.3.3、编辑.npmrc文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-4%E3%80%81%E6%81%A2%E5%A4%8D%E9%BB%98%E8%AE%A4"><span class="toc-number">3.3.4.</span> <span class="toc-text">3.3.4、恢复默认</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81-%E5%8D%9A%E5%AE%A2%E5%90%8E%E8%AE%B0-%E5%8F%91%E5%B8%83%E5%88%B0%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%9F%E5%90%8D"><span class="toc-number">4.</span> <span class="toc-text">4、 博客后记: 发布到自己的域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81%E8%B4%AD%E4%B9%B0%E5%9F%9F%E5%90%8D"><span class="toc-number">4.1.</span> <span class="toc-text">4.1、购买域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81%E9%85%8D%E7%BD%AEGithub-page"><span class="toc-number">4.2.</span> <span class="toc-text">4.2、配置Github page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E3%80%81%E8%A7%A3%E6%9E%90%E5%9F%9F%E5%90%8D%E5%88%B0github-page"><span class="toc-number">4.3.</span> <span class="toc-text">4.3、解析域名到github page</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3"><span class="toc-number">5.</span> <span class="toc-text">5、参考文档</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -724,7 +726,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -732,15 +734,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color3">Elicpse</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -756,11 +782,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JavaScript跨域</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Jsonp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -776,27 +810,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JavaScript跨域</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Jsonp</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -808,6 +822,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
               </li>
              
@@ -816,23 +838,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">XML</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -856,11 +874,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Listener</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Filter</a>
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -872,19 +890,19 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Listener</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Filter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Servlet3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -900,7 +918,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -908,15 +926,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSH</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -928,7 +942,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSH</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -937,18 +959,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -961,22 +971,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Elicpse</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">坑点</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -996,6 +990,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">坑点</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
               </li>
              
@@ -1009,6 +1015,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1036,6 +1046,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
               </li>
              
@@ -1056,10 +1070,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
               </li>
              
@@ -1069,14 +1079,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Delphi</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
