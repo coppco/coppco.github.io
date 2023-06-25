@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java Web学习06---JDBC、连接池和dbUtils | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法">
-<meta name="keywords" content="Java,JDBC">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Web学习06---JDBC、连接池和dbUtils">
-<meta property="og:url" content="http://yoursite.com/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/java/my_jdbc.jpeg">
-<meta property="og:image" content="http://47.96.147.179/images/java/no_servlet.jpeg">
-<meta property="og:image" content="http://47.96.147.179/images/java/has_servlet.jpeg">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.636Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/java/my_jdbc.jpeg">
+<meta property="og:image" content="http://yoursite.com/assets/images/java/no_servlet.jpeg">
+<meta property="og:image" content="http://yoursite.com/assets/images/java/has_servlet.jpeg">
+<meta property="article:published_time" content="2016-08-10T10:14:25.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:50:31.591Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="JDBC">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java Web学习06---JDBC、连接池和dbUtils">
-<meta name="twitter:description" content="JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法">
-<meta name="twitter:image" content="http://47.96.147.179/images/java/my_jdbc.jpeg">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/java/my_jdbc.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -41,8 +42,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -52,13 +53,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -68,9 +67,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -108,15 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -140,13 +141,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -173,7 +176,7 @@
   
 
         
-        <a href="/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/" class="archive-article-date">
+        <a href="/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/" class="archive-article-date">
   	<time datetime="2016-08-10T10:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-10</time>
 </a>
         
@@ -184,22 +187,22 @@
         <!--
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27876900&auto=1&height=66"></iframe> 
 -->
-<p>JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.<br>JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法完成数据库连接！<font color="orange">每个数据库厂商都有自己的驱动，用来连接自己公司的数据库。</font></p>
-<a id="more"></a>
-<h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a><font color="orange">JDBC</font></h2><ul>
-<li><font color="orange">JDBC的优点</font><br>&emsp;&emsp;只需用JDBC API写一个程序，就可以向相应数据库发送SQL调用, 不管数据库是Oracle、MySQL等.<center><br><img src="http://47.96.147.179/images/java/my_jdbc.jpeg" alt="JDBC关系图" style="width: 40%; text-align: center; display: block;"><br>JDBC关系图<br></center></li>
-<li><font color="orange">JDBC的作用</font><ul>
+<p>JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.<br>JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法完成数据库连接！<font color=orange>每个数据库厂商都有自己的驱动，用来连接自己公司的数据库。</p>
+<span id="more"></span>
+<h2 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a><font color=orange>JDBC</font></h2><ul>
+<li><font color=orange>JDBC的优点</font><br>&emsp;&emsp;只需用JDBC API写一个程序，就可以向相应数据库发送SQL调用, 不管数据库是Oracle、MySQL等.<center><br><img src="/assets/images/java/my_jdbc.jpeg" alt="JDBC关系图" style="width: 40%; text-align: center; display: block;"/><br>JDBC关系图<br></center></li>
+<li><font color=orange>JDBC的作用</font><ul>
 <li>与数据库建立连接</li>
 <li>发送sql语句给数据库</li>
 <li>处理返回数据集</li>
 </ul>
 </li>
-<li><font color="orange">JDBC API</font><ul>
+<li><font color=orange>JDBC API</font><ul>
 <li>java.sql或者javax.sql包下面的</li>
-<li><font color="orange">java.sql.DriverManager</font>:  管理一组 JDBC 驱动程序的基本服务. <ul>
+<li><font color=orange>java.sql.DriverManager</font>:  管理一组 JDBC 驱动程序的基本服务. <ul>
 <li>常用方法<ul>
 <li>注册驱动 <code>public static void registerDriver(Driver driver)</code><ul>
-<li><font color="red">通过查看<code>com.mysql.jdbc.driver</code>源码可以看出, 该类中有一个静态代码块进行了驱动的注册, 所有如果使用DriverManager的static方法进行注册会导致两次注册, 所有一般我们很少使用这种方法进行驱动注册.</font>, 类被加载进内存时就会执行静态代码块.<ul>
+<li><font color=red>通过查看<code>com.mysql.jdbc.driver</code>源码可以看出, 该类中有一个静态代码块进行了驱动的注册, 所有如果使用DriverManager的static方法进行注册会导致两次注册, 所有一般我们很少使用这种方法进行驱动注册.</font>, 类被加载进内存时就会执行静态代码块.</font><ul>
 <li>使用反射(常用):  <code>Class.forName(全限定名);</code></li>
 <li>使用:  <code>类名.class</code></li>
 <li>使用:  <code>对象.getClass();</code><blockquote>
@@ -229,11 +232,11 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">java.sql.Driver</font>: 驱动接口</li>
-<li><font color="orange">java.sql.Connection</font>: 连接接口<ul>
+<li><font color=orange>java.sql.Driver</font>: 驱动接口</li>
+<li><font color=orange>java.sql.Connection</font>: 连接接口<ul>
 <li>常用方法<ul>
 <li>获取语句执行者 <code>Statement createStatement()</code><ul>
-<li>会出现<font color="red">SQL注入</font>问题</li>
+<li>会出现<font color=red>SQL注入</font>问题</li>
 </ul>
 </li>
 <li>获取预编译语句执行者 <code>PreparedStatement prepareStatement(Stirng sql);</code></li>
@@ -245,7 +248,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">java.sql.PreparedStatement</font>语句预执行者<ul>
+<li><font color=orange>java.sql.PreparedStatement</font>语句预执行者<ul>
 <li>常用方法<ul>
 <li>设置参数 <code>setXXX(index, value)</code> index是从1开始的整数<ul>
 <li>如 setInt、setString等</li>
@@ -257,7 +260,7 @@
 </ul>
 </li>
 <li>更新、删除等<ul>
-<li>int executeUpdate(),  <font color="orange">返回值为受影响的行数</font>.</li>
+<li>int executeUpdate(),  <font color=orange>返回值为受影响的行数</font>.</li>
 </ul>
 </li>
 </ul>
@@ -266,12 +269,12 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">java.sql.ResultSet</font>: 结果集 接口<ul>
+<li><font color=orange>java.sql.ResultSet</font>: 结果集 接口<ul>
 <li>常用方法<ul>
 <li>判断是否有下一项<code>boolen next()</code>, 没有则返回false</li>
 <li>getXXX(int | String)<ul>
-<li>如果参数为int: 根据<font color="orange">第几列</font>获取值(下标从1开始)</li>
-<li>如果参数为String: 根据 <font color="orange">字段名</font> 获取值</li>
+<li>如果参数为int: 根据<font color=orange>第几列</font>获取值(下标从1开始)</li>
+<li>如果参数为String: 根据 <font color=orange>字段名</font> 获取值</li>
 </ul>
 </li>
 </ul>
@@ -280,7 +283,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">JDBC的一般步骤</font><ul>
+<li><font color=orange>JDBC的一般步骤</font><ul>
 <li>1、新建Java项目<ul>
 <li>注意要把eclipse设置里面<code>Preferences</code>—<code>workspace</code>—<code>Text file encoding</code>改为<code>UTF-8</code>.</li>
 <li>尽量使用自己的JDK, 不要使用内置的.</li>
@@ -289,7 +292,7 @@
 <li>2、新建数据库和表</li>
 <li>3、导入JDBC驱动jar包<ul>
 <li>复制jar包到项目中, 一般将jar包放在一个专门的目录中, 如<code>lib</code></li>
-<li><font color="red">选择导入的jar包—-<code>右键</code>—-<code>Build Path</code>—-<code>Add to Build Path</code></font></li>
+<li><font color=red>选择导入的jar包—-<code>右键</code>—-<code>Build Path</code>—-<code>Add to Build Path</code></font></li>
 </ul>
 </li>
 <li>4、编码<ul>
@@ -308,11 +311,11 @@
 </li>
 <li>4、创建预编译的语句执行者<ul>
 <li><code>PreparedStatement state = connection.prepareStatement(sql);</code></li>
-<li>Java提供了 <font color="orange">Statement</font>、<font color="orange">PreparedStatement</font> 和 <font color="orange">CallableStatement</font>三种方式来执行查询语句，其中 Statement 用于通用查询， PreparedStatement 用于执行参数化查询，而 CallableStatement则是用于存储过程。<ul>
+<li>Java提供了 <font color=orange>Statement</font>、<font color=orange>PreparedStatement</font> 和 <font color=orange>CallableStatement</font>三种方式来执行查询语句，其中 Statement 用于通用查询， PreparedStatement 用于执行参数化查询，而 CallableStatement则是用于存储过程。<ul>
 <li>PreparedStatement是java.sql包下面的一个接口，用来执行SQL语句查询，通过调用connection.preparedStatement(sql)方法可以获得PreparedStatment对象。数据库系统会对sql语句进行预编译处理（如果JDBC驱动支持的话），预处理语句将被预先编译好，这条预编译的sql查询语句能在将来的查询中重用，这样一来，它比Statement对象生成的查询速度更快。<ul>
-<li><font color="orange">PreparedStatement优点</font><ul>
+<li><font color=orange>PreparedStatement优点</font><ul>
 <li>PreparedStatement可以写动态参数化的查询</li>
-<li><font color="red">PreparedStatement可以防止SQL注入式攻击</font></li>
+<li><font color=red>PreparedStatement可以防止SQL注入式攻击</font></li>
 <li>PreparedStatement比 Statement 更快</li>
 </ul>
 </li>
@@ -325,10 +328,10 @@
 <li>5、设置参数<ul>
 <li>如果sql语句中没有参数<code>?</code>, 不需要设置.</li>
 <li><code>state.setXXX(?的index(从1开始), &quot;c005&quot;);</code></li>
-<li>注意: <font color="red">index是从1开始</font></li>
+<li>注意: <font color=red>index是从1开始</font></li>
 </ul>
 </li>
-<li>6、执行sql(注意:<font color="red">没有参数</font>)<ul>
+<li>6、执行sql(注意:<font color=red>没有参数</font>)<ul>
 <li>执行查询语句返回结果是ResultSet<ul>
 <li><code>ResultSet resultSet = state.executeQuery();</code></li>
 </ul>
@@ -351,7 +354,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">Java中的JUnit单元测试</font><ul>
+<li><font color=orange>Java中的JUnit单元测试</font><ul>
 <li>JUint单元测试可以在没有main函数的情况下测试</li>
 <li>方法是public、无返回值、无参数的</li>
 <li>不能私有构造方法</li>
@@ -360,7 +363,7 @@
 <li>在方法名上—-<code>右键</code>—-<code>Run as</code> —-<code>JUint Test</code>—-就可以执行方法了</li>
 </ul>
 </li>
-<li><font color="orange">常见配置文件格式</font><ul>
+<li><font color=orange>常见配置文件格式</font><ul>
 <li>properties<ul>
 <li><code>key=value</code>或<code>key:value</code>形式, 多个键值对使用<code>换行</code></li>
 <li>可以使用<code>java.util.Properties</code>类的<code>load(InputStream input)</code>函数读取</li>
@@ -373,7 +376,7 @@
 <li>xml</li>
 </ul>
 </li>
-<li><font color="orange">ResourceBundle</font><ul>
+<li><font color=orange>ResourceBundle</font><ul>
 <li>使用ResourceBundle工具快速获取里面的配置信息,  需要放在src里面</li>
 <li>常用方法<ul>
 <li>静态方法获取实例: <code>public static final ResourceBundle getBundle(String 文件名称不带后缀名)</code><blockquote>
@@ -388,8 +391,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="连接池"><a href="#连接池" class="headerlink" title="连接池"></a><font color="orange">连接池</font></h2><p>&emsp;&emsp;数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。对数据库连接的管理能显著影响到整个应用程序的伸缩性和健壮性，影响到程序的性能指标。数据库连接池正是针对这个问题提出来的。<br>&emsp;&emsp;数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏。这项技术能明显提高对数据库操作的性能。</p>
-<p><center><br><img src="http://47.96.147.179/images/java/no_servlet.jpeg" alt="没有连接池" style="width: 70%; text-align: center; display: block;"><br>没有连接池<br><img src="http://47.96.147.179/images/java/has_servlet.jpeg" alt="有连接池" style="width: 70%; text-align: center; display: block;"><br>有连接池<br></center></p>
+<h2 id="连接池"><a href="#连接池" class="headerlink" title="连接池"></a><font color=orange>连接池</font></h2><p>&emsp;&emsp;数据库连接是一种关键的有限的昂贵的资源，这一点在多用户的网页应用程序中体现得尤为突出。对数据库连接的管理能显著影响到整个应用程序的伸缩性和健壮性，影响到程序的性能指标。数据库连接池正是针对这个问题提出来的。<br>&emsp;&emsp;数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏。这项技术能明显提高对数据库操作的性能。</p>
+<p><center><br><img src="/assets/images/java/no_servlet.jpeg" alt="没有连接池" style="width: 70%; text-align: center; display: block;"/><br>没有连接池<br><img src="/assets/images/java/has_servlet.jpeg" alt="有连接池" style="width: 70%; text-align: center; display: block;"/><br>有连接池<br></center></p>
 <ul>
 <li>连接池的优点<ul>
 <li>节省创建连接与释放连接性能消耗 </li>
@@ -398,7 +401,7 @@
 </li>
 <li>连接池的原理<br>&emsp;&emsp;连接池基本的思想是在系统初始化的时候，将数据库连接作为对象存储在内存中，当用户需要访问数据库时，并非建立一个新的连接，而是从连接池中取出一个已建立的空闲连接对象。使用完毕后，用户也并非将连接关闭，而是将连接放回连接池中，以供下一个请求访问使用。而连接的建立、断开都由连接池自身来管理。同时，还可以通过设置连接池的参数来控制连接池中的初始连接数、连接的上下限数以及每个连接的最大使用次数、最大空闲时间等等。也可以通过其自身的管理机制来监视数据库连接的数量、使用情况等。</li>
 <li>自定义连接池<ul>
-<li>所有的自定义的连接池必须实现<font color="orange">javax.sql.DataSource</font>接口 </li>
+<li>所有的自定义的连接池必须实现<font color=orange>javax.sql.DataSource</font>接口 </li>
 <li>如果连接对象Connection是通过连接池获取的，当通过Connection对象调用close()方法时，不在是销毁连接对象，而是需要将连接对象放回到连接池。</li>
 <li>使用装饰者模式实现自定义Connection<ul>
 <li>增强的类和被增强的类实现相同的接口.</li>
@@ -407,7 +410,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">常用连接池</font><ul>
+<li><font color=orange>常用连接池</font><ul>
 <li>DBCP(了解): Apache组织出品<ul>
 <li>使用步骤<ul>
 <li>1、导入jar包 : <code>commons-dbcp-1.4.jar</code>和<code>commons-pool-1.5.6.jar</code>    </li>
@@ -426,7 +429,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">C3P0(★)</font><br>C3P0是一个开源的JDBC连接池，它实现了数据源和JNDI绑定，支持JDBC3规范和JDBC2的标准扩展。目前使用它的开源项目有Hibernate，Spring等。<font color="red">C3P0具有自动回收空闲连接的功能, 而DBCP不具有自动回收功能.</font><ul>
+<li><font color=orange>C3P0(★)</font><br>C3P0是一个开源的JDBC连接池，它实现了数据源和JNDI绑定，支持JDBC3规范和JDBC2的标准扩展。目前使用它的开源项目有Hibernate，Spring等。<font color=red>C3P0具有自动回收空闲连接的功能, 而DBCP不具有自动回收功能.</font><ul>
 <li>使用步骤<ul>
 <li>1、导入jar包 : <code>c3p0-0.9.1.2.jar</code>   </li>
 <li>2、使用API<ul>
@@ -446,7 +449,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">dbutils</font><br>dbutils是apache组织的一个工具类, jdbc框架.<ul>
+<li><font color=orange>dbutils</font><br>dbutils是apache组织的一个工具类, jdbc框架.<ul>
 <li>使用步骤<ul>
 <li>1、导入jar包 <code>commons-dbutils-1.4.jar</code></li>
 <li>2、创建QueryRunner类, 操作SQL语句</li>
@@ -520,57 +523,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -579,7 +531,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/08/18/iOS/dispatch-group-t的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/18/iOS/dispatch-group-t%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -589,7 +541,7 @@
     </a>
   
   
-    <a href="/2016/08/08/资料整理/国内镜像站mirror整理/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/08/08/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99mirror%E6%95%B4%E7%90%86/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">国内镜像站mirror整理</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -633,7 +585,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -650,7 +602,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -736,7 +688,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -752,11 +748,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -768,6 +828,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -776,7 +844,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -784,7 +884,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -792,35 +932,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -828,47 +940,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -888,6 +960,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -896,191 +1036,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1088,7 +1048,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1131,7 +1091,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

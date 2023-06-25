@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>iOS自定义导航栏的使用 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在开发App过程中, 一般整个App的导航栏大致风格都是一致, 这个时候一般有两种方式来处理:  使用系统自带的UINavigationContoller, 然后定义一个base的UIViewController作为基类, 设置好它的导航栏样式.后面的所有Controller都继承于它. 自定义导航栏控制器继承于UINavigationController, 在自定义导航栏里面设置.对于第二种方式">
-<meta name="keywords" content="iOS,资料整理,Swift,Objective-C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS自定义导航栏的使用">
-<meta property="og:url" content="http://yoursite.com/2016/04/23/iOS/iOS自定义导航栏的使用/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/23/iOS/iOS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="在开发App过程中, 一般整个App的导航栏大致风格都是一致, 这个时候一般有两种方式来处理:  使用系统自带的UINavigationContoller, 然后定义一个base的UIViewController作为基类, 设置好它的导航栏样式.后面的所有Controller都继承于它. 自定义导航栏控制器继承于UINavigationController, 在自定义导航栏里面设置.对于第二种方式">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.668Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-04-23T08:12:58.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="资料整理">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Swift">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS自定义导航栏的使用">
-<meta name="twitter:description" content="在开发App过程中, 一般整个App的导航栏大致风格都是一致, 这个时候一般有两种方式来处理:  使用系统自带的UINavigationContoller, 然后定义一个base的UIViewController作为基类, 设置好它的导航栏样式.后面的所有Controller都继承于它. 自定义导航栏控制器继承于UINavigationController, 在自定义导航栏里面设置.对于第二种方式">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +40,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +51,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +65,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +107,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +139,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +174,7 @@
   
 
         
-        <a href="/2016/04/23/iOS/iOS自定义导航栏的使用/" class="archive-article-date">
+        <a href="/2016/04/23/iOS/iOS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2016-04-23T08:12:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-23</time>
 </a>
         
@@ -182,11 +187,11 @@
 <li>使用系统自带的UINavigationContoller, 然后定义一个base的UIViewController作为基类, 设置好它的导航栏样式.后面的所有Controller都继承于它.</li>
 <li>自定义导航栏控制器继承于UINavigationController, 在自定义导航栏里面设置.<br>对于第二种方式来设置, 会导致系统自带的侧滑返回手势失效.</li>
 </ul>
-<a id="more"></a>
-<h1 id="1-统一设置导航栏"><a href="#1-统一设置导航栏" class="headerlink" title="1. 统一设置导航栏"></a><font color="orange">1. 统一设置导航栏</font></h1><blockquote>
+<span id="more"></span>
+<h1 id="1-统一设置导航栏"><a href="#1-统一设置导航栏" class="headerlink" title="1. 统一设置导航栏"></a><font color=orange>1. 统一设置导航栏</font></h1><blockquote>
 <p>  //initialize方法在该类第一次使用时只会运行一次, 在这里统一配置<br>+(void)initialize {<br>&emsp;&emsp;UINavigationBar *bar = [UINavigationBar appearance];<br>&emsp;&emsp;//设置背景颜色<br>&emsp;&emsp;//bar.barTintColor = [UIColor colorWithRed:248 / 255.0 green:79 / 255.0 blue:83 / 255.0 alpha:1];<br>&emsp;&emsp;//背景图片<br>&emsp;&emsp;[bar setBackgroundImage:kImage(@”navigation_backgroundImage”) forBarMetrics:(UIBarMetricsDefault)];<br>&emsp;&emsp;//去掉全局导航条下面黑线<br>&emsp;&emsp;[bar setShadowImage:[UIImage new]];<br>&emsp;&emsp;//设置标题字体属性<br>&emsp;&emsp;bar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorFromRGBValue:0xFFFFFF],<br>    NSFontAttributeName : kPingFangLightFont(18)};<br>&emsp;&emsp;//设置导航栏是否透明, 如果为true, 那么controller里面的布局frame的x从状态栏开始, 否则从导航栏下面开始<br>&emsp;&emsp;if (__iOS_VERSION &gt; 7.0) {<br>&emsp;&emsp;&emsp;&emsp;bar.translucent = false;<br>&emsp;&emsp;}<br>}</p>
 </blockquote>
-<h1 id="2-解决导航栏侧滑返回失效"><a href="#2-解决导航栏侧滑返回失效" class="headerlink" title="2. 解决导航栏侧滑返回失效"></a><font color="orange">2. 解决导航栏侧滑返回失效</font></h1><ul>
+<h1 id="2-解决导航栏侧滑返回失效"><a href="#2-解决导航栏侧滑返回失效" class="headerlink" title="2. 解决导航栏侧滑返回失效"></a><font color=orange>2. 解决导航栏侧滑返回失效</font></h1><ul>
 <li>设置代理</li>
 </ul>
 <blockquote>
@@ -196,7 +201,7 @@
 <li>遵循协议</li>
 </ul>
 <blockquote>
-<p>  @interface HJNavigationController ()<uigesturerecognizerdelegate></uigesturerecognizerdelegate></p>
+<p>  @interface HJNavigationController ()<UIGestureRecognizerDelegate></p>
 </blockquote>
 <ul>
 <li>实现代理协议<blockquote>
@@ -204,10 +209,10 @@
 </blockquote>
 </li>
 </ul>
-<h1 id="3-对后续页面进行处理-例如当push一个UIViewController的时候-希望leftBarButtonItem一样-可以在这里处理"><a href="#3-对后续页面进行处理-例如当push一个UIViewController的时候-希望leftBarButtonItem一样-可以在这里处理" class="headerlink" title="3. 对后续页面进行处理,例如当push一个UIViewController的时候, 希望leftBarButtonItem一样, 可以在这里处理."></a><font color="orange">3. 对后续页面进行处理,例如当push一个UIViewController的时候, 希望leftBarButtonItem一样, 可以在这里处理.</font></h1><blockquote>
+<h1 id="3-对后续页面进行处理-例如当push一个UIViewController的时候-希望leftBarButtonItem一样-可以在这里处理"><a href="#3-对后续页面进行处理-例如当push一个UIViewController的时候-希望leftBarButtonItem一样-可以在这里处理" class="headerlink" title="3. 对后续页面进行处理,例如当push一个UIViewController的时候, 希望leftBarButtonItem一样, 可以在这里处理."></a><font color=orange>3. 对后续页面进行处理,例如当push一个UIViewController的时候, 希望leftBarButtonItem一样, 可以在这里处理.</font></h1><blockquote>
 <p>  -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {<br>&emsp;&emsp;if (self.viewControllers.count &gt; 0) {<br>&emsp;&emsp;&emsp;&emsp;//隐藏tabBar<br>&emsp;&emsp;&emsp;&emsp;viewController.hidesBottomBarWhenPushed = YES;<br>&emsp;&emsp;&emsp;&emsp;//设置左边按钮<br>&emsp;&emsp;&emsp;&emsp;viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTitle:nil titleNormalColor:nil titleHighlightedColor:nil normalImage:@”back_normal” highlightedImage:@”back_press” target:self action:@selector(back:) edg:(UIEdgeInsetsMake(0, 0, 0, 0))];<br>&emsp;&emsp;}<br>&emsp;&emsp;[super pushViewController:viewController animated:animated];<br>}<br>//实现返回方法<br>-(void)back:(UIButton *)button {<br>&emsp;&emsp;[self popViewControllerAnimated:true];<br>}</p>
 </blockquote>
-<h1 id="4-使指定页面的控制器不能侧滑返回"><a href="#4-使指定页面的控制器不能侧滑返回" class="headerlink" title="4. 使指定页面的控制器不能侧滑返回"></a><font color="orange">4. 使指定页面的控制器不能侧滑返回</font></h1><p>有时产品会希望一个流程完全走完, 而不要中间中断.除了需要对导航栏左侧按钮处理外还需要处理侧滑问题.在指定控制器里面实现下面方法即可.</p>
+<h1 id="4-使指定页面的控制器不能侧滑返回"><a href="#4-使指定页面的控制器不能侧滑返回" class="headerlink" title="4. 使指定页面的控制器不能侧滑返回"></a><font color=orange>4. 使指定页面的控制器不能侧滑返回</font></h1><p>有时产品会希望一个流程完全走完, 而不要中间中断.除了需要对导航栏左侧按钮处理外还需要处理侧滑问题.在指定控制器里面实现下面方法即可.</p>
 <blockquote>
 <p>  -(void)viewDidAppear:(BOOL)animated{<br>&emsp;&emsp;if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {<br>&emsp;&emsp;&emsp;&emsp;self.navigationController.interactivePopGestureRecognizer.enabled = NO;<br>&emsp;&emsp;}<br>}<br>-(void)viewWillDisappear:(BOOL)animated{<br>&emsp;&emsp;self.navigationController.interactivePopGestureRecognizer.enabled = YES;<br>}</p>
 </blockquote>
@@ -232,11 +237,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		
 		</ul>
@@ -247,57 +252,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/04/23/iOS/iOS自定义导航栏的使用/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -306,7 +260,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/05/03/Java基础/常用DOS命令/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/03/Java%E5%9F%BA%E7%A1%80/%E5%B8%B8%E7%94%A8DOS%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -316,7 +270,7 @@
     </a>
   
   
-    <a href="/2016/04/18/iOS/几种编程思想和ReactiveCocoa的使用/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/04/18/iOS/%E5%87%A0%E7%A7%8D%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E5%92%8CReactiveCocoa%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">几种编程思想和ReactiveCocoa的使用</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -360,7 +314,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -377,7 +331,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -463,7 +417,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -479,11 +477,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -495,6 +557,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -503,7 +573,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -511,7 +613,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -519,35 +661,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -555,47 +669,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -615,6 +689,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -623,191 +765,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -815,7 +777,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -858,7 +820,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

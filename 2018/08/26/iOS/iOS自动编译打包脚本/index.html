@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>iOS自动编译打包脚本 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近闲暇时间研究了一下Xcode自动编译、打包以及通过脚本更改一个配置文件, 主要涉及的命令如下:   xcpretty 美化xcodebuild的输出日志   xcodebuild 苹果发布自动构建的工具   PlistBuddy Mac自带的专门解析plist的小工具   grep 文本搜索工具   awk 文本分析工具   sed 文本编辑工具    这里只是简单介绍了这些命令的几种用法,">
-<meta name="keywords" content="iOS,Swift,Objective-C,Xcode,持续集成,Shell">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS自动编译打包脚本">
-<meta property="og:url" content="http://yoursite.com/2018/08/26/iOS/iOS自动编译打包脚本/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/08/26/iOS/iOS%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85%E8%84%9A%E6%9C%AC/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="最近闲暇时间研究了一下Xcode自动编译、打包以及通过脚本更改一个配置文件, 主要涉及的命令如下:   xcpretty 美化xcodebuild的输出日志   xcodebuild 苹果发布自动构建的工具   PlistBuddy Mac自带的专门解析plist的小工具   grep 文本搜索工具   awk 文本分析工具   sed 文本编辑工具    这里只是简单介绍了这些命令的几种用法,">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/iOS_auto_build_ipa.jpeg">
-<meta property="og:updated_time" content="2019-05-05T00:56:25.977Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/iOS_auto_build_ipa.jpeg">
+<meta property="article:published_time" content="2018-08-26T05:37:04.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:48:33.901Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="持续集成">
+<meta property="article:tag" content="Shell">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Xcode">
+<meta property="article:tag" content="Swift">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS自动编译打包脚本">
-<meta name="twitter:description" content="最近闲暇时间研究了一下Xcode自动编译、打包以及通过脚本更改一个配置文件, 主要涉及的命令如下:   xcpretty 美化xcodebuild的输出日志   xcodebuild 苹果发布自动构建的工具   PlistBuddy Mac自带的专门解析plist的小工具   grep 文本搜索工具   awk 文本分析工具   sed 文本编辑工具    这里只是简单介绍了这些命令的几种用法,">
-<meta name="twitter:image" content="http://47.96.147.179/images/iOS/iOS_auto_build_ipa.jpeg">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/iOS/iOS_auto_build_ipa.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -39,8 +44,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -50,13 +55,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -66,9 +69,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -106,15 +111,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -138,13 +143,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -171,7 +178,7 @@
   
 
         
-        <a href="/2018/08/26/iOS/iOS自动编译打包脚本/" class="archive-article-date">
+        <a href="/2018/08/26/iOS/iOS%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85%E8%84%9A%E6%9C%AC/" class="archive-article-date">
   	<time datetime="2018-08-26T05:37:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-26</time>
 </a>
         
@@ -179,7 +186,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://47.96.147.179/images/iOS/iOS_auto_build_ipa.jpeg" alt="hello" style="width: 70%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"></p>
+        <p><img src="/assets/images/iOS/iOS_auto_build_ipa.jpeg" alt="hello" style="width: 70%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"/></p>
 <p>最近闲暇时间研究了一下Xcode自动编译、打包以及通过脚本更改一个配置文件, 主要涉及的命令如下: </p>
 <ul>
 <li>xcpretty<ul>
@@ -207,62 +214,62 @@
 </ul>
 </li>
 </ul>
-<p>这里只是简单介绍了这些命令的几种用法, 需要深入了解的可自行搜索学习。<br><a id="more"></a></p>
-<h2 id="xcpretty"><a href="#xcpretty" class="headerlink" title=" xcpretty "></a><font color="orange"> xcpretty </font></h2><p>xcpretty是一个针对于xcodebuild的快速和灵活的格式化程序, <a href="https://github.com/xcpretty/xcpretty" target="_blank" rel="noopener">github地址</a>。</p>
-<h3 id="安装xcpretty"><a href="#安装xcpretty" class="headerlink" title=" 安装xcpretty "></a><font color="orange"> 安装xcpretty </font></h3><blockquote>
+<p>这里只是简单介绍了这些命令的几种用法, 需要深入了解的可自行搜索学习。<br><span id="more"></span></p>
+<h2 id="xcpretty"><a href="#xcpretty" class="headerlink" title=" xcpretty "></a><font color=orange> xcpretty </font></h2><p>xcpretty是一个针对于xcodebuild的快速和灵活的格式化程序, <a target="_blank" rel="noopener" href="https://github.com/xcpretty/xcpretty">github地址</a>。</p>
+<h3 id="安装xcpretty"><a href="#安装xcpretty" class="headerlink" title=" 安装xcpretty "></a><font color=orange> 安装xcpretty </font></h3><blockquote>
 <p>   sudo gem install</p>
 </blockquote>
 <p>也可以自定义安装目录</p>
 <blockquote>
 <p>   gem install -n /usr/local/bin xcpretty</p>
 </blockquote>
-<h3 id="使用xcpretty"><a href="#使用xcpretty" class="headerlink" title=" 使用xcpretty "></a><font color="orange"> 使用xcpretty </font></h3><blockquote>
+<h3 id="使用xcpretty"><a href="#使用xcpretty" class="headerlink" title=" 使用xcpretty "></a><font color=orange> 使用xcpretty </font></h3><blockquote>
 <p>   xcodebuild [flags] | xcpretty</p>
 </blockquote>
 <p>或者在脚本中, 执行失败时退出</p>
 <blockquote>
 <p>   xcodebuild [flags] | xcpretty &amp;&amp; exit ${PIPESTATUS[0]}</p>
 </blockquote>
-<h2 id="grep"><a href="#grep" class="headerlink" title=" grep "></a><font color="orange"> grep </font></h2><p>Linux grep命令用于查找文件里符合条件的字符串。</p>
+<h2 id="grep"><a href="#grep" class="headerlink" title=" grep "></a><font color=orange> grep </font></h2><p>Linux grep命令用于查找文件里符合条件的字符串。</p>
 <blockquote>
 <p>   查找</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#-m1表示取第一个结果</span><br><span class="line">#-C2表示查找匹配项的下面两行</span><br><span class="line">grep [-e] &quot;要查找的字符串&quot; 文件路径 [-m1] [-C2]</span><br><span class="line">grep -E &quot;正则表达式&quot; 文件路径</span><br></pre></td></tr></table></figure>
-<h2 id="awk"><a href="#awk" class="headerlink" title=" awk "></a><font color="orange"> awk </font></h2><p>AWK是一种处理文本文件的语言，是一个强大的文本分析工具。<br>配合grep命令, 可以查找Xcode项目中的一些关键配置值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#-m1表示取第一个结果</span><br><span class="line">#-C2表示查找匹配项的下面两行</span><br><span class="line">grep [-e] &quot;要查找的字符串&quot; 文件路径 [-m1] [-C2]</span><br><span class="line">grep -E &quot;正则表达式&quot; 文件路径</span><br></pre></td></tr></table></figure>
+<h2 id="awk"><a href="#awk" class="headerlink" title=" awk "></a><font color=orange> awk </font></h2><p>AWK是一种处理文本文件的语言，是一个强大的文本分析工具。<br>配合grep命令, 可以查找Xcode项目中的一些关键配置值。</p>
 <blockquote>
 <p>   分割</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#使用,分割然后输出第一个</span><br><span class="line">awk -F, &apos;&#123;print $1&#125;&apos; 文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#使用,分割然后输出第一个</span><br><span class="line">awk -F, &#x27;&#123;print $1&#125;&#x27; 文件路径</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>示例: 在当前目录中查找Xcode project项目名称, 当grep查询有多个时,可以使用-m1取第一个<br><code>$(ls | grep xcodeproj -m1 | awk -F.xcodeproj &#39;{print $1}&#39;)</code></p>
+<p>示例: 在当前目录中查找Xcode project项目名称, 当grep查询有多个时,可以使用-m1取第一个<br><code>$(ls | grep xcodeproj -m1 | awk -F.xcodeproj &#39;&#123;print $1&#125;&#39;)</code></p>
 </blockquote>
-<h2 id="sed"><a href="#sed" class="headerlink" title=" sed "></a><font color="orange"> sed </font></h2><p>sed主要用来自动编辑一个或多个文件<br>此命令可以用来修改Xcode项目中的.h或者.m文件</p>
+<h2 id="sed"><a href="#sed" class="headerlink" title=" sed "></a><font color=orange> sed </font></h2><p>sed主要用来自动编辑一个或多个文件<br>此命令可以用来修改Xcode项目中的.h或者.m文件</p>
 <blockquote>
 <p>   打印</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查找匹配打印</span><br><span class="line">sed -n &quot;/匹配项,可以是正则表达式/p&quot; 文件路径</span><br><span class="line">#打印第四行</span><br><span class="line">sed -n 4p 文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#查找匹配打印</span><br><span class="line">sed -n &quot;/匹配项,可以是正则表达式/p&quot; 文件路径</span><br><span class="line">#打印第四行</span><br><span class="line">sed -n 4p 文件路径</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>   替换行</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#字符串替换</span><br><span class="line">sed -i &apos;&apos; -e &quot;s/被替换字符串, 可以是正则表达式/替换字符串/&quot; 文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#字符串替换</span><br><span class="line">sed -i &#x27;&#x27; -e &quot;s/被替换字符串, 可以是正则表达式/替换字符串/&quot; 文件路径</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>示例: 查找并替换某一个内容<br>假如有一个xxx.h文件, 目录是~/Desktop/xxx.h, 内容如下:<br><code>#define PUBLISH 1</code><br>我们需要修改为<code>#define PUBLISH 2</code><br>执行<code>sed -i &#39;&#39; -e &quot;s/^#define[ ]*PUBLISH[ ]*[0-9]*[ ]*$/#define PUBLISH 2/&quot; ~/Desktop/xxx.h</code>即可</p>
 </blockquote>
-<h2 id="PlistBuddy"><a href="#PlistBuddy" class="headerlink" title=" PlistBuddy "></a><font color="orange"> PlistBuddy </font></h2><p>此命令可以用来修改Xcode项目中Info.plist文件中的配置。</p>
+<h2 id="PlistBuddy"><a href="#PlistBuddy" class="headerlink" title=" PlistBuddy "></a><font color=orange> PlistBuddy </font></h2><p>此命令可以用来修改Xcode项目中Info.plist文件中的配置。</p>
 <blockquote>
 <p>   打印CFBundleShortVersionString对应的值</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/libexec/PlistBuddy -c &quot;print CFBundleShortVersionString&quot; plist文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/libexec/PlistBuddy -c &quot;print CFBundleShortVersionString&quot; plist文件路径</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>   修改CFBundleShortVersionString对应的值</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/libexec/PlistBuddy -c &quot;Set :CFBundleShortVersionString 1.1&quot; plist文件路径</span><br></pre></td></tr></table></figure>
-<h2 id="xcodebuild"><a href="#xcodebuild" class="headerlink" title=" xcodebuild "></a><font color="orange"> xcodebuild </font></h2><h3 id="常见命令"><a href="#常见命令" class="headerlink" title=" 常见命令 "></a><font color="orange"> 常见命令 </font></h3><p>这些命令可以单独使用, 无需指定<code>-project</code>、<code>-workspace</code>和<code>-scheme</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/libexec/PlistBuddy -c &quot;Set :CFBundleShortVersionString 1.1&quot; plist文件路径</span><br></pre></td></tr></table></figure>
+<h2 id="xcodebuild"><a href="#xcodebuild" class="headerlink" title=" xcodebuild "></a><font color=orange> xcodebuild </font></h2><h3 id="常见命令"><a href="#常见命令" class="headerlink" title=" 常见命令 "></a><font color=orange> 常见命令 </font></h3><p>这些命令可以单独使用, 无需指定<code>-project</code>、<code>-workspace</code>和<code>-scheme</code></p>
 <blockquote>
 <p>   使用帮助<br>   xcodebuild -help<br>   man xcodebuild</p>
 </blockquote>
 <blockquote>
-<p>   查看当前目录中的Targets、Configurations和Schemes<br>   xcodebuild -list [[-project <projectname>]|[-workspace <workspacename>]] [-json]</workspacename></projectname></p>
+<p>   查看当前目录中的Targets、Configurations和Schemes<br>   xcodebuild -list [[-project <projectname>]|[-workspace <workspacename>]] [-json]</p>
 </blockquote>
 <blockquote>
 <p>   查看已安装的SDK<br>   xcodebuild -showsdks</p>
@@ -316,7 +323,7 @@
 <p>导出ipa<br>xcodebuild -exportArchive -archivePath xcarchivepath -exportPath destinationpath -exportOptionsPlist path</p>
 </blockquote>
 </blockquote>
-<h3 id="常见action"><a href="#常见action" class="headerlink" title=" 常见action "></a><font color="orange"> 常见action </font></h3><blockquote>
+<h3 id="常见action"><a href="#常见action" class="headerlink" title=" 常见action "></a><font color=orange> 常见action </font></h3><blockquote>
 <p>build<br>编译</p>
 </blockquote>
 <blockquote>
@@ -343,7 +350,7 @@
 <blockquote>
 <p>clean<br>清理</p>
 </blockquote>
-<h3 id="exportOptionsPlist"><a href="#exportOptionsPlist" class="headerlink" title=" exportOptionsPlist "></a><font color="orange"> exportOptionsPlist </font></h3><p>这个文件可以自己生成, 但是推荐使用Xcode打包编译后, 选择相应的App Store、Ad Hoc、Development导出IPA后, 导出目录中会有一个相应的<code>ExportOptions.plist</code>文件, 这样出错的几率小很多。</p>
+<h3 id="exportOptionsPlist"><a href="#exportOptionsPlist" class="headerlink" title=" exportOptionsPlist "></a><font color=orange> exportOptionsPlist </font></h3><p>这个文件可以自己生成, 但是推荐使用Xcode打包编译后, 选择相应的App Store、Ad Hoc、Development导出IPA后, 导出目录中会有一个相应的<code>ExportOptions.plist</code>文件, 这样出错的几率小很多。</p>
 <p>Available keys for -exportOptionsPlist:</p>
 <table>
 <thead>
@@ -427,7 +434,7 @@
 <tr>
 <td style="text-align:center">thinning</td>
 <td style="text-align:center">String</td>
-<td style="text-align:center">non-App Store exports, should Xcode thin the package for one or more device variants? Available options: <none> (Xcode produces a non-thinned universal app), <thin-for-all-variants> (Xcode produces a universal app and all available thinned variants), or a model identifier for a specific device (e.g. “iPhone7,1”). Defaults to <none>.</none></thin-for-all-variants></none></td>
+<td style="text-align:center">non-App Store exports, should Xcode thin the package for one or more device variants? Available options: <none> (Xcode produces a non-thinned universal app), <thin-for-all-variants> (Xcode produces a universal app and all available thinned variants), or a model identifier for a specific device (e.g. “iPhone7,1”). Defaults to <none>.</td>
 </tr>
 <tr>
 <td style="text-align:center">uploadBitcode</td>
@@ -441,13 +448,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="自动上传到App-Store或者蒲公英"><a href="#自动上传到App-Store或者蒲公英" class="headerlink" title=" 自动上传到App Store或者蒲公英 "></a><font color="orange"> 自动上传到App Store或者蒲公英 </font></h2><h3 id="自动上传到App-Store"><a href="#自动上传到App-Store" class="headerlink" title=" 自动上传到App Store "></a><font color="orange"> 自动上传到App Store </font></h3><blockquote>
+<h2 id="自动上传到App-Store或者蒲公英"><a href="#自动上传到App-Store或者蒲公英" class="headerlink" title=" 自动上传到App Store或者蒲公英 "></a><font color=orange> 自动上传到App Store或者蒲公英 </font></h2><h3 id="自动上传到App-Store"><a href="#自动上传到App-Store" class="headerlink" title=" 自动上传到App Store "></a><font color=orange> 自动上传到App Store </font></h3><blockquote>
 <p>使用altool上传, 需要ApplID和密码<br>/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool –validate-app -f ipaPath -u AppleID -p password -t ios –output-format xml</p>
 </blockquote>
-<h3 id="自动上传到蒲公英"><a href="#自动上传到蒲公英" class="headerlink" title=" 自动上传到蒲公英 "></a><font color="orange"> 自动上传到蒲公英 </font></h3><blockquote>
-<p>使用Shell脚本<br>curl -F “file=xxx.ipa” -F “uKey=xxx” -F “_api_key=xxx” <a href="https://qiniu-storage.pgyer.com/apiv1/app/upload" target="_blank" rel="noopener">https://qiniu-storage.pgyer.com/apiv1/app/upload</a></p>
+<h3 id="自动上传到蒲公英"><a href="#自动上传到蒲公英" class="headerlink" title=" 自动上传到蒲公英 "></a><font color=orange> 自动上传到蒲公英 </font></h3><blockquote>
+<p>使用Shell脚本<br>curl -F “file=xxx.ipa” -F “uKey=xxx” -F “_api_key=xxx” <a target="_blank" rel="noopener" href="https://qiniu-storage.pgyer.com/apiv1/app/upload">https://qiniu-storage.pgyer.com/apiv1/app/upload</a></p>
 </blockquote>
-<h2 id="结束"><a href="#结束" class="headerlink" title=" 结束 "></a><font color="orange"> 结束 </font></h2><p>这里我就不放脚本了, 自己动手丰衣足食~~~<br>可以根据自己项目的配置, 个性化自己的打包脚本!</p>
+<h2 id="结束"><a href="#结束" class="headerlink" title=" 结束 "></a><font color=orange> 结束 </font></h2><p>这里我就不放脚本了, 自己动手丰衣足食~~~<br>可以根据自己项目的配置, 个性化自己的打包脚本!</p>
 
       
 
@@ -465,7 +472,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">持续集成</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shell</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -477,11 +488,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">持续集成</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Shell</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		
 		</ul>
@@ -492,57 +499,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/08/26/iOS/iOS自动编译打包脚本/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -551,7 +507,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/02/01/iOS/iOS之App瘦身/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/02/01/iOS/iOS%E4%B9%8BApp%E7%98%A6%E8%BA%AB/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -561,7 +517,7 @@
     </a>
   
   
-    <a href="/2018/04/19/CentOS 7安装Shadowsocks服务端以及相关的客户端使用/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/04/19/CentOS%207%E5%AE%89%E8%A3%85Shadowsocks%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">CentOS 7安装SS服务端以及相关客户端</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -589,7 +545,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#xcpretty"><span class="toc-number">1.</span> <span class="toc-text"> xcpretty </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装xcpretty"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装xcpretty </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用xcpretty"><span class="toc-number">1.2.</span> <span class="toc-text"> 使用xcpretty </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep"><span class="toc-number">2.</span> <span class="toc-text"> grep </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#awk"><span class="toc-number">3.</span> <span class="toc-text"> awk </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sed"><span class="toc-number">4.</span> <span class="toc-text"> sed </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PlistBuddy"><span class="toc-number">5.</span> <span class="toc-text"> PlistBuddy </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xcodebuild"><span class="toc-number">6.</span> <span class="toc-text"> xcodebuild </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见命令"><span class="toc-number">6.1.</span> <span class="toc-text"> 常见命令 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见action"><span class="toc-number">6.2.</span> <span class="toc-text"> 常见action </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exportOptionsPlist"><span class="toc-number">6.3.</span> <span class="toc-text"> exportOptionsPlist </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自动上传到App-Store或者蒲公英"><span class="toc-number">7.</span> <span class="toc-text"> 自动上传到App Store或者蒲公英 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自动上传到App-Store"><span class="toc-number">7.1.</span> <span class="toc-text"> 自动上传到App Store </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自动上传到蒲公英"><span class="toc-number">7.2.</span> <span class="toc-text"> 自动上传到蒲公英 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结束"><span class="toc-number">8.</span> <span class="toc-text"> 结束 </span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#xcpretty"><span class="toc-number">1.</span> <span class="toc-text"> xcpretty </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85xcpretty"><span class="toc-number">1.1.</span> <span class="toc-text"> 安装xcpretty </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8xcpretty"><span class="toc-number">1.2.</span> <span class="toc-text"> 使用xcpretty </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep"><span class="toc-number">2.</span> <span class="toc-text"> grep </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#awk"><span class="toc-number">3.</span> <span class="toc-text"> awk </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sed"><span class="toc-number">4.</span> <span class="toc-text"> sed </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PlistBuddy"><span class="toc-number">5.</span> <span class="toc-text"> PlistBuddy </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#xcodebuild"><span class="toc-number">6.</span> <span class="toc-text"> xcodebuild </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4"><span class="toc-number">6.1.</span> <span class="toc-text"> 常见命令 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81action"><span class="toc-number">6.2.</span> <span class="toc-text"> 常见action </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exportOptionsPlist"><span class="toc-number">6.3.</span> <span class="toc-text"> exportOptionsPlist </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0App-Store%E6%88%96%E8%80%85%E8%92%B2%E5%85%AC%E8%8B%B1"><span class="toc-number">7.</span> <span class="toc-text"> 自动上传到App Store或者蒲公英 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0App-Store"><span class="toc-number">7.1.</span> <span class="toc-text"> 自动上传到App Store </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0%E8%92%B2%E5%85%AC%E8%8B%B1"><span class="toc-number">7.2.</span> <span class="toc-text"> 自动上传到蒲公英 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F"><span class="toc-number">8.</span> <span class="toc-text"> 结束 </span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -618,7 +574,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -635,7 +591,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -721,7 +677,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -737,11 +737,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -753,6 +817,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -761,7 +833,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -769,7 +873,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -777,35 +921,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -813,47 +929,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -873,6 +949,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -881,191 +1025,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1073,7 +1037,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1116,7 +1080,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>几种编程思想和ReactiveCocoa的使用 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="常见的编程思想">
-<meta name="keywords" content="iOS,Swift,Objective-C,三方框架的使用,编程思想">
 <meta property="og:type" content="article">
 <meta property="og:title" content="几种编程思想和ReactiveCocoa的使用">
-<meta property="og:url" content="http://yoursite.com/2016/04/18/iOS/几种编程思想和ReactiveCocoa的使用/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/04/18/iOS/%E5%87%A0%E7%A7%8D%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E5%92%8CReactiveCocoa%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="常见的编程思想">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.670Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-04-18T11:02:50.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Swift">
+<meta property="article:tag" content="三方框架的使用">
+<meta property="article:tag" content="编程思想">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="几种编程思想和ReactiveCocoa的使用">
-<meta name="twitter:description" content="常见的编程思想">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +41,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +52,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +66,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +108,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +140,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +175,7 @@
   
 
         
-        <a href="/2016/04/18/iOS/几种编程思想和ReactiveCocoa的使用/" class="archive-article-date">
+        <a href="/2016/04/18/iOS/%E5%87%A0%E7%A7%8D%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E5%92%8CReactiveCocoa%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2016-04-18T11:02:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-18</time>
 </a>
         
@@ -177,7 +183,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="常见的编程思想"><a href="#常见的编程思想" class="headerlink" title="常见的编程思想"></a><font color="orange">常见的编程思想</font></h1><a id="more"></a>
+        <h1 id="常见的编程思想"><a href="#常见的编程思想" class="headerlink" title="常见的编程思想"></a><font color=orange>常见的编程思想</font></h1><span id="more"></span>
 <ul>
 <li>面向过程<ul>
 <li>如C语言</li>
@@ -191,7 +197,7 @@
 <li>Masonry:方法返回一个block,该block的参数为需要操作的参数,block的返回值为对象本身.</li>
 </ul>
 </li>
-<li><font color="red">响应式编程(Reactive Programming)</font>:不考虑执行的顺序,只考虑结果<ul>
+<li><font color=red>响应式编程(Reactive Programming)</font>:不考虑执行的顺序,只考虑结果<ul>
 <li>KVO:KVO本质上是判断对象的属性有没有调用setter方法.<blockquote>
 <p>KVO底层实现:</p>
 <ul>
@@ -203,18 +209,18 @@
 </li>
 </ul>
 </li>
-<li><font color="red">函数式编程(Function Programming)</font>:把操作尽量写成一系列嵌套的函数或者方法调用 <ul>
+<li><font color=red>函数式编程(Function Programming)</font>:把操作尽量写成一系列嵌套的函数或者方法调用 <ul>
 <li>ReactiveCocoa(RAC):被描述为函数响应式编程(FRP)框架, 它结合了函数式编程思想和响应式编程思想.</li>
 </ul>
 </li>
 </ul>
-<h1 id="ReactiveCocoa的使用"><a href="#ReactiveCocoa的使用" class="headerlink" title="ReactiveCocoa的使用"></a><font color="orange">ReactiveCocoa的使用</font></h1><font size="4" color="orange">ReactiveCocoa常见的类</font><br><font size="4"><font color="red">RACSignal</font>:信号类,只要有数据改变,信号内部接收到数据,就会马上发出数据.<font color="red"><strong>不同的信号,订阅信号的处理是不同的.</strong></font></font><br>    1. 它本身不具备发送信号的能力,而是交给内部一个订阅者发出.<br>    2. 默认一个信号是冷信号,也就是值改变了,不会触发,只有订阅了这个信号,才会变为热信号.<br>    3. 使用RACSignal的subscribeNext方法就能订阅信号.<br><font size="4"><font color="red">RACSubscriber</font>:表示订阅者的意思,作用是发送数据.它是一个协议,不是一个类.</font><br><font size="4"><font color="red">RACDisposable</font>:用于取消订阅和清理资源</font><br><strong>默认执行一次就取消订阅信号了,这个时候可以把订阅者改为强引用,只要订阅者在,就不会自动取消信号的订阅,使用RACDisposable的dispose方法自己主动取消订阅</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">@property (nonatomic, strong)id&lt;RACSubscriber&gt; subscriber;</span><br><span class="line">//一、创建信号(冷信号)</span><br><span class="line">RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">    _subscriber = subscriber;</span><br><span class="line">    //作用:发送数据</span><br><span class="line">    //调用:当信号被订阅的时候</span><br><span class="line"></span><br><span class="line">    //三、发送数据</span><br><span class="line">    [subscriber sendNext:@&quot;RACSignal&quot;];</span><br><span class="line"></span><br><span class="line">    return [RACDisposable disposableWithBlock:^&#123;</span><br><span class="line">    //只要信号取消了订阅才会执行block</span><br><span class="line">        NSLog(@&quot;信号取消订阅了&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//二、订阅信号----&gt;变为热信号</span><br><span class="line">RACDisposable *disposable = [signal subscribeNext:^(id x) &#123;</span><br><span class="line">    //作用:接收到数据</span><br><span class="line">    //调用:当接收到数据的时候</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//取消订阅</span><br><span class="line">[disposable dispose];</span><br></pre></td></tr></table></figure><br><br><font size="4"><font color="red">RACSubject</font>:信号提供者,自己可以当信号,又能订阅信号.</font>  
+<h1 id="ReactiveCocoa的使用"><a href="#ReactiveCocoa的使用" class="headerlink" title="ReactiveCocoa的使用"></a><font color=orange>ReactiveCocoa的使用</font></h1><font size=4 color=orange>ReactiveCocoa常见的类</font><br><font size=4><font color=red>RACSignal</font>:信号类,只要有数据改变,信号内部接收到数据,就会马上发出数据.<font color=red><strong>不同的信号,订阅信号的处理是不同的.</strong></font></font><br>    1. 它本身不具备发送信号的能力,而是交给内部一个订阅者发出.<br>    2. 默认一个信号是冷信号,也就是值改变了,不会触发,只有订阅了这个信号,才会变为热信号.<br>    3. 使用RACSignal的subscribeNext方法就能订阅信号.<br><font size=4><font color=red>RACSubscriber</font>:表示订阅者的意思,作用是发送数据.它是一个协议,不是一个类.</font><br><font size=4><font color=red>RACDisposable</font>:用于取消订阅和清理资源</font><br><strong>默认执行一次就取消订阅信号了,这个时候可以把订阅者改为强引用,只要订阅者在,就不会自动取消信号的订阅,使用RACDisposable的dispose方法自己主动取消订阅</strong><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">@property (nonatomic, strong)id&lt;RACSubscriber&gt; subscriber;</span><br><span class="line">//一、创建信号(冷信号)</span><br><span class="line">RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">    _subscriber = subscriber;</span><br><span class="line">    //作用:发送数据</span><br><span class="line">    //调用:当信号被订阅的时候</span><br><span class="line"></span><br><span class="line">    //三、发送数据</span><br><span class="line">    [subscriber sendNext:@&quot;RACSignal&quot;];</span><br><span class="line"></span><br><span class="line">    return [RACDisposable disposableWithBlock:^&#123;</span><br><span class="line">    //只要信号取消了订阅才会执行block</span><br><span class="line">        NSLog(@&quot;信号取消订阅了&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//二、订阅信号----&gt;变为热信号</span><br><span class="line">RACDisposable *disposable = [signal subscribeNext:^(id x) &#123;</span><br><span class="line">    //作用:接收到数据</span><br><span class="line">    //调用:当接收到数据的时候</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//取消订阅</span><br><span class="line">[disposable dispose];</span><br></pre></td></tr></table></figure><br><font size=4><font color=red>RACSubject</font>:信号提供者,自己可以当信号,又能订阅信号.</font>  
 
 <ul>
 <li>使用RACSubject来代替代理,设置成属性, 当想让其他类执行的时候就发送数据,  其他类就拿到这个属性订阅信号.这个时候就不用写协议和delegate了.</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//一、创建信号</span><br><span class="line">RACSubject *subject = [RACSubject subject];</span><br><span class="line">//二、订阅信号,可以订阅多次,订阅的时候保存订阅者</span><br><span class="line">[subject subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">[subject subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">//三、发送数据,执行上面的block</span><br><span class="line">[subject sendNext:@&quot;RACSubject&quot;];</span><br></pre></td></tr></table></figure>
-<font size="4"><font color="red">RACReplaySubject</font>:RACSubject的子类,重复提供信号类.</font>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//一、创建信号</span><br><span class="line">RACSubject *subject = [RACSubject subject];</span><br><span class="line">//二、订阅信号,可以订阅多次,订阅的时候保存订阅者</span><br><span class="line">[subject subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">[subject subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">//三、发送数据,执行上面的block</span><br><span class="line">[subject sendNext:@&quot;RACSubject&quot;];</span><br></pre></td></tr></table></figure>
+<font size=4><font color=red>RACReplaySubject</font>:RACSubject的子类,重复提供信号类.</font>
 
 <ul>
 <li>RACReplaySubject可以先发送信号,再订阅信号,而RACSubject不行</li>
@@ -224,44 +230,31 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//一、创建信号</span><br><span class="line">RACReplaySubject *replay = [RACReplaySubject subject];</span><br><span class="line">//二、订阅信号</span><br><span class="line">[replay subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">//三、发送数据</span><br><span class="line">[replay sendNext:@&quot;RACReplaySubject&quot;];</span><br><span class="line"></span><br><span class="line">//四、再次发送数据,订阅信号</span><br><span class="line">[replay sendNext:@&quot;RACReplaySubject-------&quot;];</span><br><span class="line">[replay subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;==%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<font size="4"><font color="red">RACTuple</font>:元组类,类似NSArray,用来包装值.</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">RACTuple *tuple = [RACTuple tupleWithObjects:@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;, nil];</span><br><span class="line">NSString *str = tuple[0];</span><br><span class="line">//RACTupleUnpack宏:用来解析RACTuple类型</span><br><span class="line">RACTupleUnpack(NSString *key1, NSString *key2,NSString *key3) = tuple;</span><br><span class="line">NSLog(@&quot;%@-%@-%@&quot;, key1, key2, key3);</span><br></pre></td></tr></table></figure><br><br><font size="4"><font color="red">RACSequence</font>:RAC集合类,用来代替NSArray和NSDictionary,可以使用它来快速遍历数组和字典.</font>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//一、创建信号</span><br><span class="line">RACReplaySubject *replay = [RACReplaySubject subject];</span><br><span class="line">//二、订阅信号</span><br><span class="line">[replay subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line">//三、发送数据</span><br><span class="line">[replay sendNext:@&quot;RACReplaySubject&quot;];</span><br><span class="line"></span><br><span class="line">//四、再次发送数据,订阅信号</span><br><span class="line">[replay sendNext:@&quot;RACReplaySubject-------&quot;];</span><br><span class="line">[replay subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;==%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<font size=4><font color=red>RACTuple</font>:元组类,类似NSArray,用来包装值.</font><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">RACTuple *tuple = [RACTuple tupleWithObjects:@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;, nil];</span><br><span class="line">NSString *str = tuple[0];</span><br><span class="line">//RACTupleUnpack宏:用来解析RACTuple类型</span><br><span class="line">RACTupleUnpack(NSString *key1, NSString *key2,NSString *key3) = tuple;</span><br><span class="line">NSLog(@&quot;%@-%@-%@&quot;, key1, key2, key3);</span><br></pre></td></tr></table></figure><br><font size=4><font color=red>RACSequence</font>:RAC集合类,用来代替NSArray和NSDictionary,可以使用它来快速遍历数组和字典.</font>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//数组</span><br><span class="line">NSArray *arr = @[@&quot;1&quot;,@&quot;2&quot;, @&quot;3&quot;, @&quot;4&quot;];</span><br><span class="line">//RAC集合</span><br><span class="line">RACSequence *sequence = arr.rac_sequence;</span><br><span class="line">//把集合转成信号</span><br><span class="line">RACSignal *signal = sequence.signal;</span><br><span class="line">//订阅集合信号,内部会自动遍历所有的元素发出去</span><br><span class="line">[signal subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x); //打印1,2,3,4</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//连起来写</span><br><span class="line">[@[@&quot;1&quot;, @&quot;3&quot;].rac_sequence.signal subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);//打印1,3</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<h1 id="ReactiveCocoa的在实际开发中的常见用法"><a href="#ReactiveCocoa的在实际开发中的常见用法" class="headerlink" title="ReactiveCocoa的在实际开发中的常见用法"></a><font color="orange">ReactiveCocoa的在实际开发中的常见用法</font></h1><ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//数组</span><br><span class="line">NSArray *arr = @[@&quot;1&quot;,@&quot;2&quot;, @&quot;3&quot;, @&quot;4&quot;];</span><br><span class="line">//RAC集合</span><br><span class="line">RACSequence *sequence = arr.rac_sequence;</span><br><span class="line">//把集合转成信号</span><br><span class="line">RACSignal *signal = sequence.signal;</span><br><span class="line">//订阅集合信号,内部会自动遍历所有的元素发出去</span><br><span class="line">[signal subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x); //打印1,2,3,4</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//连起来写</span><br><span class="line">[@[@&quot;1&quot;, @&quot;3&quot;].rac_sequence.signal subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);//打印1,3</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h1 id="ReactiveCocoa的在实际开发中的常见用法"><a href="#ReactiveCocoa的在实际开发中的常见用法" class="headerlink" title="ReactiveCocoa的在实际开发中的常见用法"></a><font color=orange>ReactiveCocoa的在实际开发中的常见用法</font></h1><ul>
 <li>代替代理:使用RACSubject代替代理,还可以使用rac_signalForSelector:@selector()方法把调用这个方法转换成信号</li>
-<li><p>代替KVO</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[self rac_observeKeyPath:@&quot;frame&quot; options:(NSKeyValueObservingOptionNew) observer:nil</span><br><span class="line">    block:^(id value, NSDictionary *change, BOOL causedByDealloc, BOOL affectedOnlyLastComponent) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br><span class="line">//或者</span><br><span class="line">[[self rac_valuesForKeyPath:@&quot;frame&quot; observer:nil] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-</li>
+<li>代替KVO<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[self rac_observeKeyPath:@&quot;frame&quot; options:(NSKeyValueObservingOptionNew) observer:nil</span><br><span class="line">    block:^(id value, NSDictionary *change, BOOL causedByDealloc, BOOL affectedOnlyLastComponent) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br><span class="line">//或者</span><br><span class="line">[[self rac_valuesForKeyPath:@&quot;frame&quot; observer:nil] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure></li>
 <li><p>监听事件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];</span><br><span class="line">[[button rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];</span><br><span class="line">[[button rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>代替通知</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillShowNotification </span><br><span class="line">    object:nil] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>监听文本框</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UITextField *textfield = [UITextField new];</span><br><span class="line">[textfield.rac_textSignal subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>处理同一个界面有多个请求接口,当所有接口都有数据的时候才处理一些事情,使用rac_liftSelector方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">- (void)moreAPI &#123;</span><br><span class="line">    RACSignal *sellSignal =  [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">        //网络请求</span><br><span class="line">        [subscriber sendNext:@&quot;获取动求购信息&quot;];</span><br><span class="line">        return  nil;</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    RACSignal *buySignal = [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">        //网络请求</span><br><span class="line">        [subscriber sendNext:@&quot;获取动求购信息&quot;];</span><br><span class="line">        return  nil;</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    //数组用来存放 信号</span><br><span class="line">    //当数组中的所有信号都发送数据的时候,才会执行selector</span><br><span class="line">    //该方法的参数个数必须和数组中信号个数一致</span><br><span class="line">    [self rac_liftSelector:@selector(updateUIWithSellData: buyData:) withSignals:sellSignal, buySignal, nil];</span><br><span class="line">&#125;</span><br><span class="line">//这个方法的参数就是信号发送的数据</span><br><span class="line">- (void)updateUIWithSellData:(NSString *)sell buyData:(NSString *)buy &#123;</span><br><span class="line">    NSLog(@&quot;%@====%@&quot;, sell, buy);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="ReactiveCocoa中常见的宏"><a href="#ReactiveCocoa中常见的宏" class="headerlink" title="ReactiveCocoa中常见的宏"></a><font color="orange">ReactiveCocoa中常见的宏</font></h1><ul>
-<li><p>RAC(TARGET, [KEYPATH, [NIL_VALUE]]):用于给某个对象的某个属性绑定。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//输入框的文本和描述text绑定</span><br><span class="line">RAC(self.descriptL, text) = self.nameL.rac_textSignal;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>RACObserve(self, name):监听某个对象的某个属性,返回的是信号, 可以发送信号。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[RACObserve(self, view.frame) subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>@weakify(Obj)和@strongify(Obj),一般两个都是配套使用,解决循环引用问题.</p>
-</li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillShowNotification </span><br><span class="line">    object:nil] subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure></li>
+<li>监听文本框<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">UITextField *textfield = [UITextField new];</span><br><span class="line">[textfield.rac_textSignal subscribeNext:^(id x) &#123;</span><br><span class="line">    //code</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure></li>
+<li>处理同一个界面有多个请求接口,当所有接口都有数据的时候才处理一些事情,使用rac_liftSelector方法<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">- (void)moreAPI &#123;</span><br><span class="line">    RACSignal *sellSignal =  [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">        //网络请求</span><br><span class="line">        [subscriber sendNext:@&quot;获取动求购信息&quot;];</span><br><span class="line">        return  nil;</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    RACSignal *buySignal = [RACSignal createSignal:^RACDisposable *(id&lt;RACSubscriber&gt; subscriber) &#123;</span><br><span class="line">        //网络请求</span><br><span class="line">        [subscriber sendNext:@&quot;获取动求购信息&quot;];</span><br><span class="line">        return  nil;</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    //数组用来存放 信号</span><br><span class="line">    //当数组中的所有信号都发送数据的时候,才会执行selector</span><br><span class="line">    //该方法的参数个数必须和数组中信号个数一致</span><br><span class="line">    [self rac_liftSelector:@selector(updateUIWithSellData: buyData:) withSignals:sellSignal, buySignal, nil];</span><br><span class="line">&#125;</span><br><span class="line">//这个方法的参数就是信号发送的数据</span><br><span class="line">- (void)updateUIWithSellData:(NSString *)sell buyData:(NSString *)buy &#123;</span><br><span class="line">    NSLog(@&quot;%@====%@&quot;, sell, buy);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="ReactiveCocoa中常见的宏"><a href="#ReactiveCocoa中常见的宏" class="headerlink" title="ReactiveCocoa中常见的宏"></a><font color=orange>ReactiveCocoa中常见的宏</font></h1></li>
+<li>RAC(TARGET, [KEYPATH, [NIL_VALUE]]):用于给某个对象的某个属性绑定。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//输入框的文本和描述text绑定</span><br><span class="line">RAC(self.descriptL, text) = self.nameL.rac_textSignal;</span><br></pre></td></tr></table></figure></li>
+<li>RACObserve(self, name):监听某个对象的某个属性,返回的是信号, 可以发送信号。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[RACObserve(self, view.frame) subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure></li>
+<li>@weakify(Obj)和@strongify(Obj),一般两个都是配套使用,解决循环引用问题.</li>
 <li>RACTuplePack：把数据包装成RACTuple（元组类）</li>
 <li>RACTupleUnpack：把RACTuple（元组类）解包成对应的数据。</li>
 </ul>
-<h1 id="ReactiveCocoa实际使用"><a href="#ReactiveCocoa实际使用" class="headerlink" title="ReactiveCocoa实际使用"></a><font color="orange">ReactiveCocoa实际使用</font></h1><h3 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//过滤使用filter来过滤 当输入框长度&gt;=3的时候才会打印,可以直接修改block的参数类型,</span><br><span class="line">[[self.nameL.rac_textSignal filter:^BOOL(NSString *text) &#123;</span><br><span class="line">    return text.length &gt;= 3;</span><br><span class="line">&#125;] subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<h3 id="Map-用于把源信号内容映射成新的内容"><a href="#Map-用于把源信号内容映射成新的内容" class="headerlink" title="Map:用于把源信号内容映射成新的内容"></a>Map:用于把源信号内容映射成新的内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//使用map来改变输入数据的类型,输入框输入的是文本,改变为NSNumber类型</span><br><span class="line">[[[self.nameL.rac_textSignal map:^id(NSString *value) &#123;</span><br><span class="line">    return @(value.length);</span><br><span class="line">&#125;] filter:^BOOL(NSNumber *value) &#123;</span><br><span class="line">    return [value integerValue] &gt;= 3;</span><br><span class="line">&#125;] subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<h3 id="combineLatest-将多个信号合并起来，并且拿到各个信号的最新的值-必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合-用于信号发出的内容是元组，把信号发出元组的值聚合成一个值"><a href="#combineLatest-将多个信号合并起来，并且拿到各个信号的最新的值-必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合-用于信号发出的内容是元组，把信号发出元组的值聚合成一个值" class="headerlink" title="combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值"></a>combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//登录按钮和 用户名和密码的长度绑定:  使用combineLatest和reduce</span><br><span class="line">RAC(self.loginB, enabled) = [RACSignal combineLatest:@[self.nameL.rac_textSignal,</span><br><span class="line">    self.passwordL.rac_textSignal] reduce:^id (NSString *name, NSString *password)&#123;</span><br><span class="line">        return @(name.length &gt;= 6 &amp;&amp; password.length &gt;= 6);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//使用  @weakify(self) 和 @strongify(self) 解决循环引用问题</span><br><span class="line">@weakify(self);</span><br><span class="line">RAC(self.descriptL, text) = [RACSignal combineLatest:@[self.nameL.rac_textSignal,</span><br><span class="line">    self.passwordL.rac_textSignal] reduce:^id (NSString *name, NSString *password)&#123;</span><br><span class="line">    @strongify(self);</span><br><span class="line">    if (name.length == 0 &amp;&amp; password.length == 0) &#123;</span><br><span class="line">        return @&quot;\t使用ReactiveCocoa使用户名和密码的输入框内容和下面用于显示的文本、登录按钮绑定.</span><br><span class="line">    \n\t当用户名和密码都大于等于6位的时候,按钮才能按.\n\t文本展示的内容是两个输入框的内容&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    self.loginB.enabled = YES;</span><br><span class="line">    return [name stringByAppendingString:password];</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h1 id="ReactiveCocoa实际使用"><a href="#ReactiveCocoa实际使用" class="headerlink" title="ReactiveCocoa实际使用"></a><font color=orange>ReactiveCocoa实际使用</font></h1><h3 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//过滤使用filter来过滤 当输入框长度&gt;=3的时候才会打印,可以直接修改block的参数类型,</span><br><span class="line">[[self.nameL.rac_textSignal filter:^BOOL(NSString *text) &#123;</span><br><span class="line">    return text.length &gt;= 3;</span><br><span class="line">&#125;] subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h3 id="Map-用于把源信号内容映射成新的内容"><a href="#Map-用于把源信号内容映射成新的内容" class="headerlink" title="Map:用于把源信号内容映射成新的内容"></a>Map:用于把源信号内容映射成新的内容</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//使用map来改变输入数据的类型,输入框输入的是文本,改变为NSNumber类型</span><br><span class="line">[[[self.nameL.rac_textSignal map:^id(NSString *value) &#123;</span><br><span class="line">    return @(value.length);</span><br><span class="line">&#125;] filter:^BOOL(NSNumber *value) &#123;</span><br><span class="line">    return [value integerValue] &gt;= 3;</span><br><span class="line">&#125;] subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h3 id="combineLatest-将多个信号合并起来，并且拿到各个信号的最新的值-必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合-用于信号发出的内容是元组，把信号发出元组的值聚合成一个值"><a href="#combineLatest-将多个信号合并起来，并且拿到各个信号的最新的值-必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合-用于信号发出的内容是元组，把信号发出元组的值聚合成一个值" class="headerlink" title="combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值"></a>combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。reduce聚合:用于信号发出的内容是元组，把信号发出元组的值聚合成一个值</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//登录按钮和 用户名和密码的长度绑定:  使用combineLatest和reduce</span><br><span class="line">RAC(self.loginB, enabled) = [RACSignal combineLatest:@[self.nameL.rac_textSignal,</span><br><span class="line">    self.passwordL.rac_textSignal] reduce:^id (NSString *name, NSString *password)&#123;</span><br><span class="line">        return @(name.length &gt;= 6 &amp;&amp; password.length &gt;= 6);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//使用  @weakify(self) 和 @strongify(self) 解决循环引用问题</span><br><span class="line">@weakify(self);</span><br><span class="line">RAC(self.descriptL, text) = [RACSignal combineLatest:@[self.nameL.rac_textSignal,</span><br><span class="line">    self.passwordL.rac_textSignal] reduce:^id (NSString *name, NSString *password)&#123;</span><br><span class="line">    @strongify(self);</span><br><span class="line">    if (name.length == 0 &amp;&amp; password.length == 0) &#123;</span><br><span class="line">        return @&quot;\t使用ReactiveCocoa使用户名和密码的输入框内容和下面用于显示的文本、登录按钮绑定.</span><br><span class="line">    \n\t当用户名和密码都大于等于6位的时候,按钮才能按.\n\t文本展示的内容是两个输入框的内容&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    self.loginB.enabled = YES;</span><br><span class="line">    return [name stringByAppendingString:password];</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
       
 
@@ -279,11 +272,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -302,57 +295,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/04/18/iOS/几种编程思想和ReactiveCocoa的使用/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -361,7 +303,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/04/23/iOS/iOS自定义导航栏的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/04/23/iOS/iOS%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%BC%E8%88%AA%E6%A0%8F%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -371,7 +313,7 @@
     </a>
   
   
-    <a href="/2016/03/23/iOS/iOS剪切板相关/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/03/23/iOS/iOS%E5%89%AA%E5%88%87%E6%9D%BF%E7%9B%B8%E5%85%B3/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">iOS剪切板相关</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -415,7 +357,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -432,7 +374,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -518,7 +460,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -534,11 +520,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -550,6 +600,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -558,7 +616,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -566,7 +656,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -574,35 +704,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -610,47 +712,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -670,6 +732,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -678,191 +808,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -870,7 +820,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -913,7 +863,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

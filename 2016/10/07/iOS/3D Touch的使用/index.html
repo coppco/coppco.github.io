@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>3D Touch的使用 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="3D Touch，其原理上是增加了一个压力的感触，通过区分轻按和重按来进行不同的用户交互。它只能在iPhone 6s, iOS 9.0系统以上才能使用. 一、Home Screen Quick Action使用通过主屏幕的应用icon，我们可以用3D Touch呼出一个菜单，进行快速定位应用功能模块相关功能的开发, 目前最多只支持4个.目前有两种方式:">
-<meta name="keywords" content="iOS,Objective-C,Xcode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="3D Touch的使用">
-<meta property="og:url" content="http://yoursite.com/2016/10/07/iOS/3D Touch的使用/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/10/07/iOS/3D%20Touch%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="3D Touch，其原理上是增加了一个压力的感触，通过区分轻按和重按来进行不同的用户交互。它只能在iPhone 6s, iOS 9.0系统以上才能使用. 一、Home Screen Quick Action使用通过主屏幕的应用icon，我们可以用3D Touch呼出一个菜单，进行快速定位应用功能模块相关功能的开发, 目前最多只支持4个.目前有两种方式:">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/3dtouch1.png">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/3dtouch2.png">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.659Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/3dtouch1.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/3dtouch2.png">
+<meta property="article:published_time" content="2016-10-07T07:53:09.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:29:01.712Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Xcode">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="3D Touch的使用">
-<meta name="twitter:description" content="3D Touch，其原理上是增加了一个压力的感触，通过区分轻按和重按来进行不同的用户交互。它只能在iPhone 6s, iOS 9.0系统以上才能使用. 一、Home Screen Quick Action使用通过主屏幕的应用icon，我们可以用3D Touch呼出一个菜单，进行快速定位应用功能模块相关功能的开发, 目前最多只支持4个.目前有两种方式:">
-<meta name="twitter:image" content="http://47.96.147.179/images/iOS/3dtouch1.png">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/iOS/3dtouch1.png">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -40,8 +42,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -51,13 +53,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -67,9 +67,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -107,15 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -139,13 +141,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -172,7 +176,7 @@
   
 
         
-        <a href="/2016/10/07/iOS/3D Touch的使用/" class="archive-article-date">
+        <a href="/2016/10/07/iOS/3D%20Touch%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2016-10-07T07:53:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-07</time>
 </a>
         
@@ -181,27 +185,26 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>3D Touch，其原理上是增加了一个压力的感触，通过区分轻按和重按来进行不同的用户交互。它只能在iPhone 6s, iOS 9.0系统以上才能使用.</p>
-<h2 id="一、Home-Screen-Quick-Action使用"><a href="#一、Home-Screen-Quick-Action使用" class="headerlink" title="一、Home Screen Quick Action使用"></a><font color="orange">一、Home Screen Quick Action使用</font></h2><p>通过主屏幕的应用icon，我们可以用3D Touch呼出一个菜单，进行快速定位应用功能模块相关功能的开发, 目前最多只支持4个.目前有两种方式:</p>
-<a id="more"></a>
-<h3 id="1、静态设置"><a href="#1、静态设置" class="headerlink" title="1、静态设置"></a><font color="purple">1、静态设置</font></h3><p>在info.plist里面添加UIApplicationShortcutItems数组, 数组中对应得item为字典<br>必填项（下面两个键值是必须设置的）：</p>
+<h2 id="一、Home-Screen-Quick-Action使用"><a href="#一、Home-Screen-Quick-Action使用" class="headerlink" title="一、Home Screen Quick Action使用"></a><font color=orange>一、Home Screen Quick Action使用</font></h2><p>通过主屏幕的应用icon，我们可以用3D Touch呼出一个菜单，进行快速定位应用功能模块相关功能的开发, 目前最多只支持4个.目前有两种方式:</p>
+<span id="more"></span>
+<h3 id="1、静态设置"><a href="#1、静态设置" class="headerlink" title="1、静态设置"></a><font color=purple>1、静态设置</font></h3><p>在info.plist里面添加UIApplicationShortcutItems数组, 数组中对应得item为字典<br>必填项（下面两个键值是必须设置的）：</p>
 <p>UIApplicationShortcutItemType 这个键值设置一个快捷通道类型的字符串<br>UIApplicationShortcutItemTitle 这个键值设置标签的标题</p>
 <p>选填项（下面这些键值不是必须设置的）：</p>
 <p>UIApplicationShortcutItemSubtitle 设置标签的副标题<br>UIApplicationShortcutItemIconType 设置标签Icon类型<br>UIApplicationShortcutItemIconFile  设置标签的Icon文件<br>UIApplicationShortcutItemUserInfo 设置信息字典(用于传值)</p>
-<h3 id="2、动态设置"><a href="#2、动态设置" class="headerlink" title="2、动态设置"></a><font color="purple">2、动态设置</font></h3><p>在AppDelegate中didFinishLaunchingWithOptions方法中设置3DTouch的桌面的快捷方式按钮（UIApplicationShortcutItem／UIMutableApplicationShortcutItem）, 注意UIApplicationShortcutItem的type是为了识别哪个按钮被点击的.</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//iOS 9以后才能使用</span></span><br><span class="line"><span class="keyword">if</span> ([[<span class="built_in">UIDevice</span> currentDevice].systemVersion floatValue] &gt;= <span class="number">9.0</span>) &#123;</span><br><span class="line">    <span class="comment">//不存在的时候去添加</span></span><br><span class="line">    <span class="keyword">if</span> (application.shortcutItems == <span class="literal">nil</span> || application.shortcutItems.count == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">//UIApplicationShortcutIcon可以是系统的样式, 也可以是自定义图标</span></span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *recharge = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeRecharge localizedTitle:<span class="string">@"快速充值"</span> localizedSubtitle:<span class="string">@""</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@"recharge"</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line"></span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *withdraw = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeWithdraw localizedTitle:<span class="string">@"提现"</span> localizedSubtitle:<span class="string">@""</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@"withdraw"</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *myRecord = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeMyRecord localizedTitle:<span class="string">@"账单"</span> localizedSubtitle:<span class="string">@""</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@"myRecord"</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line">        application.shortcutItems = @[myRecord, withdraw, recharge];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler方法中获取到执行的事件.<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//App图标的3D Touch事件, willFinishLaunchingWithOptions和didFinishLaunchingWithOptions返回true才会执行</span></span><br><span class="line">- (<span class="keyword">void</span>)application:(<span class="built_in">UIApplication</span> *)application performActionForShortcutItem:(<span class="built_in">UIApplicationShortcutItem</span> *)shortcutItem completionHandler:(<span class="keyword">void</span> (^)(<span class="built_in">BOOL</span>))completionHandler &#123;</span><br><span class="line">    <span class="keyword">if</span> ([[<span class="built_in">UIDevice</span> currentDevice].systemVersion floatValue] &gt;= <span class="number">9.0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeRecharge]) &#123;<span class="comment">//充值</span></span><br><span class="line">            <span class="comment">//code</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeWithdraw]) &#123;</span><br><span class="line">            <span class="comment">//code</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeMyRecord]) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//如果操作已经完成传入true</span></span><br><span class="line">        <span class="keyword">if</span> (completionHandler) &#123;</span><br><span class="line">            completionHandler(<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><font color="green"><strong>预览</strong>:</font><br><img src="http://47.96.147.179/images/iOS/3dtouch1.png" alt="应用图标3D Touch"></p>
-<h2 id="二、Peek-and-Pop使用"><a href="#二、Peek-and-Pop使用" class="headerlink" title="二、Peek and Pop使用"></a><font color="orange">二、Peek and Pop使用</font></h2><p>当在一个控制器上使用3D Touch的时候, 会经历三个步骤</p>
+<h3 id="2、动态设置"><a href="#2、动态设置" class="headerlink" title="2、动态设置"></a><font color=purple>2、动态设置</font></h3><p>在AppDelegate中didFinishLaunchingWithOptions方法中设置3DTouch的桌面的快捷方式按钮（UIApplicationShortcutItem／UIMutableApplicationShortcutItem）, 注意UIApplicationShortcutItem的type是为了识别哪个按钮被点击的.</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//iOS 9以后才能使用</span></span><br><span class="line"><span class="keyword">if</span> ([[<span class="built_in">UIDevice</span> currentDevice].systemVersion floatValue] &gt;= <span class="number">9.0</span>) &#123;</span><br><span class="line">    <span class="comment">//不存在的时候去添加</span></span><br><span class="line">    <span class="keyword">if</span> (application.shortcutItems == <span class="literal">nil</span> || application.shortcutItems.count == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">//UIApplicationShortcutIcon可以是系统的样式, 也可以是自定义图标</span></span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *recharge = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeRecharge localizedTitle:<span class="string">@&quot;快速充值&quot;</span> localizedSubtitle:<span class="string">@&quot;&quot;</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@&quot;recharge&quot;</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line"></span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *withdraw = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeWithdraw localizedTitle:<span class="string">@&quot;提现&quot;</span> localizedSubtitle:<span class="string">@&quot;&quot;</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@&quot;withdraw&quot;</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line">        <span class="built_in">UIApplicationShortcutItem</span> *myRecord = [[<span class="built_in">UIApplicationShortcutItem</span> alloc] initWithType:HJShortcutItemTypeMyRecord localizedTitle:<span class="string">@&quot;账单&quot;</span> localizedSubtitle:<span class="string">@&quot;&quot;</span> icon:[<span class="built_in">UIApplicationShortcutIcon</span> iconWithTemplateImageName:<span class="string">@&quot;myRecord&quot;</span>] userInfo:<span class="literal">nil</span>];</span><br><span class="line">        application.shortcutItems = @[myRecord, withdraw, recharge];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler方法中获取到执行的事件.<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//App图标的3D Touch事件, willFinishLaunchingWithOptions和didFinishLaunchingWithOptions返回true才会执行</span></span><br><span class="line">- (<span class="type">void</span>)application:(<span class="built_in">UIApplication</span> *)application performActionForShortcutItem:(<span class="built_in">UIApplicationShortcutItem</span> *)shortcutItem completionHandler:(<span class="type">void</span> (^)(<span class="type">BOOL</span>))completionHandler &#123;</span><br><span class="line">    <span class="keyword">if</span> ([[<span class="built_in">UIDevice</span> currentDevice].systemVersion floatValue] &gt;= <span class="number">9.0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeRecharge]) &#123;<span class="comment">//充值</span></span><br><span class="line">            <span class="comment">//code</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeWithdraw]) &#123;</span><br><span class="line">            <span class="comment">//code</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> ([shortcutItem.type isEqualToString:HJShortcutItemTypeMyRecord]) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//如果操作已经完成传入true</span></span><br><span class="line">        <span class="keyword">if</span> (completionHandler) &#123;</span><br><span class="line">            completionHandler(<span class="literal">true</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<font color=green><strong>预览</strong>:</font>
+
+<p><img src="/assets/images/iOS/3dtouch1.png" alt="应用图标3D Touch"></p>
+<h2 id="二、Peek-and-Pop使用"><a href="#二、Peek-and-Pop使用" class="headerlink" title="二、Peek and Pop使用"></a><font color=orange>二、Peek and Pop使用</font></h2><p>当在一个控制器上使用3D Touch的时候, 会经历三个步骤</p>
 <ol>
 <li>提示用户这里有3D Touch的交互，会使交互控件周围模糊</li>
 <li>继续深按，会出现预览视图</li>
 <li>通过视图上的交互控件进行进一步交互</li>
 </ol>
-<p>1️⃣、 控制器应遵守UIViewControllerPreviewingDelegate协议,并且先判断当前设备是否支持3DTouch操作, 然后进行注册.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) &#123;//3DTouch可用</span><br><span class="line">    //注册协议, sourceView是监听的那个视图, 可以对cell进行监听</span><br><span class="line">    [self registerForPreviewingWithDelegate:self sourceView:cell];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>2️⃣、实现UIViewControllerPreviewingDelegate的代理方法<br>2.1 这个方法是返回需要预览的控制器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- (nullable UIViewController *)previewingContext:(id &lt;UIViewControllerPreviewing&gt;)previewingContext viewControllerForLocation:(CGPoint)location &#123;</span><br><span class="line">    UIViewController *vc = [[UIViewController alloc] init];</span><br><span class="line">    vc.view.backgroundColor = [UIColor redColor];</span><br><span class="line">    //设置预览控制器大小</span><br><span class="line">    //vc.preferredContentSize = CGSizeMake(200, 200);</span><br><span class="line">    CGFloat h = 50;</span><br><span class="line">    CGFloat y = (self.view.height - h) * 0.5;</span><br><span class="line">    //[previewingContext sourceView]可以拿到对应的cell；</span><br><span class="line">    //NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];</span><br><span class="line">    //设置不被虚化范围</span><br><span class="line">    //previewingContext.sourceRect = sourceRect;</span><br><span class="line">    return vc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>2.2 继续按压会执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (void)previewingContext:(id &lt;UIViewControllerPreviewing&gt;)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0) &#123;</span><br><span class="line">    [self.navigationController pushViewController:viewControllerToCommit animated:false];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>3️⃣、在弹出的预览控制器实现下面方法, 在向上滑动的时候, 底部会出现选项.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- (NSArray&lt;id&lt;UIPreviewActionItem&gt;&gt; *)previewActionItems &#123;</span><br><span class="line">    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@&quot;Aciton1&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton1&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@&quot;Aciton2&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton2&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    UIPreviewAction *action3 = [UIPreviewAction actionWithTitle:@&quot;Aciton3&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton3&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line">    return @[action1,action2,action3];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><font color="green"><strong>预览</strong>:</font><br><img src="http://47.96.147.179/images/iOS/3dtouch2.png" alt="应用图标3D Touch"></p>
+<p>1️⃣、 控制器应遵守UIViewControllerPreviewingDelegate协议,并且先判断当前设备是否支持3DTouch操作, 然后进行注册.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) &#123;//3DTouch可用</span><br><span class="line">    //注册协议, sourceView是监听的那个视图, 可以对cell进行监听</span><br><span class="line">    [self registerForPreviewingWithDelegate:self sourceView:cell];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>2️⃣、实现UIViewControllerPreviewingDelegate的代理方法<br>2.1 这个方法是返回需要预览的控制器<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- (nullable UIViewController *)previewingContext:(id &lt;UIViewControllerPreviewing&gt;)previewingContext viewControllerForLocation:(CGPoint)location &#123;</span><br><span class="line">    UIViewController *vc = [[UIViewController alloc] init];</span><br><span class="line">    vc.view.backgroundColor = [UIColor redColor];</span><br><span class="line">    //设置预览控制器大小</span><br><span class="line">    //vc.preferredContentSize = CGSizeMake(200, 200);</span><br><span class="line">    CGFloat h = 50;</span><br><span class="line">    CGFloat y = (self.view.height - h) * 0.5;</span><br><span class="line">    //[previewingContext sourceView]可以拿到对应的cell；</span><br><span class="line">    //NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell* )[previewingContext sourceView]];</span><br><span class="line">    //设置不被虚化范围</span><br><span class="line">    //previewingContext.sourceRect = sourceRect;</span><br><span class="line">    return vc;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>2.2 继续按压会执行<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (void)previewingContext:(id &lt;UIViewControllerPreviewing&gt;)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0) &#123;</span><br><span class="line">    [self.navigationController pushViewController:viewControllerToCommit animated:false];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>3️⃣、在弹出的预览控制器实现下面方法, 在向上滑动的时候, 底部会出现选项.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- (NSArray&lt;id&lt;UIPreviewActionItem&gt;&gt; *)previewActionItems &#123;</span><br><span class="line">    UIPreviewAction *action1 = [UIPreviewAction actionWithTitle:@&quot;Aciton1&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton1&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    UIPreviewAction *action2 = [UIPreviewAction actionWithTitle:@&quot;Aciton2&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton2&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line"></span><br><span class="line">    UIPreviewAction *action3 = [UIPreviewAction actionWithTitle:@&quot;Aciton3&quot; style:UIPreviewActionStyleDefault handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) &#123;</span><br><span class="line">            NSLog(@&quot;Aciton3&quot;);</span><br><span class="line">    &#125;];</span><br><span class="line">    return @[action1,action2,action3];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color=green><strong>预览</strong>:</font><br><img src="/assets/images/iOS/3dtouch2.png" alt="应用图标3D Touch"></p>
 
       
 
@@ -234,57 +237,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/10/07/iOS/3D Touch的使用/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -293,7 +245,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/10/08/iOS/记录Swift3.0的一些变化/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/10/08/iOS/%E8%AE%B0%E5%BD%95Swift3.0%E7%9A%84%E4%B8%80%E4%BA%9B%E5%8F%98%E5%8C%96/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -303,7 +255,7 @@
     </a>
   
   
-    <a href="/2016/09/29/Java Web/Java Web学习11---JavaBean、MVC、事务/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/29/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A011---JavaBean%E3%80%81MVC%E3%80%81%E4%BA%8B%E5%8A%A1/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java Web学习11---JavaBean、MVC、事务</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -347,7 +299,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -364,7 +316,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -450,7 +402,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -466,11 +462,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,6 +542,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -490,7 +558,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -498,7 +598,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -506,35 +646,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -542,47 +654,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -602,6 +674,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -610,191 +750,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -802,7 +762,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -845,7 +805,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

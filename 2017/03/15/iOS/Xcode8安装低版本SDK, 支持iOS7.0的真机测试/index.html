@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Xcode8安装低版本SDK, 支持iOS7.0的真机测试 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近新安装了Xcode8, 但是发现Deployment Target最低是8.0, 虽然可以手动改为7.0, 但是真机测试的时候还是不能完成, 而且模拟器最低版本也是为iPhone 5的 iOS 8.0, 不能使用iPhone 4s设备进行模拟器测试.">
-<meta name="keywords" content="IDE,iOS,资料整理,Swift,Objective-C,Xcode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xcode8安装低版本SDK, 支持iOS7.0的真机测试">
-<meta property="og:url" content="http://yoursite.com/2017/03/15/iOS/Xcode8安装低版本SDK, 支持iOS7.0的真机测试/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/15/iOS/Xcode8%E5%AE%89%E8%A3%85%E4%BD%8E%E7%89%88%E6%9C%ACSDK,%20%E6%94%AF%E6%8C%81iOS7.0%E7%9A%84%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="最近新安装了Xcode8, 但是发现Deployment Target最低是8.0, 虽然可以手动改为7.0, 但是真机测试的时候还是不能完成, 而且模拟器最低版本也是为iPhone 5的 iOS 8.0, 不能使用iPhone 4s设备进行模拟器测试.">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/Xcode8_iOS7.png">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/SDKSetting.png">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/DeploymentTarget_7.0.png">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/xcode8_log.png">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.662Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/Xcode8_iOS7.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/SDKSetting.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/DeploymentTarget_7.0.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/xcode8_log.png">
+<meta property="article:published_time" content="2017-03-15T06:07:22.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:56:12.316Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="资料整理">
+<meta property="article:tag" content="IDE">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Xcode">
+<meta property="article:tag" content="Swift">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xcode8安装低版本SDK, 支持iOS7.0的真机测试">
-<meta name="twitter:description" content="最近新安装了Xcode8, 但是发现Deployment Target最低是8.0, 虽然可以手动改为7.0, 但是真机测试的时候还是不能完成, 而且模拟器最低版本也是为iPhone 5的 iOS 8.0, 不能使用iPhone 4s设备进行模拟器测试.">
-<meta name="twitter:image" content="http://47.96.147.179/images/iOS/Xcode8_iOS7.png">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/iOS/Xcode8_iOS7.png">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -42,8 +47,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -53,13 +58,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -69,9 +72,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -109,15 +114,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -141,13 +146,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -174,7 +181,7 @@
   
 
         
-        <a href="/2017/03/15/iOS/Xcode8安装低版本SDK, 支持iOS7.0的真机测试/" class="archive-article-date">
+        <a href="/2017/03/15/iOS/Xcode8%E5%AE%89%E8%A3%85%E4%BD%8E%E7%89%88%E6%9C%ACSDK,%20%E6%94%AF%E6%8C%81iOS7.0%E7%9A%84%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95/" class="archive-article-date">
   	<time datetime="2017-03-15T06:07:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-15</time>
 </a>
         
@@ -183,8 +190,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近新安装了Xcode8, 但是发现Deployment Target最低是8.0, 虽然可以手动改为7.0, 但是真机测试的时候还是不能完成, 而且模拟器最低版本也是为iPhone 5的 iOS 8.0, 不能使用iPhone 4s设备进行模拟器测试.</p>
-<a id="more"></a>
-<h1 id="一、Deployment-Target最低为7-0并且可以在iOS-7-0版本真机测试"><a href="#一、Deployment-Target最低为7-0并且可以在iOS-7-0版本真机测试" class="headerlink" title="一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试"></a><font color="orange">一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试</font></h1><p><img src="http://47.96.147.179/images/iOS/Xcode8_iOS7.png" alt="真机测试报错"></p>
+<span id="more"></span>
+<h1 id="一、Deployment-Target最低为7-0并且可以在iOS-7-0版本真机测试"><a href="#一、Deployment-Target最低为7-0并且可以在iOS-7-0版本真机测试" class="headerlink" title="一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试"></a><font color=orange>一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试</h1><p><img src="/assets/images/iOS/Xcode8_iOS7.png" alt="真机测试报错"></p>
 <ul>
 <li><p>1、从Xcode7或者更低版本的Xcode里面提取DeviceSupport支持文件</p>
 <blockquote>
@@ -193,30 +200,28 @@
 </li>
 <li><p>2、将上述文件夹里面的7.0和7.1文件夹拷贝到Xcode8同样的目录下</p>
 </li>
-<li>3、修改SDKSettings文件, 重启Xcode即可,地址如下: <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/SDKSettings.plist</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<li>3、修改SDKSettings文件, 重启Xcode即可,地址如下: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/SDKSettings.plist</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>   //修改配置文件</p>
-<ul>
-<li>注意拷贝进去几个文件夹就新增几个字段, 而且要按从小到大的顺序排列</li>
-<li>另外有的系统可能无法修改, 可以先把文件拷贝出来, 修改后再覆盖进去(需要输入管理员密码鉴定)<br><img src="http://47.96.147.179/images/iOS/SDKSetting.png" alt="真机测试报错"></li>
-</ul>
 </blockquote>
-<ul>
-<li>4、最后Deploymeng Target最低可以选择iOS7.0, 并且在iOS7.0的手机上面也可以真机了.<br><img src="http://47.96.147.179/images/iOS/DeploymentTarget_7.0.png" alt="真机测试报错"></li>
-<li>5、百度云下载密码:6g6j<a href="https://pan.baidu.com/s/1o7TJ6zw" target="_blank" rel="noopener">下载地址</a></li>
+</li>
+<li>注意拷贝进去几个文件夹就新增几个字段, 而且要按从小到大的顺序排列</li>
+<li><p>另外有的系统可能无法修改, 可以先把文件拷贝出来, 修改后再覆盖进去(需要输入管理员密码鉴定)<br><img src="/assets/images/iOS/SDKSetting.png" alt="真机测试报错"></p>
+</li>
+<li><p>4、最后Deploymeng Target最低可以选择iOS7.0, 并且在iOS7.0的手机上面也可以真机了.<br><img src="/assets/images/iOS/DeploymentTarget_7.0.png" alt="真机测试报错"></p>
+</li>
+<li>5、百度云下载密码:6g6j<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1o7TJ6zw">下载地址</a></li>
 </ul>
-<h1 id="二、为Xcode8添加iPhone-4S模拟器"><a href="#二、为Xcode8添加iPhone-4S模拟器" class="headerlink" title="二、为Xcode8添加iPhone 4S模拟器"></a><font color="orange">二、为Xcode8添加iPhone 4S模拟器</font></h1><ol>
+<h1 id="二、为Xcode8添加iPhone-4S模拟器"><a href="#二、为Xcode8添加iPhone-4S模拟器" class="headerlink" title="二、为Xcode8添加iPhone 4S模拟器"></a><font color=orange>二、为Xcode8添加iPhone 4S模拟器</h1><ol>
 <li>方式1可以通过Xcode——偏好设置——Components——下载对应的Simlator(Xcode8 可以下载的Simlator SDK最低版本是iOS 8.1, 而且基本上因为墙的缘故会很慢!)</li>
 <li>手动下载安装, 将下载好的Simlator SDK放入下面的目录<blockquote>
 <p>  Finder——右键——前往文件夹<br> /Library/Developer/CoreSimulator/Profiles/Runtimes/</p>
 </blockquote>
 </li>
-<li>百度云下载密码:cs7e<a href="https://pan.baidu.com/s/1gf7Tzs3" target="_blank" rel="noopener">下载地址</a></li>
+<li>百度云下载密码:cs7e<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1gf7Tzs3">下载地址</a></li>
 </ol>
-<h1 id="三、Xcode8以后会有很多系统级别的打印"><a href="#三、Xcode8以后会有很多系统级别的打印" class="headerlink" title="三、Xcode8以后会有很多系统级别的打印"></a><font color="orange">三、Xcode8以后会有很多系统级别的打印</font></h1><p>Xcode – Product – Scheme – Edit Scheme – Run – Environment Variables 中添加 OS_ACTIVITY_MODE为disable<br>进入快捷键：<code>command  + shift + &lt;</code></p>
-<center><br><img src="http://47.96.147.179/images/iOS/xcode8_log.png" alt="主设置界面" style="width: 80%; text-align: center; display: block;"><br></center>
+<h1 id="三、Xcode8以后会有很多系统级别的打印"><a href="#三、Xcode8以后会有很多系统级别的打印" class="headerlink" title="三、Xcode8以后会有很多系统级别的打印"></a><font color=orange>三、Xcode8以后会有很多系统级别的打印</h1><p>Xcode – Product – Scheme – Edit Scheme – Run – Environment Variables 中添加 OS_ACTIVITY_MODE为disable<br>进入快捷键：<code>command  + shift + &lt;</code></p>
+<center><br><img src="/assets/images/iOS/xcode8_log.png" alt="主设置界面" style="width: 80%; text-align: center; display: block;"/><br></center>
 
 
 
@@ -232,10 +237,6 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">IDE</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
         		</li>
       		 
@@ -244,7 +245,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">IDE</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -253,6 +254,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Xcode</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		
 		</ul>
@@ -263,57 +268,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/15/iOS/Xcode8安装低版本SDK, 支持iOS7.0的真机测试/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -322,7 +276,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/03/20/Java Web/Intellij IDEA的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/03/20/Java%20Web/Intellij%20IDEA%E7%9A%84%E4%BD%BF%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -332,7 +286,7 @@
     </a>
   
   
-    <a href="/2017/01/14/Java Web/REMOTE HOST IDENTIFICATION HAS CHANGED的解决方法/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/01/14/Java%20Web/REMOTE%20HOST%20IDENTIFICATION%20HAS%20CHANGED%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">REMOTE HOST IDENTIFICATION HAS CHANGED的解决方法</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -360,7 +314,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、Deployment-Target最低为7-0并且可以在iOS-7-0版本真机测试"><span class="toc-number">1.</span> <span class="toc-text">一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、为Xcode8添加iPhone-4S模拟器"><span class="toc-number">2.</span> <span class="toc-text">二、为Xcode8添加iPhone 4S模拟器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、Xcode8以后会有很多系统级别的打印"><span class="toc-number">3.</span> <span class="toc-text">三、Xcode8以后会有很多系统级别的打印</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81Deployment-Target%E6%9C%80%E4%BD%8E%E4%B8%BA7-0%E5%B9%B6%E4%B8%94%E5%8F%AF%E4%BB%A5%E5%9C%A8iOS-7-0%E7%89%88%E6%9C%AC%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">一、Deployment Target最低为7.0并且可以在iOS 7.0版本真机测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%B8%BAXcode8%E6%B7%BB%E5%8A%A0iPhone-4S%E6%A8%A1%E6%8B%9F%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">二、为Xcode8添加iPhone 4S模拟器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81Xcode8%E4%BB%A5%E5%90%8E%E4%BC%9A%E6%9C%89%E5%BE%88%E5%A4%9A%E7%B3%BB%E7%BB%9F%E7%BA%A7%E5%88%AB%E7%9A%84%E6%89%93%E5%8D%B0"><span class="toc-number">3.</span> <span class="toc-text">三、Xcode8以后会有很多系统级别的打印</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -389,7 +343,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -406,7 +360,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -492,7 +446,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -508,11 +506,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -524,6 +586,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -532,7 +602,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -540,7 +642,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -548,35 +690,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -584,47 +698,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -644,6 +718,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -652,191 +794,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -844,7 +806,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -887,7 +849,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

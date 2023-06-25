@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>使用Gitlab-CI实现iOS的可持续集成 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="持续集成(Continuous Integration)是一种软件开发实践，即团队开发成员经常集成他们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。">
-<meta name="keywords" content="iOS,Swift,Objective-C,Xcode,持续集成,Gitlab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Gitlab-CI实现iOS的可持续集成">
-<meta property="og:url" content="http://yoursite.com/2017/11/29/iOS/使用Gitlab-CI实现iOS的可持续集成/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/11/29/iOS/%E4%BD%BF%E7%94%A8Gitlab-CI%E5%AE%9E%E7%8E%B0iOS%E7%9A%84%E5%8F%AF%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="持续集成(Continuous Integration)是一种软件开发实践，即团队开发成员经常集成他们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/gitlab-ci-iOS.jpg">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.669Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/gitlab-ci-iOS.jpg">
+<meta property="article:published_time" content="2017-11-29T07:51:46.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:39:59.916Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="持续集成">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Xcode">
+<meta property="article:tag" content="Swift">
+<meta property="article:tag" content="Gitlab">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用Gitlab-CI实现iOS的可持续集成">
-<meta name="twitter:description" content="持续集成(Continuous Integration)是一种软件开发实践，即团队开发成员经常集成他们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。">
-<meta name="twitter:image" content="http://47.96.147.179/images/iOS/gitlab-ci-iOS.jpg">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/iOS/gitlab-ci-iOS.jpg">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -39,8 +44,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -50,13 +55,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -66,9 +69,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -106,15 +111,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -138,13 +143,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -171,7 +178,7 @@
   
 
         
-        <a href="/2017/11/29/iOS/使用Gitlab-CI实现iOS的可持续集成/" class="archive-article-date">
+        <a href="/2017/11/29/iOS/%E4%BD%BF%E7%94%A8Gitlab-CI%E5%AE%9E%E7%8E%B0iOS%E7%9A%84%E5%8F%AF%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/" class="archive-article-date">
   	<time datetime="2017-11-29T07:51:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-29</time>
 </a>
         
@@ -180,27 +187,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>持续集成(Continuous Integration)是一种软件开发实践，即团队开发成员经常集成他们的工作，通过每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
-<p><img src="http://47.96.147.179/images/iOS/gitlab-ci-iOS.jpg" alt="hello" style="width: 50%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"></p>
-<a id="more"></a>
-<h1 id="常见持续集成框架"><a href="#常见持续集成框架" class="headerlink" title=" 常见持续集成框架 "></a><font color="orange"> 常见持续集成框架 </font></h1><ul>
-<li><font color="red">Jenkins</font>: 基于Java语言开发的持续构建/部署开源免费的持续集成框架, 目前使用最多的持续集成框架.</li>
-<li><font color="red">Buildbot</font>: 基于Python开发而成的项目.</li>
-<li><font color="red">Travis CI</font>: 开源项目免费使用, 使用Travis Pro需要付费.</li>
-<li><font color="red">Gitlab-CI</font>: 是Gitlab提供的一个持续集成套件, 在8.x以后版本已经集成进Gitlab中, 使用时配置Gitlab-runner即可.</li>
+<p><img src="/assets/images/iOS/gitlab-ci-iOS.jpg" alt="hello" style="width: 50%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"/></p>
+<span id="more"></span>
+<h1 id="常见持续集成框架"><a href="#常见持续集成框架" class="headerlink" title=" 常见持续集成框架 "></a><font color=orange> 常见持续集成框架 </font></h1><ul>
+<li><font color=red>Jenkins</font>: 基于Java语言开发的持续构建/部署开源免费的持续集成框架, 目前使用最多的持续集成框架.</li>
+<li><font color= red>Buildbot</font>: 基于Python开发而成的项目.</li>
+<li><font color= red>Travis CI</font>: 开源项目免费使用, 使用Travis Pro需要付费.</li>
+<li><font color= red>Gitlab-CI</font>: 是Gitlab提供的一个持续集成套件, 在8.x以后版本已经集成进Gitlab中, 使用时配置Gitlab-runner即可.</li>
 </ul>
-<h1 id="Gitlab-CI"><a href="#Gitlab-CI" class="headerlink" title=" Gitlab-CI "></a><font color="orange"> Gitlab-CI </font></h1><h2 id="安装Gitalb"><a href="#安装Gitalb" class="headerlink" title=" 安装Gitalb "></a><font color="orange"> 安装Gitalb </font></h2><h3 id="安装"><a href="#安装" class="headerlink" title=" 安装 "></a><font color="green"> 安装 </font></h3><p>使用Gitlab-CI需要首先需要使用<a href="https://www.gitlab.com" target="_blank" rel="noopener">Gitlab</a>或者自己<a href="/2017/07/07/Java Web/CentOS 7搭建GitLab/index.html">安装Gitlab</a>到自己的服务器, 从8.0版本开始, Gitlab默认已经集成Gitlab-CI.</p>
-<h3 id="汉化"><a href="#汉化" class="headerlink" title=" 汉化 "></a><font color="green"> 汉化 </font></h3><ul>
+<h1 id="Gitlab-CI"><a href="#Gitlab-CI" class="headerlink" title=" Gitlab-CI "></a><font color=orange> Gitlab-CI </font></h1><h2 id="安装Gitalb"><a href="#安装Gitalb" class="headerlink" title=" 安装Gitalb "></a><font color=orange> 安装Gitalb </font></h2><h3 id="安装"><a href="#安装" class="headerlink" title=" 安装 "></a><font color=green> 安装 </font></h3><p>使用Gitlab-CI需要首先需要使用<a target="_blank" rel="noopener" href="https://www.gitlab.com">Gitlab</a>或者自己<a href="/2017/07/07/Java Web/CentOS 7搭建GitLab/index.html">安装Gitlab</a>到自己的服务器, 从8.0版本开始, Gitlab默认已经集成Gitlab-CI.</p>
+<h3 id="汉化"><a href="#汉化" class="headerlink" title=" 汉化 "></a><font color= green> 汉化 </font></h3><ul>
 <li>Gitlab v8.8以及之前的版本汉化<ul>
-<li><a href="https://gitlab.com/larryli/gitlab.git" target="_blank" rel="noopener">https://gitlab.com/larryli/gitlab.git</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitlab.com/larryli/gitlab.git">https://gitlab.com/larryli/gitlab.git</a></li>
 </ul>
 </li>
 <li>Gitlab v8.8之后的汉化<ul>
-<li><a href="https://gitlab.com/xhang/gitlab.git" target="_blank" rel="noopener">https://gitlab.com/xhang/gitlab.git</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitlab.com/xhang/gitlab.git">https://gitlab.com/xhang/gitlab.git</a></li>
 <li>该项目延续了larryli的汉化.</li>
 </ul>
 </li>
 </ul>
-<h2 id="配置Gitlab-runner"><a href="#配置Gitlab-runner" class="headerlink" title=" 配置Gitlab-runner "></a><font color="orange"> 配置Gitlab-runner </font></h2><h3 id="Gitlab-CI和Gitlab-runner的区别"><a href="#Gitlab-CI和Gitlab-runner的区别" class="headerlink" title=" Gitlab-CI和Gitlab-runner的区别 "></a><font color="green"> Gitlab-CI和Gitlab-runner的区别 </font></h3><ul>
+<h2 id="配置Gitlab-runner"><a href="#配置Gitlab-runner" class="headerlink" title=" 配置Gitlab-runner "></a><font color=orange> 配置Gitlab-runner </font></h2><h3 id="Gitlab-CI和Gitlab-runner的区别"><a href="#Gitlab-CI和Gitlab-runner的区别" class="headerlink" title=" Gitlab-CI和Gitlab-runner的区别 "></a><font color= green> Gitlab-CI和Gitlab-runner的区别 </font></h3><ul>
 <li>Gitlab-CI<ul>
 <li>它安装在Gitlab服务器</li>
 <li>用来管理各个项目的各个runner</li>
@@ -212,9 +219,9 @@
 </ul>
 </li>
 </ul>
-<h3 id="安装Gitlab-runner"><a href="#安装Gitlab-runner" class="headerlink" title=" 安装Gitlab-runner "></a><font color="green"> 安装Gitlab-runner </font></h3><font color="red">从Gitlab-runner 10.0开始, <code>gitlab-ci-multi-runner</code>重新命名为<code>gitlab-runner</code>, 安装时需要注意!</font>
+<h3 id="安装Gitlab-runner"><a href="#安装Gitlab-runner" class="headerlink" title=" 安装Gitlab-runner "></a><font color= green> 安装Gitlab-runner </font></h3><font color=red>从Gitlab-runner 10.0开始, <code>gitlab-ci-multi-runner</code>重新命名为<code>gitlab-runner</code>, 安装时需要注意!</font>
 
-<h5 id="GitLab-Runner和Gitlab版本支持情况"><a href="#GitLab-Runner和Gitlab版本支持情况" class="headerlink" title=" GitLab Runner和Gitlab版本支持情况 "></a><font color="green"> GitLab Runner和Gitlab版本支持情况 </font></h5><table>
+<h5 id="GitLab-Runner和Gitlab版本支持情况"><a href="#GitLab-Runner和Gitlab版本支持情况" class="headerlink" title=" GitLab Runner和Gitlab版本支持情况 "></a><font color= green> GitLab Runner和Gitlab版本支持情况 </font></h5><table>
 <thead>
 <tr>
 <th style="text-align:center">GitLab Runner / GitLab</th>
@@ -320,18 +327,18 @@
 </tr>
 </tbody>
 </table>
-<h5 id="不同系统安装gitlab-runner"><a href="#不同系统安装gitlab-runner" class="headerlink" title=" 不同系统安装gitlab-runner "></a><font color="green"> 不同系统安装gitlab-runner </font></h5><ul>
-<li><a href="https://docs.gitlab.com/runner/install/linux-repository.html" target="_blank" rel="noopener">Install using GitLab’s repository for Debian/Ubuntu/CentOS/RedHat (preferred)</a></li>
-<li><a href="https://docs.gitlab.com/runner/install/linux-manually.html" target="_blank" rel="noopener">Install on GNU/Linux manually (advanced) </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/osx.html" target="_blank" rel="noopener">Install on macOS (preferred) </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/windows.html" target="_blank" rel="noopener">Install on Windows (preferred) </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/docker.html" target="_blank" rel="noopener">Install as a Docker Service </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/autoscaling.html" target="_blank" rel="noopener">Install in Auto-scaling mode using Docker machine </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/freebsd.html" target="_blank" rel="noopener">Install on FreeBSD </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/kubernetes.html" target="_blank" rel="noopener">Install on Kubernetes </a></li>
-<li><a href="https://docs.gitlab.com/runner/install/bleeding-edge.html" target="_blank" rel="noopener">Install the nightly binary manually (development) </a></li>
+<h5 id="不同系统安装gitlab-runner"><a href="#不同系统安装gitlab-runner" class="headerlink" title=" 不同系统安装gitlab-runner "></a><font color= green> 不同系统安装gitlab-runner </font></h5><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/linux-repository.html">Install using GitLab’s repository for Debian/Ubuntu/CentOS/RedHat (preferred)</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/linux-manually.html">Install on GNU/Linux manually (advanced) </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/osx.html">Install on macOS (preferred) </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/windows.html">Install on Windows (preferred) </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/docker.html">Install as a Docker Service </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/autoscaling.html">Install in Auto-scaling mode using Docker machine </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/freebsd.html">Install on FreeBSD </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/kubernetes.html">Install on Kubernetes </a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.gitlab.com/runner/install/bleeding-edge.html">Install the nightly binary manually (development) </a></li>
 </ul>
-<h5 id="Mac下安装gitlab-runner"><a href="#Mac下安装gitlab-runner" class="headerlink" title=" Mac下安装gitlab-runner "></a><font color="green"> Mac下安装gitlab-runner </font></h5><p>以下是官网10.0以后版本安装步骤:</p>
+<h5 id="Mac下安装gitlab-runner"><a href="#Mac下安装gitlab-runner" class="headerlink" title=" Mac下安装gitlab-runner "></a><font color= green> Mac下安装gitlab-runner </font></h5><p>以下是官网10.0以后版本安装步骤:</p>
 <ul>
 <li>下载可执行文件: <code>sudo curl --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-darwin-amd64</code><ul>
 <li>(由于墙的原因安装速度比较慢), 也可以下载该文件然后拷贝到<code>/usr/local/bin</code>目录中, 并且重命名为: <code>gitlab-runner</code>或者<code>gitlab-ci-multi-runner</code></li>
@@ -339,9 +346,9 @@
 </li>
 <li>更改权限: <code>sudo chmod +x /usr/local/bin/gitlab-runner</code></li>
 </ul>
-<h5 id="Linux下安装gitlab-runner"><a href="#Linux下安装gitlab-runner" class="headerlink" title=" Linux下安装gitlab-runner "></a><font color="green"> Linux下安装gitlab-runner </font></h5><p>由于墙的原因下载很慢, 对于<code>ubuntu</code>、<code>debian</code>和<code>centOS</code>等Linux系统可以使用<a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ci-multi-runner/" target="_blank" rel="noopener">清华大学开源软件镜像站</a>来进行安装, 它里面现在更新到了9.x版本的gitlab-runner.</p>
-<p>如CentOS下使用yum安装:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#1、创建`gitlab-ci-multi-runner.repo`</span><br><span class="line">vi /etc/yum.repos.d/gitlab-ci-multi-runner.repo</span><br><span class="line"></span><br><span class="line">#2、将下面的内容写入并保存</span><br><span class="line">[gitlab-ci-multi-runner]</span><br><span class="line">name=gitlab-ci-multi-runner</span><br><span class="line">baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ci-multi-runner/yum/el7</span><br><span class="line">repo_gpgcheck=0</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">gpgkey=https://packages.gitlab.com/gpg.key</span><br><span class="line"></span><br><span class="line">#3、运行命令</span><br><span class="line">sudo yum makecache</span><br><span class="line">sudo yum install gitlab-ci-multi-runner</span><br></pre></td></tr></table></figure></p>
-<h4 id="注册Gitlab-runner"><a href="#注册Gitlab-runner" class="headerlink" title=" 注册Gitlab-runner "></a><font color="green"> 注册Gitlab-runner </font></h4><p>安装好gitlab-runner以后, 可以根据操作系统来注册runner(注意gitlab-runner版本不同, 命令也不同): </p>
+<h5 id="Linux下安装gitlab-runner"><a href="#Linux下安装gitlab-runner" class="headerlink" title=" Linux下安装gitlab-runner "></a><font color= green> Linux下安装gitlab-runner </font></h5><p>由于墙的原因下载很慢, 对于<code>ubuntu</code>、<code>debian</code>和<code>centOS</code>等Linux系统可以使用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ci-multi-runner/">清华大学开源软件镜像站</a>来进行安装, 它里面现在更新到了9.x版本的gitlab-runner.</p>
+<p>如CentOS下使用yum安装:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#1、创建`gitlab-ci-multi-runner.repo`</span><br><span class="line">vi /etc/yum.repos.d/gitlab-ci-multi-runner.repo</span><br><span class="line"></span><br><span class="line">#2、将下面的内容写入并保存</span><br><span class="line">[gitlab-ci-multi-runner]</span><br><span class="line">name=gitlab-ci-multi-runner</span><br><span class="line">baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ci-multi-runner/yum/el7</span><br><span class="line">repo_gpgcheck=0</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">gpgkey=https://packages.gitlab.com/gpg.key</span><br><span class="line"></span><br><span class="line">#3、运行命令</span><br><span class="line">sudo yum makecache</span><br><span class="line">sudo yum install gitlab-ci-multi-runner</span><br></pre></td></tr></table></figure></p>
+<h4 id="注册Gitlab-runner"><a href="#注册Gitlab-runner" class="headerlink" title=" 注册Gitlab-runner "></a><font color=green> 注册Gitlab-runner </font></h4><p>安装好gitlab-runner以后, 可以根据操作系统来注册runner(注意gitlab-runner版本不同, 命令也不同): </p>
 <ul>
 <li>Linux和Mac在终端中运行命令: <code>sudo gitlab-runner register</code></li>
 <li><p>Windows需要<code>以管理员身份</code>打开cmd然后运行: <code>./gitlab-runner.exe register</code> </p>
@@ -357,20 +364,17 @@
 <li>最后在Gitlab中就会有一个runner. </li>
 <li>查看当前机器的runner状态: <code>sudo gitlab-ci-multi-runner list</code></li>
 </ul>
-<h4 id="安装服务并启动gitlab-runner"><a href="#安装服务并启动gitlab-runner" class="headerlink" title=" 安装服务并启动gitlab-runner "></a><font color="green"> 安装服务并启动gitlab-runner </font></h4><ul>
-<li><p>Windows</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gitlab-runner install</span><br><span class="line">gitlab-runner start</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Linux和Mac</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">gitlab-runner install</span><br><span class="line">gitlab-runner start</span><br></pre></td></tr></table></figure>
+<h4 id="安装服务并启动gitlab-runner"><a href="#安装服务并启动gitlab-runner" class="headerlink" title=" 安装服务并启动gitlab-runner "></a><font color=green> 安装服务并启动gitlab-runner </font></h4><ul>
+<li>Windows<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gitlab-runner install</span><br><span class="line">gitlab-runner start</span><br></pre></td></tr></table></figure></li>
+<li>Linux和Mac<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">gitlab-runner install</span><br><span class="line">gitlab-runner start</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="在项目根目录配置-gitlab-ci-yml"><a href="#在项目根目录配置-gitlab-ci-yml" class="headerlink" title=" 在项目根目录配置.gitlab-ci.yml "></a><font color="orange"> 在项目根目录配置<code>.gitlab-ci.yml</code> </font></h3><p>当安装好Gitlab、Gitlab-CI以及注册好Gitlab-runner之后, 我们要做的事情就是在项目根目录中添加 <code>.gitlab-ci.yml</code> 文件配置构建任务。当我们添加了 <code>.gitlab-ci.yml</code> 了之后，每次提交代码或者合并 master 都会自动运行构建任务了。它使用<code>YAML</code>文件进行配置, 缩进时使用空格, 不要使用<code>tab</code>键.</p>
+<h3 id="在项目根目录配置-gitlab-ci-yml"><a href="#在项目根目录配置-gitlab-ci-yml" class="headerlink" title=" 在项目根目录配置.gitlab-ci.yml "></a><font color=orange> 在项目根目录配置<code>.gitlab-ci.yml</code> </font></h3><p>当安装好Gitlab、Gitlab-CI以及注册好Gitlab-runner之后, 我们要做的事情就是在项目根目录中添加 <code>.gitlab-ci.yml</code> 文件配置构建任务。当我们添加了 <code>.gitlab-ci.yml</code> 了之后，每次提交代码或者合并 master 都会自动运行构建任务了。它使用<code>YAML</code>文件进行配置, 缩进时使用空格, 不要使用<code>tab</code>键.</p>
 <ul>
-<li><p><a href="https://docs.gitlab.com/ee/ci/yaml/README.html#configuration-of-your-jobs-with-gitlab-ci-yml" target="_blank" rel="noopener">英文文档</a></p>
+<li><p><a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/ci/yaml/README.html#configuration-of-your-jobs-with-gitlab-ci-yml">英文文档</a></p>
 </li>
 <li><p>Stages: 阶段<br><code>.gitlab-ci.yml</code>中可以包含很多阶段: 安装依赖、运行测试、编译、部署测试服务器、部署生产服务器等流程。使用<code>stages</code>来定义,如下定义了<code>build</code>和<code>test</code>两个阶段: </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">stages:</span><br><span class="line">  - build</span><br><span class="line">  - test</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">stages:</span><br><span class="line">  - build</span><br><span class="line">  - test</span><br></pre></td></tr></table></figure>
 <ul>
 <li>特点<ul>
 <li>所有Stages会按照顺序运行，即当一个Stage完成后，下一个Stage才会开始</li>
@@ -381,7 +385,7 @@
 </ul>
 </li>
 <li><p>Job: 工作(工作名唯一, 并且不能为关键字)<br>Jobs 表示构建工作，表示某个Stage里面执行的工作。我们可以在Stages里面定义多个Jobs.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">build_project:</span><br><span class="line">  stage: build</span><br><span class="line">  script:</span><br><span class="line">    - xcodebuild clean -project ProjectName.xcodeproj -scheme SchemeName | xcpretty</span><br><span class="line">    - xcodebuild test -project ProjectName.xcodeproj -scheme SchemeName -destination &apos;platform=iOS Simulator,name=iPhone 6s,OS=9.2&apos; | xcpretty -s</span><br><span class="line">  tags:</span><br><span class="line">    - ios_9-2</span><br><span class="line">    - xcode_7-2</span><br><span class="line">    - osx_10-11</span><br><span class="line"></span><br><span class="line">archive_project:</span><br><span class="line">  stage: archive</span><br><span class="line">  script:</span><br><span class="line">    - xcodebuild clean archive -archivePath build/ProjectName -scheme SchemeName</span><br><span class="line">    - xcodebuild -exportArchive -exportFormat ipa -archivePath &quot;build/ProjectName.xcarchive&quot; -exportPath &quot;build/ProjectName.ipa&quot; -exportProvisioningProfile &quot;ProvisioningProfileName&quot;</span><br><span class="line">  only:</span><br><span class="line">    - master</span><br><span class="line">  artifacts:</span><br><span class="line">    paths:</span><br><span class="line">      - build/ProjectName.ipa</span><br><span class="line">  tags:</span><br><span class="line">    - ios_9-2</span><br><span class="line">    - xcode_7-2</span><br><span class="line">    - osx_10-11</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">build_project:</span><br><span class="line">  stage: build</span><br><span class="line">  script:</span><br><span class="line">    - xcodebuild clean -project ProjectName.xcodeproj -scheme SchemeName | xcpretty</span><br><span class="line">    - xcodebuild test -project ProjectName.xcodeproj -scheme SchemeName -destination &#x27;platform=iOS Simulator,name=iPhone 6s,OS=9.2&#x27; | xcpretty -s</span><br><span class="line">  tags:</span><br><span class="line">    - ios_9-2</span><br><span class="line">    - xcode_7-2</span><br><span class="line">    - osx_10-11</span><br><span class="line"></span><br><span class="line">archive_project:</span><br><span class="line">  stage: archive</span><br><span class="line">  script:</span><br><span class="line">    - xcodebuild clean archive -archivePath build/ProjectName -scheme SchemeName</span><br><span class="line">    - xcodebuild -exportArchive -exportFormat ipa -archivePath &quot;build/ProjectName.xcarchive&quot; -exportPath &quot;build/ProjectName.ipa&quot; -exportProvisioningProfile &quot;ProvisioningProfileName&quot;</span><br><span class="line">  only:</span><br><span class="line">    - master</span><br><span class="line">  artifacts:</span><br><span class="line">    paths:</span><br><span class="line">      - build/ProjectName.ipa</span><br><span class="line">  tags:</span><br><span class="line">    - ios_9-2</span><br><span class="line">    - xcode_7-2</span><br><span class="line">    - osx_10-11</span><br></pre></td></tr></table></figure>
 <ul>
 <li>Job中的<code>stage</code>: 表示所属的阶段</li>
 <li>Job中的<code>script</code>: 定义由Runner执行的脚本</li>
@@ -398,21 +402,21 @@
 </ul>
 </li>
 </ul>
-<h2 id="iOS相关编译、打包命令"><a href="#iOS相关编译、打包命令" class="headerlink" title=" iOS相关编译、打包命令 "></a><font color="orange"> iOS相关编译、打包命令 </font></h2><p>持续集成无论是使用Gitlab-CI还是Jenkins, 对于iOS来说都需要知道底层的打包、编译、上传App Store、蒲公英的一些底层命令.</p>
-<h3 id="xcodebuild命令"><a href="#xcodebuild命令" class="headerlink" title=" xcodebuild命令 "></a><font color="orange"> xcodebuild命令 </font></h3><p>xcodebuild 是苹果提供的打包项目或者工程的命令，了解该命令最好的方式就是终端使用<code>man xcodebuild</code>命令查看, <a href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html" target="_blank" rel="noopener">官方文档</a>.</p>
-<h5 id="使用注意"><a href="#使用注意" class="headerlink" title=" 使用注意 "></a><font color="green"> 使用注意 </font></h5><ul>
+<h2 id="iOS相关编译、打包命令"><a href="#iOS相关编译、打包命令" class="headerlink" title=" iOS相关编译、打包命令 "></a><font color=orange> iOS相关编译、打包命令 </font></h2><p>持续集成无论是使用Gitlab-CI还是Jenkins, 对于iOS来说都需要知道底层的打包、编译、上传App Store、蒲公英的一些底层命令.</p>
+<h3 id="xcodebuild命令"><a href="#xcodebuild命令" class="headerlink" title=" xcodebuild命令 "></a><font color=orange> xcodebuild命令 </font></h3><p>xcodebuild 是苹果提供的打包项目或者工程的命令，了解该命令最好的方式就是终端使用<code>man xcodebuild</code>命令查看, <a target="_blank" rel="noopener" href="https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/xcodebuild.1.html">官方文档</a>.</p>
+<h5 id="使用注意"><a href="#使用注意" class="headerlink" title=" 使用注意 "></a><font color=green> 使用注意 </font></h5><ul>
 <li>需要在包含<code>*.xcodeproj</code>的目录中执行<code>xcodebuild</code>目录, 如果该目录下有多个 projects，那么需要使用<code>-project</code>指定需要编译的项目。</li>
 <li>不指定编译的target时, 默认会编译项目下第一个target.</li>
 <li>当编译worspace时需要同时指定<code>-workspace</code>和<code>-scheme</code>参数, scheme参数决定哪个targets会被编译以及编译方式.</li>
 <li><code>-list</code>、<code>-showBuildSetting</code>和<code>-showsdks</code>可以查看项目或者工程的信息.</li>
 </ul>
-<h5 id="常用xcodebuild命令"><a href="#常用xcodebuild命令" class="headerlink" title=" 常用xcodebuild命令 "></a><font color="green"> 常用xcodebuild命令 </font></h5><ul>
+<h5 id="常用xcodebuild命令"><a href="#常用xcodebuild命令" class="headerlink" title=" 常用xcodebuild命令 "></a><font color= green> 常用xcodebuild命令 </font></h5><ul>
 <li>查看Xcode所有可用的SDKs: <blockquote>
 <p>   xcodebuild -showsdks</p>
 </blockquote>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">iOS SDKs:</span><br><span class="line">	iOS 11.0                      	-sdk iphoneos11.0</span><br><span class="line"></span><br><span class="line">iOS Simulator SDKs:</span><br><span class="line">	Simulator - iOS 11.0          	-sdk iphonesimulator11.0</span><br><span class="line"></span><br><span class="line">macOS SDKs:</span><br><span class="line">	macOS 10.13                   	-sdk macosx10.13</span><br><span class="line"></span><br><span class="line">tvOS SDKs:</span><br><span class="line">	tvOS 11.0                     	-sdk appletvos11.0</span><br><span class="line"></span><br><span class="line">tvOS Simulator SDKs:</span><br><span class="line">	Simulator - tvOS 11.0         	-sdk appletvsimulator11.0</span><br><span class="line"></span><br><span class="line">watchOS SDKs:</span><br><span class="line">	watchOS 4.0                   	-sdk watchos4.0</span><br><span class="line"></span><br><span class="line">watchOS Simulator SDKs:</span><br><span class="line">	Simulator - watchOS 4.0       	-sdk watchsimulator4.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">iOS SDKs:</span><br><span class="line">	iOS 11.0                      	-sdk iphoneos11.0</span><br><span class="line"></span><br><span class="line">iOS Simulator SDKs:</span><br><span class="line">	Simulator - iOS 11.0          	-sdk iphonesimulator11.0</span><br><span class="line"></span><br><span class="line">macOS SDKs:</span><br><span class="line">	macOS 10.13                   	-sdk macosx10.13</span><br><span class="line"></span><br><span class="line">tvOS SDKs:</span><br><span class="line">	tvOS 11.0                     	-sdk appletvos11.0</span><br><span class="line"></span><br><span class="line">tvOS Simulator SDKs:</span><br><span class="line">	Simulator - tvOS 11.0         	-sdk appletvsimulator11.0</span><br><span class="line"></span><br><span class="line">watchOS SDKs:</span><br><span class="line">	watchOS 4.0                   	-sdk watchos4.0</span><br><span class="line"></span><br><span class="line">watchOS Simulator SDKs:</span><br><span class="line">	Simulator - watchOS 4.0       	-sdk watchsimulator4.0</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>查看当前工程或项目build setting配置参数: </p>
 <blockquote>
@@ -425,7 +429,7 @@
 </blockquote>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Information about project &quot;HelloWorld&quot;:</span><br><span class="line">    Targets:</span><br><span class="line">        HelloWorld</span><br><span class="line">        HelloWorldTests</span><br><span class="line">        HelloWorldUITests</span><br><span class="line"></span><br><span class="line">    Build Configurations:</span><br><span class="line">        Debug</span><br><span class="line">        Release</span><br><span class="line"></span><br><span class="line">    If no build configuration is specified and -scheme is not passed then &quot;Release&quot; is used.</span><br><span class="line"></span><br><span class="line">    Schemes:</span><br><span class="line">        HelloWorld</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Information about project &quot;HelloWorld&quot;:</span><br><span class="line">    Targets:</span><br><span class="line">        HelloWorld</span><br><span class="line">        HelloWorldTests</span><br><span class="line">        HelloWorldUITests</span><br><span class="line"></span><br><span class="line">    Build Configurations:</span><br><span class="line">        Debug</span><br><span class="line">        Release</span><br><span class="line"></span><br><span class="line">    If no build configuration is specified and -scheme is not passed then &quot;Release&quot; is used.</span><br><span class="line"></span><br><span class="line">    Schemes:</span><br><span class="line">        HelloWorld</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>编译、测试、分析、archive等: </p>
 <ul>
@@ -474,7 +478,7 @@
 <p>   xcodebuild -exportArchive -archivePath xcarchivepath -exportPath destinationpath -exportOptionsPlist path</p>
 </blockquote>
 <ul>
-<li><code>exportOptionsPlist</code>参数: 是一个plist文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">    &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span><br><span class="line">&lt;plist version=&quot;1.0&quot;&gt;</span><br><span class="line">  &lt;dict&gt;</span><br><span class="line">    &lt;key&gt;teamID&lt;/key&gt;</span><br><span class="line">      &lt;string&gt;xxxxxxxx&lt;/string&gt; //TeamID</span><br><span class="line">    &lt;key&gt;method&lt;/key&gt;</span><br><span class="line">      &lt;string&gt;ad-hoc&lt;/string&gt; //ad-hoc打包</span><br><span class="line">    &lt;key&gt;compileBitcode&lt;/key&gt; //是否编译bitcode</span><br><span class="line">      &lt;false/&gt;</span><br><span class="line">  &lt;/dict&gt;</span><br><span class="line">&lt;/plist&gt;</span><br></pre></td></tr></table></figure>
+<li><code>exportOptionsPlist</code>参数: 是一个plist文件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><br><span class="line">    &lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span><br><span class="line">&lt;plist version=&quot;1.0&quot;&gt;</span><br><span class="line">  &lt;dict&gt;</span><br><span class="line">    &lt;key&gt;teamID&lt;/key&gt;</span><br><span class="line">      &lt;string&gt;xxxxxxxx&lt;/string&gt; //TeamID</span><br><span class="line">    &lt;key&gt;method&lt;/key&gt;</span><br><span class="line">      &lt;string&gt;ad-hoc&lt;/string&gt; //ad-hoc打包</span><br><span class="line">    &lt;key&gt;compileBitcode&lt;/key&gt; //是否编译bitcode</span><br><span class="line">      &lt;false/&gt;</span><br><span class="line">  &lt;/dict&gt;</span><br><span class="line">&lt;/plist&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
@@ -498,7 +502,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">持续集成</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -510,7 +514,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">持续集成</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -525,57 +529,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/11/29/iOS/使用Gitlab-CI实现iOS的可持续集成/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -584,7 +537,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/02/iOS/iTunes Connect 构建版本不显示/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/01/02/iOS/iTunes%20Connect%20%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC%E4%B8%8D%E6%98%BE%E7%A4%BA/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -594,7 +547,7 @@
     </a>
   
   
-    <a href="/2017/10/19/Java Web/JS跨域/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/10/19/Java%20Web/JS%E8%B7%A8%E5%9F%9F/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">JS跨域问题</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -622,7 +575,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#常见持续集成框架"><span class="toc-number">1.</span> <span class="toc-text"> 常见持续集成框架 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gitlab-CI"><span class="toc-number">2.</span> <span class="toc-text"> Gitlab-CI </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Gitalb"><span class="toc-number">2.1.</span> <span class="toc-text"> 安装Gitalb </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 安装 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#汉化"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 汉化 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Gitlab-runner"><span class="toc-number">2.2.</span> <span class="toc-text"> 配置Gitlab-runner </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gitlab-CI和Gitlab-runner的区别"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Gitlab-CI和Gitlab-runner的区别 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Gitlab-runner"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 安装Gitlab-runner </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#GitLab-Runner和Gitlab版本支持情况"><span class="toc-number">2.2.2.0.1.</span> <span class="toc-text"> GitLab Runner和Gitlab版本支持情况 </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#不同系统安装gitlab-runner"><span class="toc-number">2.2.2.0.2.</span> <span class="toc-text"> 不同系统安装gitlab-runner </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Mac下安装gitlab-runner"><span class="toc-number">2.2.2.0.3.</span> <span class="toc-text"> Mac下安装gitlab-runner </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Linux下安装gitlab-runner"><span class="toc-number">2.2.2.0.4.</span> <span class="toc-text"> Linux下安装gitlab-runner </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注册Gitlab-runner"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 注册Gitlab-runner </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装服务并启动gitlab-runner"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 安装服务并启动gitlab-runner </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在项目根目录配置-gitlab-ci-yml"><span class="toc-number">2.2.3.</span> <span class="toc-text"> 在项目根目录配置.gitlab-ci.yml </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iOS相关编译、打包命令"><span class="toc-number">2.3.</span> <span class="toc-text"> iOS相关编译、打包命令 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#xcodebuild命令"><span class="toc-number">2.3.1.</span> <span class="toc-text"> xcodebuild命令 </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#使用注意"><span class="toc-number">2.3.1.0.1.</span> <span class="toc-text"> 使用注意 </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#常用xcodebuild命令"><span class="toc-number">2.3.1.0.2.</span> <span class="toc-text"> 常用xcodebuild命令 </span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E6%A1%86%E6%9E%B6"><span class="toc-number">1.</span> <span class="toc-text"> 常见持续集成框架 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Gitlab-CI"><span class="toc-number">2.</span> <span class="toc-text"> Gitlab-CI </span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Gitalb"><span class="toc-number">2.1.</span> <span class="toc-text"> 安装Gitalb </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 安装 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%89%E5%8C%96"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 汉化 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEGitlab-runner"><span class="toc-number">2.2.</span> <span class="toc-text"> 配置Gitlab-runner </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Gitlab-CI%E5%92%8CGitlab-runner%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.2.1.</span> <span class="toc-text"> Gitlab-CI和Gitlab-runner的区别 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Gitlab-runner"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 安装Gitlab-runner </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#GitLab-Runner%E5%92%8CGitlab%E7%89%88%E6%9C%AC%E6%94%AF%E6%8C%81%E6%83%85%E5%86%B5"><span class="toc-number">2.2.2.0.1.</span> <span class="toc-text"> GitLab Runner和Gitlab版本支持情况 </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85gitlab-runner"><span class="toc-number">2.2.2.0.2.</span> <span class="toc-text"> 不同系统安装gitlab-runner </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Mac%E4%B8%8B%E5%AE%89%E8%A3%85gitlab-runner"><span class="toc-number">2.2.2.0.3.</span> <span class="toc-text"> Mac下安装gitlab-runner </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Linux%E4%B8%8B%E5%AE%89%E8%A3%85gitlab-runner"><span class="toc-number">2.2.2.0.4.</span> <span class="toc-text"> Linux下安装gitlab-runner </span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%86%8CGitlab-runner"><span class="toc-number">2.2.2.1.</span> <span class="toc-text"> 注册Gitlab-runner </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%9C%8D%E5%8A%A1%E5%B9%B6%E5%90%AF%E5%8A%A8gitlab-runner"><span class="toc-number">2.2.2.2.</span> <span class="toc-text"> 安装服务并启动gitlab-runner </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E9%A1%B9%E7%9B%AE%E6%A0%B9%E7%9B%AE%E5%BD%95%E9%85%8D%E7%BD%AE-gitlab-ci-yml"><span class="toc-number">2.2.3.</span> <span class="toc-text"> 在项目根目录配置.gitlab-ci.yml </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iOS%E7%9B%B8%E5%85%B3%E7%BC%96%E8%AF%91%E3%80%81%E6%89%93%E5%8C%85%E5%91%BD%E4%BB%A4"><span class="toc-number">2.3.</span> <span class="toc-text"> iOS相关编译、打包命令 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#xcodebuild%E5%91%BD%E4%BB%A4"><span class="toc-number">2.3.1.</span> <span class="toc-text"> xcodebuild命令 </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%B3%A8%E6%84%8F"><span class="toc-number">2.3.1.0.1.</span> <span class="toc-text"> 使用注意 </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8xcodebuild%E5%91%BD%E4%BB%A4"><span class="toc-number">2.3.1.0.2.</span> <span class="toc-text"> 常用xcodebuild命令 </span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -651,7 +604,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -668,7 +621,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -754,7 +707,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -770,11 +767,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -786,6 +847,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -794,7 +863,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -802,7 +903,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -810,35 +951,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -846,47 +959,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -906,6 +979,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -914,191 +1055,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1106,7 +1067,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1149,7 +1110,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

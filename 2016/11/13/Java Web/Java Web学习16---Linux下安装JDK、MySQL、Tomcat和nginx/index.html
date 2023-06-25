@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="RPM RPM是RPM Package Manager（RPM软件包管理器）的缩写，这一文件格式名称虽然打上了RedHat的标志，但是其原始设计理念是开放式的，现在包括OpenLinux、S.u.S.E.以及Turbo Linux等Linux的分发版本都有采用，可以算是公认的行业标准了。Linux可以通过brew安装: brew install rpm.  RPM主要功能 安装、卸载、升级和管理">
-<meta name="keywords" content="Java,Tomcat,RPM,nginx,JDK,MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx">
-<meta property="og:url" content="http://yoursite.com/2016/11/13/Java Web/Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/11/13/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A016---Linux%E4%B8%8B%E5%AE%89%E8%A3%85JDK%E3%80%81MySQL%E3%80%81Tomcat%E5%92%8Cnginx/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="RPM RPM是RPM Package Manager（RPM软件包管理器）的缩写，这一文件格式名称虽然打上了RedHat的标志，但是其原始设计理念是开放式的，现在包括OpenLinux、S.u.S.E.以及Turbo Linux等Linux的分发版本都有采用，可以算是公认的行业标准了。Linux可以通过brew安装: brew install rpm.  RPM主要功能 安装、卸载、升级和管理">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.640Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-11-13T02:24:53.000Z">
+<meta property="article:modified_time" content="2020-02-28T02:29:02.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="Tomcat">
+<meta property="article:tag" content="RPM">
+<meta property="article:tag" content="nginx">
+<meta property="article:tag" content="JDK">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx">
-<meta name="twitter:description" content="RPM RPM是RPM Package Manager（RPM软件包管理器）的缩写，这一文件格式名称虽然打上了RedHat的标志，但是其原始设计理念是开放式的，现在包括OpenLinux、S.u.S.E.以及Turbo Linux等Linux的分发版本都有采用，可以算是公认的行业标准了。Linux可以通过brew安装: brew install rpm.  RPM主要功能 安装、卸载、升级和管理">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +42,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +53,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +67,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +141,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +176,7 @@
   
 
         
-        <a href="/2016/11/13/Java Web/Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx/" class="archive-article-date">
+        <a href="/2016/11/13/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A016---Linux%E4%B8%8B%E5%AE%89%E8%A3%85JDK%E3%80%81MySQL%E3%80%81Tomcat%E5%92%8Cnginx/" class="archive-article-date">
   	<time datetime="2016-11-13T02:24:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-13</time>
 </a>
         
@@ -177,7 +184,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="RPM"><a href="#RPM" class="headerlink" title=" RPM "></a><font color="orange"> RPM </font></h2><p>RPM是RPM Package Manager（RPM软件包管理器）的缩写，这一文件格式名称虽然打上了RedHat的标志，但是其原始设计理念是开放式的，现在包括OpenLinux、S.u.S.E.以及Turbo Linux等Linux的分发版本都有采用，可以算是公认的行业标准了。Linux可以通过brew安装: <code>brew install rpm</code>.</p>
+        <h2 id="RPM"><a href="#RPM" class="headerlink" title=" RPM "></a><font color=orange> RPM </font></h2><p>RPM是RPM Package Manager（RPM软件包管理器）的缩写，这一文件格式名称虽然打上了RedHat的标志，但是其原始设计理念是开放式的，现在包括OpenLinux、S.u.S.E.以及Turbo Linux等Linux的分发版本都有采用，可以算是公认的行业标准了。Linux可以通过brew安装: <code>brew install rpm</code>.</p>
 <ul>
 <li>RPM主要功能<ul>
 <li>安装、卸载、升级和管理软件</li>
@@ -225,7 +232,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="yum"><a href="#yum" class="headerlink" title=" yum "></a><font color="orange"> yum </font></h2><p>Yum（全称为 Yellow dog Updater, Modified）是一个在Fedora和RedHat以及CentOS中的Shell前端软件包管理器。基于RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装.</p>
+<h2 id="yum"><a href="#yum" class="headerlink" title=" yum "></a><font color=orange> yum </font></h2><p>Yum（全称为 Yellow dog Updater, Modified）是一个在Fedora和RedHat以及CentOS中的Shell前端软件包管理器。基于RPM包管理，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软件包，无须繁琐地一次次下载、安装.</p>
 <ul>
 <li>常用命令行命令<ul>
 <li>安装软件(以foo-x.x.x.rpm为例）：yum install foo-x.x.x.rpm</li>
@@ -247,7 +254,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="Linux安装JDK"><a href="#Linux安装JDK" class="headerlink" title=" Linux安装JDK "></a><font color="orange"> Linux安装JDK </font></h2><ul>
+<h2 id="Linux安装JDK"><a href="#Linux安装JDK" class="headerlink" title=" Linux安装JDK "></a><font color=orange> Linux安装JDK </font></h2><ul>
 <li>检查是否安装了JDK<ul>
 <li><code>java -version</code>: 如果未找到命令, 那么就没有安装, 有版本信息那么久已经安装了</li>
 </ul>
@@ -283,7 +290,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="Linux安装MySQL"><a href="#Linux安装MySQL" class="headerlink" title=" Linux安装MySQL "></a><font color="orange"> Linux安装MySQL </font></h2><ul>
+<h2 id="Linux安装MySQL"><a href="#Linux安装MySQL" class="headerlink" title=" Linux安装MySQL "></a><font color=orange> Linux安装MySQL </font></h2><ul>
 <li>查看是否安装了MySQL<ul>
 <li><code>rpm -qa | grep mysql</code></li>
 </ul>
@@ -293,9 +300,8 @@
 <li>CentOS 7新版还需要卸载mariadb: <code>rpm -e --nodeps mariadb-libs-5.5.52-1.el7.x86_64</code></li>
 </ul>
 </li>
-<li><p>CentOS7上安装MySQL(tar.gz压缩包)</p>
-<ul>
-<li>1、下载MySQL: <a href="https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.18-1.el7.x86_64.rpm-bundle.tar" target="_blank" rel="noopener">MySQL-5.7</a></li>
+<li>CentOS7上安装MySQL(tar.gz压缩包)<ul>
+<li>1、下载MySQL: <a target="_blank" rel="noopener" href="https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.18-1.el7.x86_64.rpm-bundle.tar">MySQL-5.7</a></li>
 <li>2、通过scp命令把文件传递到Linux服务器: <code>scp 文件路径 用户名@服务器ip地址:路径</code>, 输入密码后即可开始传递.可以通过windows下载, 然后通过scp命令传输到服务器, 也可以通过wget命令直接在Linux服务器上面下载(如果提示没有wget命令, 需要运行<code>yum -y install wget</code>).</li>
 <li>3、创建目录: <code>/usr/local/mysql</code>, 并把MySQL的tar包拷贝到该目录</li>
 <li>4、解压tar压缩包: <code>tar -xvf tar包名</code></li>
@@ -313,9 +319,9 @@
 <li>7、数据库初始化<ul>
 <li>7.1、为了保证数据库目录为与文件的所有者为 mysql 登陆用户，如果你的linux系统是以 root 身份运行 mysql 服务，需要执行下面的命令初始化: <code>mysqld --initialize --user=用户名</code>, 用户名一般是root</li>
 <li>7.2、上面的命令运行了之后, 系统会生成一个随机密码, 会在<code>/var/log/mysqld.log</code>保存</li>
-<li>7.3、可以通过<code>grep password /var/log/mysqld.log</code>命令查看, 例如: <code>A temporary password is generated for root@localhost: K-hd5nRr/1Il</code>, 那么<font color="red"><code>K-hd5nRr/1Il</code></font>就是密码.</li>
+<li>7.3、可以通过<code>grep password /var/log/mysqld.log</code>命令查看, 例如: <code>A temporary password is generated for root@localhost: K-hd5nRr/1Il</code>, 那么<font color=red><code>K-hd5nRr/1Il</code></font>就是密码.</li>
 <li>7.4、登录MySQL后可以修改密码<code>mysql -uroot -pK-hd5nRr/1Il</code><ul>
-<li><font color="red">7.4.1、如果该命令运行之后出现</font><code>ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket &#39;/var/run/mysqld/mysqld.sock&#39; (2)</code>, 那是因为MySQL没有正常启动导致</li>
+<li><font color=red>7.4.1、如果该命令运行之后出现</font><code>ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket &#39;/var/run/mysqld/mysqld.sock&#39; (2)</code>, 那是因为MySQL没有正常启动导致</li>
 <li>7.4.2、老版本运行<code>service mysqld start</code>, 新版本运行<code>systemctl start mysqld.service</code>开启服务</li>
 <li>7.4.3、如果不能运行, 查看报错日志, <code>grep [ERROR] | /var/log/mysqld.log</code>, 如果出现<code>The innodb_system data file &#39;ibdata1&#39; must be writable</code></li>
 <li>7.4.4、运行<code>mkdir -p /usr/local/mysql/data</code></li>
@@ -353,7 +359,7 @@
 </li>
 </ul>
 </li>
-<li><font color="red">8、无法远程连接到Linux服务器上面的数据库</font><ul>
+<li><font color=red>8、无法远程连接到Linux服务器上面的数据库</font><ul>
 <li>方式1: <ul>
 <li>8.1.1、首先登录到MySQL中: <code>mysql -uroot -p</code> </li>
 <li>8.1.2、然后运行 <code>grant all privileges on *.* to root@&#39;%&#39; identified by &#39;123456&#39;;</code><ul>
@@ -384,18 +390,11 @@
 <li>8.4、重启防火墙: <code>sudo systemctl restart firewalld</code></li>
 </ul>
 </li>
-<li><p>9、字符集问题, 需要修改为utf8, 如果数据库要存储emoji表情, 那么需要使用<code>utf8mb4</code>, 它向下兼容utf8.</p>
-<ul>
-<li><p>9.1.1、修改现有数据库和表</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER DATABASE `数据库名` CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;</span><br><span class="line"></span><br><span class="line">ALTER TABLE `表名` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>9.1.2、运行<code>vi /etc/my.cnf</code></p>
-</li>
-<li><p>9.1.3、在配置文件中添加一个字符集的配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line"># 客户端来源数据的默认字符集</span><br><span class="line">default-character-set= utf8mb4</span><br><span class="line">[mysqld]</span><br><span class="line"># 服务端默认字符集</span><br><span class="line">character-set-server=utf8mb4</span><br><span class="line"># 连接层默认字符集</span><br><span class="line">collation-server=utf8mb4_unicode_ci</span><br><span class="line">[mysql]</span><br><span class="line"># 数据库默认字符集</span><br><span class="line">default-character-set= utf8mb4</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>9.1.4、重启mysql服务</p>
-</li>
+<li>9、字符集问题, 需要修改为utf8, 如果数据库要存储emoji表情, 那么需要使用<code>utf8mb4</code>, 它向下兼容utf8.<ul>
+<li>9.1.1、修改现有数据库和表<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER DATABASE `数据库名` CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;</span><br><span class="line"></span><br><span class="line">ALTER TABLE `表名` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</span><br></pre></td></tr></table></figure></li>
+<li>9.1.2、运行<code>vi /etc/my.cnf</code></li>
+<li>9.1.3、在配置文件中添加一个字符集的配置<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line"># 客户端来源数据的默认字符集</span><br><span class="line">default-character-set= utf8mb4</span><br><span class="line">[mysqld]</span><br><span class="line"># 服务端默认字符集</span><br><span class="line">character-set-server=utf8mb4</span><br><span class="line"># 连接层默认字符集</span><br><span class="line">collation-server=utf8mb4_unicode_ci</span><br><span class="line">[mysql]</span><br><span class="line"># 数据库默认字符集</span><br><span class="line">default-character-set= utf8mb4</span><br></pre></td></tr></table></figure></li>
+<li>9.1.4、重启mysql服务</li>
 </ul>
 </li>
 <li>10、查看MySQL服务状态: 老版本使用<code>service mysqld status</code>, 新版本使用<code>systemctl status mysqld.service</code></li>
@@ -407,8 +406,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="Linux安装Tomcat"><a href="#Linux安装Tomcat" class="headerlink" title=" Linux安装Tomcat "></a><font color="orange"> Linux安装Tomcat </font></h2><ul>
-<li>1、下载Tomcat的Linux版本: <a href="https://www.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz" target="_blank" rel="noopener">Tomcat-7.0.79.tar.gz</a></li>
+<h2 id="Linux安装Tomcat"><a href="#Linux安装Tomcat" class="headerlink" title=" Linux安装Tomcat "></a><font color=orange> Linux安装Tomcat </font></h2><ul>
+<li>1、下载Tomcat的Linux版本: <a target="_blank" rel="noopener" href="https://www.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz">Tomcat-7.0.79.tar.gz</a></li>
 <li>2、新建tomcat文件夹: <code>mkdir -p /usr/local/tomcat</code></li>
 <li>3、把tomcat.tar.gz拷贝到该文件夹下: <code>cp tomcat.tar.gz /usr/local/tomcat</code></li>
 <li>4、解压tar: <code>tar -xvf tomcat.tar.gz</code></li>
@@ -420,7 +419,7 @@
 </li>
 </ul>
 </li>
-<li>6、<font color="red">Linux默认情况下8080端口对外是是关闭的, 需要开启这个端口或者修改Tomcat端口为80</font><ul>
+<li>6、<font color=red>Linux默认情况下8080端口对外是是关闭的, 需要开启这个端口或者修改Tomcat端口为80</font><ul>
 <li>永久开启8080端口: <code>firewall-cmd --add-port=8080/tcp --zone=public --permanent</code></li>
 <li>查询所有已经开启的端口: <code>firewall-cmd --zone=public --list-ports</code></li>
 <li>移除8080端口:<code>firewall-cmd --permanent --zone=public --remove-port=8080/tcp</code></li>
@@ -429,8 +428,8 @@
 </ul>
 </li>
 </ul>
-<h3 id="war包"><a href="#war包" class="headerlink" title=" war包 "></a><font color="orange"> war包 </font></h3><p>war包在tomcat/webapps目录中, tomcat启动时,会自动解压</p>
-<h2 id="nginx"><a href="#nginx" class="headerlink" title=" nginx "></a><font color="orange"> nginx </font></h2><p>Nginx (engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。其特点是占有内存少，并发能力强，负载均衡,动静分离.事实上nginx的并发能力确实在同类型的网页服务器中表现较好.</p>
+<h3 id="war包"><a href="#war包" class="headerlink" title=" war包 "></a><font color=orange> war包 </font></h3><p>war包在tomcat/webapps目录中, tomcat启动时,会自动解压</p>
+<h2 id="nginx"><a href="#nginx" class="headerlink" title=" nginx "></a><font color=orange> nginx </font></h2><p>Nginx (engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。其特点是占有内存少，并发能力强，负载均衡,动静分离.事实上nginx的并发能力确实在同类型的网页服务器中表现较好.</p>
 <ul>
 <li>反向代理（Reverse Proxy）: 是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。</li>
 <li>虚拟主机: 可以在一台服务器虚拟出多个网站</li>
@@ -439,7 +438,7 @@
 </li>
 <li><p>Linux安装 Nginx</p>
 <ul>
-<li>nginx官网: <a href="http://nginx.org/" target="_blank" rel="noopener">官网地址</a></li>
+<li>nginx官网: <a target="_blank" rel="noopener" href="http://nginx.org/">官网地址</a></li>
 <li>下载nginx源码到服务器<ul>
 <li><code>wget http://nginx.org/download/nginx-1.8.1.tar.gz</code></li>
 </ul>
@@ -452,14 +451,10 @@
 <li>openssl: <code>yum install -y openssl openssl-devel</code></li>
 </ul>
 </li>
-<li><p>编译运行</p>
-<ul>
+<li>编译运行<ul>
 <li>进入nginx文件夹</li>
-<li><p>使用configure命令创建一makeFile文件, prefix是安装路径, 临时文件目录是<code>/var/temp/nginx</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>确认运行前 <code>/var/temp/nginx/client</code>目录已经创建</p>
-<ul>
+<li>使用configure命令创建一makeFile文件, prefix是安装路径, 临时文件目录是<code>/var/temp/nginx</code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">./configure \</span><br><span class="line">--prefix=/usr/local/nginx \</span><br><span class="line">--pid-path=/var/run/nginx/nginx.pid \</span><br><span class="line">--lock-path=/var/lock/nginx.lock \</span><br><span class="line">--error-log-path=/var/log/nginx/error.log \</span><br><span class="line">--http-log-path=/var/log/nginx/access.log \</span><br><span class="line">--with-http_gzip_static_module \</span><br><span class="line">--http-client-body-temp-path=/var/temp/nginx/client \</span><br><span class="line">--http-proxy-temp-path=/var/temp/nginx/proxy \</span><br><span class="line">--http-fastcgi-temp-path=/var/temp/nginx/fastcgi \</span><br><span class="line">--http-uwsgi-temp-path=/var/temp/nginx/uwsgi \</span><br><span class="line">--http-scgi-temp-path=/var/temp/nginx/scgi \</span><br><span class="line">--with-http_stub_status_module \</span><br><span class="line">--with-http_ssl_module</span><br></pre></td></tr></table></figure></li>
+<li>确认运行前 <code>/var/temp/nginx/client</code>目录已经创建<ul>
 <li>创建文件夹: <code>mkdir -p /var/temp/nginx/client</code></li>
 </ul>
 </li>
@@ -489,37 +484,35 @@
 </ul>
 </li>
 </ul>
-<h3 id="配置虚拟主机"><a href="#配置虚拟主机" class="headerlink" title=" 配置虚拟主机"></a><font color="orange"> 配置虚拟主机</font></h3><h4 id="通过端口区分不同虚拟机"><a href="#通过端口区分不同虚拟机" class="headerlink" title=" 通过端口区分不同虚拟机 "></a><font color="orange"> 通过端口区分不同虚拟机 </font></h4><p>在nginx安装目录下有一个<code>conf</code>文件夹里面的<code>nginx.conf</code>就是配置文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">    #                  '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">    #                  '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="配置虚拟主机"><a href="#配置虚拟主机" class="headerlink" title=" 配置虚拟主机"></a><font color=orange> 配置虚拟主机</font></h3><h4 id="通过端口区分不同虚拟机"><a href="#通过端口区分不同虚拟机" class="headerlink" title=" 通过端口区分不同虚拟机 "></a><font color=orange> 通过端口区分不同虚拟机 </font></h4><p>在nginx安装目录下有一个<code>conf</code>文件夹里面的<code>nginx.conf</code>就是配置文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">    #                  &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">    #                  &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <ul>
-<li>通过端口区分就是添加一个server标签, 然后修改不同的端口<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">    #                  '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">    #                  '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       81; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html81;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html81;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<li>通过端口区分就是添加一个server标签, 然后修改不同的端口<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">    #                  &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">    #                  &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       81; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html81;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html81;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="通过域名区分不同虚拟机"><a href="#通过域名区分不同虚拟机" class="headerlink" title=" 通过域名区分不同虚拟机 "></a><font color=orange> 通过域名区分不同虚拟机 </font></h4>通过域名区分就是添加一个server标签, 然后修改不同的hostname<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">    #                  &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">    #                  &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  www.coppco.com;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html-coppco;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html-coppco;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a><font color=orange>反向代理</font></h3>反向代理（Reverse Proxy）方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。</li>
 </ul>
-<h4 id="通过域名区分不同虚拟机"><a href="#通过域名区分不同虚拟机" class="headerlink" title=" 通过域名区分不同虚拟机 "></a><font color="orange"> 通过域名区分不同虚拟机 </font></h4><p>通过域名区分就是添加一个server标签, 然后修改不同的hostname<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">    #                  '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">    #                  '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  www.coppco.com;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #路径  相对于nginx安装目录下的html路径</span><br><span class="line">            root   html-coppco;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html-coppco;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a><font color="orange">反向代理</font></h3><p>反向代理（Reverse Proxy）方式是指以代理服务器来接受internet上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求连接的客户端，此时代理服务器对外就表现为一个反向代理服务器。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">    #                  '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">    #                  '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    #服务器列表, server_xxxx名称可以自己定义, 里面的ip和端口设置为自己的服务器的ip, weight是配置权重的, 权重却高请求越多</span><br><span class="line">    upstream server_xxxx&#123;</span><br><span class="line">    	server 192.168.1.111:8080;</span><br><span class="line">    	server 192.168.1.222:8080 weight=2;</span><br><span class="line">    	#添加ip_hash;可以保证同一个ip进入同一台服务器, 解决session共享问题</span><br><span class="line">    	ip_hash;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #通过代理访问, server_xxxx</span><br><span class="line">            proxy_pass http://server_xxxx;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            proxy_pass http://server_xxxx;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a><font color="orange">负载均衡</font></h3><p>可以根据服务器的实际情况调整服务器权重。权重越高分配的请求越多，权重越低，请求越少。默认是都是1</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">upstream server_xxxx&#123;</span><br><span class="line">    server 192.168.1.111:8080;</span><br><span class="line">    server 192.168.1.222:8080 weight=2;</span><br><span class="line">    #添加ip_hash;可以保证同一个ip进入同一台服务器, 解决session共享问题</span><br><span class="line">    ip_hash;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Center-OS下nginx开机启动"><a href="#Center-OS下nginx开机启动" class="headerlink" title="Center OS下nginx开机启动"></a><font color="orange">Center OS下nginx开机启动</font></h3><h4 id="一、使用yum命令安装的"><a href="#一、使用yum命令安装的" class="headerlink" title="一、使用yum命令安装的"></a><font color="orange">一、使用yum命令安装的</font></h4><p>如果用yum install命令安装的，yum命令会自动创建nginx.service文件，直接用命令</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">    #log_format  main  &#x27;$remote_addr - $remote_user [$time_local] &quot;$request&quot; &#x27;</span><br><span class="line">    #                  &#x27;$status $body_bytes_sent &quot;$http_referer&quot; &#x27;</span><br><span class="line">    #                  &#x27;&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;&#x27;;</span><br><span class="line"></span><br><span class="line">    #access_log  logs/access.log  main;</span><br><span class="line"></span><br><span class="line">    sendfile        on;</span><br><span class="line">    #tcp_nopush     on;</span><br><span class="line"></span><br><span class="line">    #keepalive_timeout  0;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line"></span><br><span class="line">    #gzip  on;</span><br><span class="line">    </span><br><span class="line">    #服务器列表, server_xxxx名称可以自己定义, 里面的ip和端口设置为自己的服务器的ip, weight是配置权重的, 权重却高请求越多</span><br><span class="line">    upstream server_xxxx&#123;</span><br><span class="line">    	server 192.168.1.111:8080;</span><br><span class="line">    	server 192.168.1.222:8080 weight=2;</span><br><span class="line">    	#添加ip_hash;可以保证同一个ip进入同一台服务器, 解决session共享问题</span><br><span class="line">    	ip_hash;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    server &#123;</span><br><span class="line">        #监听的端口</span><br><span class="line">        listen       80; </span><br><span class="line">        #监听的域名</span><br><span class="line">        server_name  localhost;</span><br><span class="line">   </span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line">        #访问路径</span><br><span class="line">        location / &#123;</span><br><span class="line">            #通过代理访问, server_xxxx</span><br><span class="line">            proxy_pass http://server_xxxx;</span><br><span class="line">            #欢迎语</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        #error_page  404              /404.html;</span><br><span class="line">    </span><br><span class="line">        # redirect server error pages to the static page /50x.html</span><br><span class="line">        #错误页面</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            proxy_pass http://server_xxxx;</span><br><span class="line">         &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a><font color=orange>负载均衡</font></h3><p>可以根据服务器的实际情况调整服务器权重。权重越高分配的请求越多，权重越低，请求越少。默认是都是1</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">upstream server_xxxx&#123;</span><br><span class="line">    server 192.168.1.111:8080;</span><br><span class="line">    server 192.168.1.222:8080 weight=2;</span><br><span class="line">    #添加ip_hash;可以保证同一个ip进入同一台服务器, 解决session共享问题</span><br><span class="line">    ip_hash;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="配置SSL"><a href="#配置SSL" class="headerlink" title="配置SSL"></a><font color=orange>配置SSL</font></h3><p>假如nginx安装目录在<code>/usr/local/nginx</code>, 那么我们把ssl文件(.crt和.key)放在<code>/usr/local/nginx/ssl/</code>中, 编辑<code>vi /usr/local/nginx/conf/nginx.conf</code>, 配置如下: 可以同时支持http和https</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen 80 default backlog=2048;</span><br><span class="line">   listen 443 ssl;</span><br><span class="line">   server_name wosign.com;</span><br><span class="line">   root /var/www/html;</span><br><span class="line">  </span><br><span class="line">   ssl_certificate ssl/xxx.crt;</span><br><span class="line">   ssl_certificate_key ssl/xxx.key;</span><br><span class="line">   </span><br><span class="line">   #code</span><br><span class="line">   # ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Center-OS下nginx开机启动"><a href="#Center-OS下nginx开机启动" class="headerlink" title="Center OS下nginx开机启动"></a><font color=orange>Center OS下nginx开机启动</font></h3><h4 id="一、使用yum命令安装的"><a href="#一、使用yum命令安装的" class="headerlink" title="一、使用yum命令安装的"></a><font color=orange>一、使用yum命令安装的</font></h4><p>如果用yum install命令安装的，yum命令会自动创建nginx.service文件，直接用命令</p>
 <blockquote>
 <p>systemcel enable nginx.service</p>
 </blockquote>
-<h4 id="二、源码编译安装的"><a href="#二、源码编译安装的" class="headerlink" title="二、源码编译安装的"></a><font color="orange">二、源码编译安装的</font></h4><p>编译安装的需要在<code>/lib/systemd/system/</code>中手动新建<code>nginx.service</code>文件, 并配置相关参数, 可以参考<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/" target="_blank" rel="noopener">NGINX systemd service file</a></p>
-<h4 id="新建nginx-service文件"><a href="#新建nginx-service文件" class="headerlink" title="新建nginx.service文件"></a><font color="orange">新建nginx.service文件</font></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /lib/systemd/system/nginx.service</span><br></pre></td></tr></table></figure>
-<h4 id="配置相关参数"><a href="#配置相关参数" class="headerlink" title="配置相关参数"></a><font color="orange">配置相关参数</font></h4><p>注意这里的参数路径: 和使用.configuartion参数配置时的路径一致<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network.target remote-fs.target nss-lookup.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/var/run/nginx/nginx.pid</span><br><span class="line">ExecStart=/usr/local/nginx/sbin/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/sbin/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
+<h4 id="二、源码编译安装的"><a href="#二、源码编译安装的" class="headerlink" title="二、源码编译安装的"></a><font color=orange>二、源码编译安装的</font></h4><p>编译安装的需要在<code>/lib/systemd/system/</code>中手动新建<code>nginx.service</code>文件, 并配置相关参数, 可以参考<a target="_blank" rel="noopener" href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">NGINX systemd service file</a></p>
+<h4 id="新建nginx-service文件"><a href="#新建nginx-service文件" class="headerlink" title="新建nginx.service文件"></a><font color=orange>新建nginx.service文件</font></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /lib/systemd/system/nginx.service</span><br></pre></td></tr></table></figure>
+<h4 id="配置相关参数"><a href="#配置相关参数" class="headerlink" title="配置相关参数"></a><font color=orange>配置相关参数</font></h4><p>注意这里的参数路径: 和使用.configuartion参数配置时的路径一致<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network.target remote-fs.target nss-lookup.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/var/run/nginx/nginx.pid</span><br><span class="line">ExecStart=/usr/local/nginx/sbin/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/sbin/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>Description:描述服务<br>After:描述服务类别<br>[Service]服务运行参数的设置<br>Type=forking是后台运行的形式<br>ExecStart为服务的具体运行命令<br>ExecReload为重启命令<br>ExecStop为停止命令<br>PrivateTmp=True表示给服务分配独立的临时空间<br>注意：[Service]的启动、重启、停止命令全部要求使用绝对路径<br>[Install]运行级别下服务安装的相关设置，可设置为多用户，即系统运行级别为3</p>
 </blockquote>
-<h4 id="开机启动相关命令"><a href="#开机启动相关命令" class="headerlink" title="开机启动相关命令"></a><font color="orange">开机启动相关命令</font></h4><blockquote>
+<h4 id="开机启动相关命令"><a href="#开机启动相关命令" class="headerlink" title="开机启动相关命令"></a><font color=orange>开机启动相关命令</font></h4><blockquote>
 <p>设置开机启动: systemctl enable nginx.service<br>启动nginx服务: systemctl start nginx.service　<br>停止开机启动: systemctl disable nginx.service<br>查看服务当前状态: systemctl status nginx.service<br>重新启动服务: systemctl restart nginx.service<br>查看所有已启动的服务: systemctl list-units –type=service</p>
 </blockquote>
-<h3 id="搭建图片服务器"><a href="#搭建图片服务器" class="headerlink" title="搭建图片服务器"></a><font color="orange">搭建图片服务器</font></h3><h4 id="新增location"><a href="#新增location" class="headerlink" title="新增location"></a><font color="orange">新增location</font></h4><p>在 nginx 的配置文件 <code>/安装路径/conf/nginx.conf</code>中添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location /images/ &#123;</span><br><span class="line">	#将/images路径映射到实际路径/home/images</span><br><span class="line">	root /home;</span><br><span class="line">	#开启预览功能</span><br><span class="line">	autoindex on;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="重新启动nginx-访问图片"><a href="#重新启动nginx-访问图片" class="headerlink" title="重新启动nginx, 访问图片"></a><font color="orange">重新启动nginx, 访问图片</font></h4><ul>
-<li><p>重新启动nginx, 新建<code>/home/images</code>文件夹, 并更改<code>/home/images</code>文件夹权限, 阿里云EOS用户还需要注意在控制台开启80端口</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /home/images</span><br><span class="line">chown 777 -R /home/images</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将图片拷贝到服务器<code>/home/images</code>目录中</p>
-</li>
+<h3 id="搭建图片服务器"><a href="#搭建图片服务器" class="headerlink" title="搭建图片服务器"></a><font color=orange>搭建图片服务器</font></h3><h4 id="新增location"><a href="#新增location" class="headerlink" title="新增location"></a><font color=orange>新增location</font></h4><p>在 nginx 的配置文件 <code>/安装路径/conf/nginx.conf</code>中添加</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">location /images/ &#123;</span><br><span class="line">	#将/images路径映射到实际路径/home/images</span><br><span class="line">	root /home;</span><br><span class="line">	#开启预览功能</span><br><span class="line">	autoindex on;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="重新启动nginx-访问图片"><a href="#重新启动nginx-访问图片" class="headerlink" title="重新启动nginx, 访问图片"></a><font color=orange>重新启动nginx, 访问图片</font></h4><ul>
+<li>重新启动nginx, 新建<code>/home/images</code>文件夹, 并更改<code>/home/images</code>文件夹权限, 阿里云EOS用户还需要注意在控制台开启80端口<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /home/images</span><br><span class="line">chown 777 -R /home/images</span><br></pre></td></tr></table></figure></li>
+<li>将图片拷贝到服务器<code>/home/images</code>目录中</li>
 <li>通过<code>服务器ip/images/图片名称</code>访问</li>
 </ul>
 
@@ -539,6 +532,10 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
         		</li>
       		 
@@ -553,10 +550,6 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JDK</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -566,57 +559,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/11/13/Java Web/Java Web学习16---Linux下安装JDK、MySQL、Tomcat和nginx/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -625,7 +567,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/19/Java Web/Java Web学习17---Oracle/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/11/19/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A017---Oracle/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -635,7 +577,7 @@
     </a>
   
   
-    <a href="/2016/11/07/iOS/Swift里面的一些零碎的知识点/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/11/07/iOS/Swift%E9%87%8C%E9%9D%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E9%9B%B6%E7%A2%8E%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Swift里面的一些零碎的知识点</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -663,7 +605,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RPM"><span class="toc-number">1.</span> <span class="toc-text"> RPM </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yum"><span class="toc-number">2.</span> <span class="toc-text"> yum </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux安装JDK"><span class="toc-number">3.</span> <span class="toc-text"> Linux安装JDK </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux安装MySQL"><span class="toc-number">4.</span> <span class="toc-text"> Linux安装MySQL </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux安装Tomcat"><span class="toc-number">5.</span> <span class="toc-text"> Linux安装Tomcat </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#war包"><span class="toc-number">5.1.</span> <span class="toc-text"> war包 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx"><span class="toc-number">6.</span> <span class="toc-text"> nginx </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置虚拟主机"><span class="toc-number">6.1.</span> <span class="toc-text"> 配置虚拟主机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通过端口区分不同虚拟机"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 通过端口区分不同虚拟机 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过域名区分不同虚拟机"><span class="toc-number">6.1.2.</span> <span class="toc-text"> 通过域名区分不同虚拟机 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#反向代理"><span class="toc-number">6.2.</span> <span class="toc-text">反向代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#负载均衡"><span class="toc-number">6.3.</span> <span class="toc-text">负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Center-OS下nginx开机启动"><span class="toc-number">6.4.</span> <span class="toc-text">Center OS下nginx开机启动</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、使用yum命令安装的"><span class="toc-number">6.4.1.</span> <span class="toc-text">一、使用yum命令安装的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、源码编译安装的"><span class="toc-number">6.4.2.</span> <span class="toc-text">二、源码编译安装的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#新建nginx-service文件"><span class="toc-number">6.4.3.</span> <span class="toc-text">新建nginx.service文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置相关参数"><span class="toc-number">6.4.4.</span> <span class="toc-text">配置相关参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#开机启动相关命令"><span class="toc-number">6.4.5.</span> <span class="toc-text">开机启动相关命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搭建图片服务器"><span class="toc-number">6.5.</span> <span class="toc-text">搭建图片服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#新增location"><span class="toc-number">6.5.1.</span> <span class="toc-text">新增location</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重新启动nginx-访问图片"><span class="toc-number">6.5.2.</span> <span class="toc-text">重新启动nginx, 访问图片</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RPM"><span class="toc-number">1.</span> <span class="toc-text"> RPM </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yum"><span class="toc-number">2.</span> <span class="toc-text"> yum </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%AE%89%E8%A3%85JDK"><span class="toc-number">3.</span> <span class="toc-text"> Linux安装JDK </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%AE%89%E8%A3%85MySQL"><span class="toc-number">4.</span> <span class="toc-text"> Linux安装MySQL </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%AE%89%E8%A3%85Tomcat"><span class="toc-number">5.</span> <span class="toc-text"> Linux安装Tomcat </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#war%E5%8C%85"><span class="toc-number">5.1.</span> <span class="toc-text"> war包 </span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx"><span class="toc-number">6.</span> <span class="toc-text"> nginx </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA"><span class="toc-number">6.1.</span> <span class="toc-text"> 配置虚拟主机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E7%AB%AF%E5%8F%A3%E5%8C%BA%E5%88%86%E4%B8%8D%E5%90%8C%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-number">6.1.1.</span> <span class="toc-text"> 通过端口区分不同虚拟机 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E5%9F%9F%E5%90%8D%E5%8C%BA%E5%88%86%E4%B8%8D%E5%90%8C%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-number">6.1.2.</span> <span class="toc-text"> 通过域名区分不同虚拟机 </span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86"><span class="toc-number">6.2.</span> <span class="toc-text">反向代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-number">6.3.</span> <span class="toc-text">负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AESSL"><span class="toc-number">6.4.</span> <span class="toc-text">配置SSL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Center-OS%E4%B8%8Bnginx%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8"><span class="toc-number">6.5.</span> <span class="toc-text">Center OS下nginx开机启动</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BD%BF%E7%94%A8yum%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85%E7%9A%84"><span class="toc-number">6.5.1.</span> <span class="toc-text">一、使用yum命令安装的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E7%9A%84"><span class="toc-number">6.5.2.</span> <span class="toc-text">二、源码编译安装的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%BB%BAnginx-service%E6%96%87%E4%BB%B6"><span class="toc-number">6.5.3.</span> <span class="toc-text">新建nginx.service文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0"><span class="toc-number">6.5.4.</span> <span class="toc-text">配置相关参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-number">6.5.5.</span> <span class="toc-text">开机启动相关命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E5%9B%BE%E7%89%87%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">6.6.</span> <span class="toc-text">搭建图片服务器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E5%A2%9Elocation"><span class="toc-number">6.6.1.</span> <span class="toc-text">新增location</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8nginx-%E8%AE%BF%E9%97%AE%E5%9B%BE%E7%89%87"><span class="toc-number">6.6.2.</span> <span class="toc-text">重新启动nginx, 访问图片</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -692,7 +634,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -709,7 +651,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -795,7 +737,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -811,11 +797,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -827,6 +877,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -835,7 +893,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -843,7 +933,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -851,35 +981,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -887,47 +989,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -947,6 +1009,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -955,191 +1085,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1147,7 +1097,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1190,7 +1140,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java语言基础16---异常、File类、I/O流 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="异常异常就是Java程序在运行过程中出现的错误. main收到异常时, ①自己处理, 如果自己没有处理方式, 那么交给JVM处理, JVM默认处理方式是将该异常的名称、信息等打印在控制台,并且终止程序运行.Throwable 类是 Java 语言中所有错误或异常的超类  Throwable Error 数据库异常, 服务器宕机等   Exception">
-<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java语言基础16---异常、File类、I&#x2F;O流">
-<meta property="og:url" content="http://yoursite.com/2016/06/06/Java基础/Java语言基础16---异常、File类、IO流/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/06/06/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8016---%E5%BC%82%E5%B8%B8%E3%80%81File%E7%B1%BB%E3%80%81IO%E6%B5%81/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="异常异常就是Java程序在运行过程中出现的错误. main收到异常时, ①自己处理, 如果自己没有处理方式, 那么交给JVM处理, JVM默认处理方式是将该异常的名称、信息等打印在控制台,并且终止程序运行.Throwable 类是 Java 语言中所有错误或异常的超类  Throwable Error 数据库异常, 服务器宕机等   Exception">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.655Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-06-06T06:57:52.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java语言基础16---异常、File类、I&#x2F;O流">
-<meta name="twitter:description" content="异常异常就是Java程序在运行过程中出现的错误. main收到异常时, ①自己处理, 如果自己没有处理方式, 那么交给JVM处理, JVM默认处理方式是将该异常的名称、信息等打印在控制台,并且终止程序运行.Throwable 类是 Java 语言中所有错误或异常的超类  Throwable Error 数据库异常, 服务器宕机等   Exception">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +37,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +48,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +62,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +104,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +136,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +171,7 @@
   
 
         
-        <a href="/2016/06/06/Java基础/Java语言基础16---异常、File类、IO流/" class="archive-article-date">
+        <a href="/2016/06/06/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8016---%E5%BC%82%E5%B8%B8%E3%80%81File%E7%B1%BB%E3%80%81IO%E6%B5%81/" class="archive-article-date">
   	<time datetime="2016-06-06T06:57:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-06</time>
 </a>
         
@@ -177,14 +179,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a><font color="orange">异常</font></h2><p>异常就是Java程序在运行过程中出现的错误. main收到异常时, ①自己处理, 如果自己没有处理方式, 那么交给JVM处理, JVM默认处理方式是将该异常的名称、信息等打印在控制台,并且终止程序运行.Throwable 类是 Java 语言中所有错误或异常的超类</p>
+        <h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a><font color=orange>异常</font></h2><p>异常就是Java程序在运行过程中出现的错误. main收到异常时, ①自己处理, 如果自己没有处理方式, 那么交给JVM处理, JVM默认处理方式是将该异常的名称、信息等打印在控制台,并且终止程序运行.Throwable 类是 Java 语言中所有错误或异常的超类</p>
 <ul>
-<li><font color="red">Throwable</font><ul>
+<li><font color=red>Throwable</font><ul>
 <li>Error<ul>
 <li>数据库异常, 服务器宕机等</li>
 </ul>
 </li>
-<li>Exception<a id="more"></a>
+<li>Exception<span id="more"></span>
 </li>
 </ul>
 </li>
@@ -228,10 +230,10 @@
 </ul>
 </li>
 </ul>
-<pre><code>public static void readFile(String fileName) throws FileNotFoundException, IOException {
+<pre><code>public static void readFile(String fileName) throws FileNotFoundException, IOException &#123;
     FileInputStream fileIn = new FileInputStream(fileName);
     fileIn.close();
-}
+&#125;
 </code></pre><h3 id="编译器异常和运行期异常"><a href="#编译器异常和运行期异常" class="headerlink" title="编译器异常和运行期异常"></a>编译器异常和运行期异常</h3><p>Java中所有异常被分为两大类</p>
 <ul>
 <li>运行期异常<ul>
@@ -245,7 +247,7 @@
 </li>
 </ul>
 <h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p>自定义类继承于Exception或者RuntimeException, 通过message来区分什么问题.</p>
-<h2 id="File类"><a href="#File类" class="headerlink" title="File类"></a><font color="orange">File类</font></h2><p>文件和目录路径名的抽象表示形式。路径有相对路径和绝对路径.</p>
+<h2 id="File类"><a href="#File类" class="headerlink" title="File类"></a><font color=orange>File类</font></h2><p>文件和目录路径名的抽象表示形式。路径有相对路径和绝对路径.</p>
 <ul>
 <li>构造方法<ul>
 <li>File(File parent, String child) 根据file对象和 child路径名字符串创建一个新 File 实例。 </li>
@@ -316,20 +318,20 @@
 </li>
 </ul>
 <pre><code>//递归获取目录下面的文件
-public static void findFile(File file) throws IOException {
-    for (File subFile : file.listFiles()) {
+public static void findFile(File file) throws IOException &#123;
+    for (File subFile : file.listFiles()) &#123;
         System.out.println(subFile);
-        if (subFile.isFile()) {
+        if (subFile.isFile()) &#123;
             System.out.println(subFile);
             BufferedWriter write = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(&quot;fileList.txt&quot;, true), &quot;utf-8&quot;));
             write.write(subFile.getAbsolutePath());
             write.newLine();
             write.close();
-        } else if (subFile.isDirectory() &amp;&amp; !subFile.isHidden()) {
+        &#125; else if (subFile.isDirectory() &amp;&amp; !subFile.isHidden()) &#123;
             findFile(subFile);
-        }
-    }
-}
+        &#125;
+    &#125;
+&#125;
 </code></pre><ul>
 <li>文件过滤器<ul>
 <li>String[] list(FilenameFilter filter) 返回一个字符串数组，这些字符串指定此抽象路径名表示的目录中满足指定过滤器的文件和目录。 </li>
@@ -341,7 +343,7 @@ public static void findFile(File file) throws IOException {
 </ul>
 </li>
 </ul>
-<h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a><font color="orange">IO流</font></h2><p>Java中对数据的操作是通过流的方式, Java用于操作流的类都在IO包里面.</p>
+<h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a><font color=orange>IO流</font></h2><p>Java中对数据的操作是通过流的方式, Java用于操作流的类都在IO包里面.</p>
 <ul>
 <li>按照流方向<ul>
 <li>输入流</li>
@@ -368,7 +370,7 @@ public static void findFile(File file) throws IOException {
 </ul>
 </li>
 </ul>
-<h2 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a><font color="orange">字节流</font></h2><p>read()返回值和write的写入值都是int类型, Java在读写的时候都会处理.</p>
+<h2 id="字节流"><a href="#字节流" class="headerlink" title="字节流"></a><font color=orange>字节流</font></h2><p>read()返回值和write的写入值都是int类型, Java在读写的时候都会处理.</p>
 <ul>
 <li>FileInputStream, 字节输入流<ul>
 <li>int available() 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取（或跳过）的估计剩余字节数。     </li>
@@ -380,9 +382,9 @@ public static void findFile(File file) throws IOException {
 </ul>
 <pre><code>FileInputStream fis = new FileInputStream(&quot;xx.txt&quot;);
 int x;
-while ((x = fis.read()) != -1) {
+while ((x = fis.read()) != -1) &#123;
     System.out.println(x);
-}
+&#125;
 fis.close();
 </code></pre><ul>
 <li>FileOutputStream, 字节输出流<ul>
@@ -423,9 +425,9 @@ FileOutputStream output = new FileOutputStream(&quot;copy.mp3&quot;);
 /*
 //一个字节一个字节的读写, 效率慢
 int d;
-while ((d = input.read()) != -1) {
+while ((d = input.read()) != -1) &#123;
     output.write(d);
-}
+&#125;
 */
 /*
 //整体读写, 但是不推荐, 因为文件过大可能会内存溢出
@@ -436,17 +438,17 @@ output.write(read);
 //可以使用小数组, 如1024*8 来拷贝, 推荐
 byte[] arr = new byte[1024*8];
 int len;
-while ((len = input.read(arr)) != -1) {
+while ((len = input.read(arr)) != -1) &#123;
     output.write(arr, 0, len);
-}
+&#125;
 /*
 //使用BufferedInputStream和BufferedOutputStream来拷贝, 推荐
 BufferedInputStream bis = new BufferedInputStream(input);
 BufferedOutputStream bos = new BufferedOutputStream(output);
 int b;
-while ((b = bis.read()) != -1) {
+while ((b = bis.read()) != -1) &#123;
     bos.write(b);
-}
+&#125;
 //只关闭封装后的对象即可
 bis.close();
 bos.close();
@@ -454,53 +456,53 @@ bos.close();
 input.close();
 output.close();
 System.out.println(&quot;拷贝完成了&quot;);
-</code></pre><h3 id="BufferedInputStream和BufferedOutputStream"><a href="#BufferedInputStream和BufferedOutputStream" class="headerlink" title="BufferedInputStream和BufferedOutputStream"></a><font color="orange">BufferedInputStream和BufferedOutputStream</font></h3><p>这两个类里面都有一个缓冲区, 大小为8*1024, BufferedInputStream读的时候从文件一次读取8*1024个大小字节的数据, 然后写到BufferedOutputStream的缓冲区, 缓冲区写满才一次写到文件里面.这样减少了硬盘读写操作, 而大部分在内存操作, 加快了读写速度.</p>
+</code></pre><h3 id="BufferedInputStream和BufferedOutputStream"><a href="#BufferedInputStream和BufferedOutputStream" class="headerlink" title="BufferedInputStream和BufferedOutputStream"></a><font color=orange>BufferedInputStream和BufferedOutputStream</font></h3><p>这两个类里面都有一个缓冲区, 大小为8*1024, BufferedInputStream读的时候从文件一次读取8*1024个大小字节的数据, 然后写到BufferedOutputStream的缓冲区, 缓冲区写满才一次写到文件里面.这样减少了硬盘读写操作, 而大部分在内存操作, 加快了读写速度.</p>
 <ul>
 <li>完整读写代码</li>
 </ul>
 <pre><code>//JDK1.6的写法
-public static void copy(String source, String dest) throws IOException {
+public static void copy(String source, String dest) throws IOException &#123;
     FileInputStream in = null;
     FileOutputStream out = null;
-    try {
+    try &#123;
         in = new FileInputStream(source);
         out = new FileOutputStream(dest);
         byte[] arr = new byte[8*1024];
         int len;
-        while ((len = in.read(arr)) != -1) {
+        while ((len = in.read(arr)) != -1) &#123;
             out.write(arr,0,len);
-        }
+        &#125;
         System.out.println(&quot;复制完成&quot;);
-    } finally {
-        try {
-            if(in != null) {
+    &#125; finally &#123;
+        try &#123;
+            if(in != null) &#123;
                 in.close();                
-            }                
-        } finally {
-            if(out != null){
+            &#125;                
+        &#125; finally &#123;
+            if(out != null)&#123;
                 out.close();                
-            }                
-        }
-    }
-}
+            &#125;                
+        &#125;
+    &#125;
+&#125;
 
 //JDK1.7新写法, 只有实现了AutoCloseable接口的可以这样写, 在使用后会自动close()方法来关闭流.
-public static void newCopy(String source, String dest) throws IOException {
+public static void newCopy(String source, String dest) throws IOException &#123;
     try (
             //这里面只能写自动关闭的类, 实现了接口: AutoCloseable
             FileInputStream in = new FileInputStream(source);
             FileOutputStream out = new FileOutputStream(dest);
-        ){
+        )&#123;
             byte[] arr = new byte[8 * 1024];
             int len;
-            while ((len = in.read(arr)) != -1) {
+            while ((len = in.read(arr)) != -1) &#123;
                 out.write(arr,0,len);
-            }
+            &#125;
             System.out.println(&quot;新复制完成&quot;);
-    }
-}
+    &#125;
+&#125;
 </code></pre><h3 id="数据的加密"><a href="#数据的加密" class="headerlink" title="数据的加密"></a>数据的加密</h3><p>在读写的时候, 改变byte字节. 推荐使用异或同一个int数.</p>
-<h2 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a><font color="orange">字符流</font></h2><h3 id="字节流和字符流"><a href="#字节流和字符流" class="headerlink" title="字节流和字符流"></a>字节流和字符流</h3><ul>
+<h2 id="字符流"><a href="#字符流" class="headerlink" title="字符流"></a><font color=orange>字符流</font></h2><h3 id="字节流和字符流"><a href="#字节流和字符流" class="headerlink" title="字节流和字符流"></a>字节流和字符流</h3><ul>
 <li>当拷贝文本文件的时候不推荐使用字符流, 因为中间有一个字节-(读)-字符-(写)-字节转换过程.</li>
 <li>单单操作只读或者只写的文本文件可以使用字符流.</li>
 <li>除了文本文件, 其他文件使用字节流</li>
@@ -523,9 +525,9 @@ public static void newCopy(String source, String dest) throws IOException {
 <pre><code>FileReader reader = new FileReader(&quot;xx.txt&quot;);
 FileWriter write = new FileWriter(&quot;copy.txt&quot;);
 int a;
-while ((a = reader.read()) != -1) {
+while ((a = reader.read()) != -1) &#123;
     write.write(a);
-}
+&#125;
 reader.close();
 write.close();
 </code></pre><h3 id="BufferedReader和BufferedWriter"><a href="#BufferedReader和BufferedWriter" class="headerlink" title="BufferedReader和BufferedWriter"></a>BufferedReader和BufferedWriter</h3><p>和BufferedInputStream和BufferedOutputStream类似.除了常用方法, 也有独有方法.</p>
@@ -546,10 +548,10 @@ write.close();
 BufferedWriter writer = new BufferedWriter(new FileWriter(&quot;copy.txt&quot;));
 
 String st;
-while ((st = reader.readLine()) != null) {
+while ((st = reader.readLine()) != null) &#123;
     writer.write(st);
     writer.newLine();
-}
+&#125;
 
 reader.close();
 writer.close();
@@ -560,28 +562,28 @@ InputStreamReader reader = new InputStreamReader(new FileInputStream(&quot;utf-8
 OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(&quot;gbk.txt&quot;), &quot;gbk&quot;);
 
 int d;
-while ((d = reader.read()) != -1) {
+while ((d = reader.read()) != -1) &#123;
     writer.write(d);
-}
+&#125;
 
 reader.close();
 writer.close();
 
 //获取目录下面的文件列表
-public static void findFile(File file) throws IOException {
-    for (File subFile : file.listFiles()) {
+public static void findFile(File file) throws IOException &#123;
+    for (File subFile : file.listFiles()) &#123;
         System.out.println(subFile);
-        if (subFile.isFile()) {
+        if (subFile.isFile()) &#123;
             System.out.println(subFile);
             BufferedWriter write = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(&quot;fileList.txt&quot;, true), &quot;utf-8&quot;));
             write.write(subFile.getAbsolutePath());
             write.newLine();
             write.close();
-        } else if (subFile.isDirectory() &amp;&amp; !subFile.isHidden()) {
+        &#125; else if (subFile.isDirectory() &amp;&amp; !subFile.isHidden()) &#123;
             findFile(subFile);
-        }
-    }
-}
+        &#125;
+    &#125;
+&#125;
 </code></pre><h3 id="序列流"><a href="#序列流" class="headerlink" title="序列流"></a>序列流</h3><p>序列流可以把多个字节输入流整合成一个, 从序列流中读取数据时, 将从被整合的第一个流开始读, 读完一个之后继续读第二个, 以此类推.</p>
 <ul>
 <li><p>整合两个</p>
@@ -591,7 +593,7 @@ public static void findFile(File file) throws IOException {
 </li>
 <li><p>整合多个使用集合</p>
 <blockquote>
-<p>   FileInputStream fi1 = new FileInputStream(“1.txt”);<br>  FileInputStream fi2 = new FileInputStream(“2.txt”);<br>  FileInputStream fi3 = new FileInputStream(“3.txt”);<br>  Vector<fileinputstream> v = new Vector&lt;&gt;();<br>  v.add(fi1);<br>  v.add(fi2);<br>  v.add(fi3);<br>  SequenceInputStream s = new SequenceInputStream(v.elements());</fileinputstream></p>
+<p>   FileInputStream fi1 = new FileInputStream(“1.txt”);<br>  FileInputStream fi2 = new FileInputStream(“2.txt”);<br>  FileInputStream fi3 = new FileInputStream(“3.txt”);<br>  Vector<FileInputStream> v = new Vector&lt;&gt;();<br>  v.add(fi1);<br>  v.add(fi2);<br>  v.add(fi3);<br>  SequenceInputStream s = new SequenceInputStream(v.elements());</p>
 </blockquote>
 </li>
 </ul>
@@ -606,9 +608,9 @@ public static void findFile(File file) throws IOException {
 byte[] arr = new byte[5];
 int d;
 ByteArrayOutputStream out = new ByteArrayOutputStream();
-while ((d = in.read(arr)) != -1) {
+while ((d = in.read(arr)) != -1) &#123;
     out.write(arr, 0, d);
-}
+&#125;
 System.out.println(out.toString());
 in.close();
 </code></pre><h3 id="对象操作流"><a href="#对象操作流" class="headerlink" title="对象操作流"></a>对象操作流</h3><p>ObjectOutputStream和ObjectInputStream可以把对象序列化和反序列化.Object类需要实现Serializable接口.<br>读的时候可能遇到问题, 不知道有几个, 那么可以通过写的时候放在集合里面, 把集合写入, 这样读的时候也是读取集合.</p>
@@ -622,10 +624,10 @@ in.close();
     //每readObject()一次就会得到一个对象.
     Object o = in.readObject();
     in.close();
-    if (o instanceof Person) {
+    if (o instanceof Person) &#123;
         Person newP = (Person)o;
         System.out.println(newP.getName());
-    }
+    &#125;
 </code></pre><h3 id="标准输入流和标准输出流"><a href="#标准输入流和标准输出流" class="headerlink" title="标准输入流和标准输出流"></a>标准输入流和标准输出流</h3><p>System.in是InputStream, 标准输入流, 默认可以从键盘输入读取字节数据.<br>System.out是PrintStream, 标准输出流, 默认可以向控制台输出字符和字节数据</p>
 <ul>
 <li>System.setIn(InputStream) 修改输入流</li>
@@ -681,57 +683,6 @@ in.close();
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/06/06/Java基础/Java语言基础16---异常、File类、IO流/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -740,7 +691,7 @@ in.close();
   
 <nav id="article-nav">
   
-    <a href="/2016/06/10/Java基础/Java语言基础17---多线程、Thread、单例/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/06/10/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8017---%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81Thread%E3%80%81%E5%8D%95%E4%BE%8B/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -750,7 +701,7 @@ in.close();
     </a>
   
   
-    <a href="/2016/06/02/Java基础/Java语言基础15---map、Collections/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/06/02/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8015---map%E3%80%81Collections/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java语言基础15---map、Collections工具类</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -794,7 +745,7 @@ in.close();
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -811,7 +762,7 @@ in.close();
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -897,7 +848,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -913,11 +908,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -929,6 +988,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -937,7 +1004,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -945,7 +1044,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -953,35 +1092,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -989,47 +1100,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1049,6 +1120,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -1057,191 +1196,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1249,7 +1208,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1292,7 +1251,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

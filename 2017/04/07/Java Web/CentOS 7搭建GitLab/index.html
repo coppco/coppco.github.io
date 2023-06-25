@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>CentOS 7搭建GitLab | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;CentOS 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。CentOS是开源的, 完全免费的, 最新版本是CentOS 7。CentOS是Community Enterprise Operating System的缩写。 &amp;emsp;&amp;emsp;GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础">
-<meta name="keywords" content="Java,Linux,资料整理,CentOS,GitLab,git,持续集成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS 7搭建GitLab">
-<meta property="og:url" content="http://yoursite.com/2017/04/07/Java Web/CentOS 7搭建GitLab/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/07/Java%20Web/CentOS%207%E6%90%AD%E5%BB%BAGitLab/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;CentOS 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。CentOS是开源的, 完全免费的, 最新版本是CentOS 7。CentOS是Community Enterprise Operating System的缩写。 &amp;emsp;&amp;emsp;GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/java/centos_gitlab_setting.png">
-<meta property="og:image" content="http://47.96.147.179/images/java/centos_gitlab_disableSignUp.png">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.632Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/java/centos_gitlab_setting.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/java/centos_gitlab_disableSignUp.png">
+<meta property="article:published_time" content="2017-04-07T09:06:02.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:46:47.145Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="CentOS">
+<meta property="article:tag" content="GitLab">
+<meta property="article:tag" content="git">
+<meta property="article:tag" content="资料整理">
+<meta property="article:tag" content="持续集成">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS 7搭建GitLab">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;CentOS 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。CentOS是开源的, 完全免费的, 最新版本是CentOS 7。CentOS是Community Enterprise Operating System的缩写。 &amp;emsp;&amp;emsp;GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础">
-<meta name="twitter:image" content="http://47.96.147.179/images/java/centos_gitlab_setting.png">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/java/centos_gitlab_setting.png">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -40,8 +46,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -51,13 +57,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -67,9 +71,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -107,15 +113,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -139,13 +145,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -172,7 +180,7 @@
   
 
         
-        <a href="/2017/04/07/Java Web/CentOS 7搭建GitLab/" class="archive-article-date">
+        <a href="/2017/04/07/Java%20Web/CentOS%207%E6%90%AD%E5%BB%BAGitLab/" class="archive-article-date">
   	<time datetime="2017-04-07T09:06:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-07</time>
 </a>
         
@@ -182,17 +190,17 @@
       
         <p>&emsp;&emsp;CentOS 是一个基于Red Hat Linux 提供的可自由使用源代码的企业级Linux发行版本。CentOS是开源的, 完全免费的, 最新版本是CentOS 7。CentOS是Community Enterprise Operating System的缩写。</p>
 <p>&emsp;&emsp;GitLab 是一个用于仓库管理系统的开源项目，使用Git作为代码管理工具，并在此基础上搭建起来的web服务。</p>
-<a id="more"></a>
-<h2 id="GitLab"><a href="#GitLab" class="headerlink" title="GitLab"></a><font color="orange">GitLab</font></h2><p>&emsp;&emsp;与SVN相比, GitLab同样提供完美的用户权限管理, 与Git相比, 除了涵盖Git所有功能, 同时又提供方便的后台管理, 非常适合企业使用.和Github相比, 因为有墙的关系国内访问速度很慢, github的公开项目免费，私有项目收费,最低<code>$7/month</code>可以拥有5个私有项目。</p>
+<span id="more"></span>
+<h2 id="GitLab"><a href="#GitLab" class="headerlink" title="GitLab"></a><font color=orange>GitLab</font></h2><p>&emsp;&emsp;与SVN相比, GitLab同样提供完美的用户权限管理, 与Git相比, 除了涵盖Git所有功能, 同时又提供方便的后台管理, 非常适合企业使用.和Github相比, 因为有墙的关系国内访问速度很慢, github的公开项目免费，私有项目收费,最低<code>$7/month</code>可以拥有5个私有项目。</p>
 <ul>
 <li>国内提供代码托管服务的网站<ul>
-<li><a href="https://crp.aliyun.com" target="_blank" rel="noopener">阿里云持续交付平台</a></li>
-<li><a href="https://git.oschina.net" target="_blank" rel="noopener">码云</a></li>
+<li><a target="_blank" rel="noopener" href="https://crp.aliyun.com">阿里云持续交付平台</a></li>
+<li><a target="_blank" rel="noopener" href="https://git.oschina.net">码云</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="GitLab的安装"><a href="#GitLab的安装" class="headerlink" title="GitLab的安装"></a><font color="orange">GitLab的安装</font></h2><ul>
-<li>支持的<a href="https://about.gitlab.com/installation/" target="_blank" rel="noopener">Linux系统</a><ul>
+<h2 id="GitLab的安装"><a href="#GitLab的安装" class="headerlink" title="GitLab的安装"></a><font color=orange>GitLab的安装</font></h2><ul>
+<li>支持的<a target="_blank" rel="noopener" href="https://about.gitlab.com/installation/">Linux系统</a><ul>
 <li>Omnibus package installation (recommended)(综合包安装(推荐))<ul>
 <li>Ubuntu</li>
 <li>Debian</li>
@@ -210,17 +218,11 @@
 </ul>
 </li>
 </ul>
-<h2 id="CentOS-7安装GitLab"><a href="#CentOS-7安装GitLab" class="headerlink" title="CentOS 7安装GitLab"></a><font color="orange">CentOS 7安装GitLab</font></h2><ul>
-<li><p>1、系统防火墙中打开HTTP、SSH访问和邮件系统(如果不使用postfix, 可以不安装postfix)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#安装ssh</span><br><span class="line">sudo yum install curl openssh-server openssh-clients -y</span><br><span class="line">#ssh开机启动</span><br><span class="line">sudo systemctl enable sshd </span><br><span class="line">#开启ssh</span><br><span class="line">sudo systemctl start sshd </span><br><span class="line">#安装policycoreutils-python(10.x以后版本需要)</span><br><span class="line">sudo yum install policycoreutils policycoreutils-python -y</span><br><span class="line">#安装邮件系统</span><br><span class="line">sudo yum install postfix -y</span><br><span class="line">#开机启动 </span><br><span class="line">sudo systemctl enable postfix </span><br><span class="line">#开启邮件系统</span><br><span class="line">sudo systemctl start postfix </span><br><span class="line">#开启http访问</span><br><span class="line">sudo firewall-cmd --permanent --add-service=http</span><br><span class="line">#重新加载防火墙 </span><br><span class="line">sudo systemctl reload firewalld</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2、添加GitLab软件包服务器并安装软件包</p>
-<ul>
-<li><p>方式1: 由于墙的问题, 下载速度可能很慢, 推荐第二种方式</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash</span><br><span class="line"> </span><br><span class="line">sudo yum -y install gitlab-ce</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>方式2: 使用清华大学开源软件镜像站(默认安装最新版), 新建<code>vi /etc/yum.repos.d/gitlab-ce.repo</code>,内容如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[gitlab-ce] </span><br><span class="line">name=gitlab-ce </span><br><span class="line">baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7 </span><br><span class="line">repo_gpgcheck=0 </span><br><span class="line">gpgcheck=0 </span><br><span class="line">enabled=1 </span><br><span class="line">gpgkey=https://packages.gitlab.com/gpg.key</span><br></pre></td></tr></table></figure>
+<h2 id="CentOS-7安装GitLab"><a href="#CentOS-7安装GitLab" class="headerlink" title="CentOS 7安装GitLab"></a><font color=orange>CentOS 7安装GitLab</font></h2><ul>
+<li>1、系统防火墙中打开HTTP、SSH访问和邮件系统(如果不使用postfix, 可以不安装postfix)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#安装ssh</span><br><span class="line">sudo yum install curl openssh-server openssh-clients -y</span><br><span class="line">#ssh开机启动</span><br><span class="line">sudo systemctl enable sshd </span><br><span class="line">#开启ssh</span><br><span class="line">sudo systemctl start sshd </span><br><span class="line">#安装policycoreutils-python(10.x以后版本需要)</span><br><span class="line">sudo yum install policycoreutils policycoreutils-python -y</span><br><span class="line">#安装邮件系统</span><br><span class="line">sudo yum install postfix -y</span><br><span class="line">#开机启动 </span><br><span class="line">sudo systemctl enable postfix </span><br><span class="line">#开启邮件系统</span><br><span class="line">sudo systemctl start postfix </span><br><span class="line">#开启http访问</span><br><span class="line">sudo firewall-cmd --permanent --add-service=http</span><br><span class="line">#重新加载防火墙 </span><br><span class="line">sudo systemctl reload firewalld</span><br></pre></td></tr></table></figure></li>
+<li>2、添加GitLab软件包服务器并安装软件包<ul>
+<li>方式1: 由于墙的问题, 下载速度可能很慢, 推荐第二种方式<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash</span><br><span class="line"> </span><br><span class="line">sudo yum -y install gitlab-ce</span><br></pre></td></tr></table></figure></li>
+<li>方式2: 使用清华大学开源软件镜像站(默认安装最新版), 新建<code>vi /etc/yum.repos.d/gitlab-ce.repo</code>,内容如下:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[gitlab-ce] </span><br><span class="line">name=gitlab-ce </span><br><span class="line">baseurl=http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7 </span><br><span class="line">repo_gpgcheck=0 </span><br><span class="line">gpgcheck=0 </span><br><span class="line">enabled=1 </span><br><span class="line">gpgkey=https://packages.gitlab.com/gpg.key</span><br></pre></td></tr></table></figure>
 <ul>
 <li>然后运行<ul>
 <li><code>sudo yum makecache</code></li>
@@ -233,47 +235,37 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-9.3.0-ce.0.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">rpm -ivh gitlab-ce-9.3.0-ce.0.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-9.3.0-ce.0.el7.x86_64.rpm</span><br><span class="line"></span><br><span class="line">rpm -ivh gitlab-ce-9.3.0-ce.0.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
 <ul>
 <li>4、读取配置文件并安装<ul>
 <li>4.1、<code>sudo gitlab-ctl reconfigure</code></li>
-<li>4.2、在我使用CentOS 7.2实际安装时会出现<font color="red"><code>Error executing action run on resource execute[semodule -i /opt/gitlab/embedded/selinux/rhel/7/gitlab-7.2.0-ssh-keygen.pp]</code></font>的错误<ul>
+<li>4.2、在我使用CentOS 7.2实际安装时会出现<font color=red><code>Error executing action run on resource execute[semodule -i /opt/gitlab/embedded/selinux/rhel/7/gitlab-7.2.0-ssh-keygen.pp]</code></font>的错误<ul>
 <li>4.2.1、解决方法: 运行: <code>yum install libsemanage-static libsemanage-devel</code></li>
 <li>4.2.2、再次运行: <code>sudo gitlab-ctl reconfigure</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>5、其他配置, GitLab默认会有一个配置包括host、端口、默认git存放路径等</p>
-<ul>
+<li>5、其他配置, GitLab默认会有一个配置包括host、端口、默认git存放路径等<ul>
 <li>GitLab的配置都是在<code>/etc/gitlab/gitlab.rb</code>中进行配置</li>
-<li><p>5.1、配置访问host和端口</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">external_url &apos;192.168.1.188:8888&apos;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>5.2、修改unicorn端口, 默认使用<code>80</code>和<code>8080</code>, 如果被占用可以修改, 也不能修改为9090, 该端口是普罗米修斯监控的默认端口.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">unicorn[&apos;listen&apos;] = &apos;127.0.0.1&apos;</span><br><span class="line">unicorn[&apos;port&apos;] = 18080</span><br><span class="line">#和上面的端口一样</span><br><span class="line">gitlab_workhorse[&apos;auth_backend&apos;] = &quot;http://localhost: 18080&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>5.3、修改默认仓库位置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#简单的设置</span><br><span class="line">git_data_dir &quot;/data/git&quot;</span><br><span class="line">#复杂的设置</span><br><span class="line">git_data_dirs(&#123;</span><br><span class="line">    &quot;default&quot; =&gt; &#123;</span><br><span class="line">        &quot;path&quot; =&gt; &quot;/data/git&quot;,</span><br><span class="line">        &quot;failure_count_threshold&quot; =&gt; 10,</span><br><span class="line">        &quot;failure_wait_time&quot; =&gt; 30,</span><br><span class="line">        &quot;failure_reset_time&quot; =&gt; 1800,</span><br><span class="line">        &quot;storage_timeout&quot; =&gt; 5</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>5.4、配置邮箱提醒, <code>vi /etc/gitlab/gitlab.rb</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#阿里云邮箱, 具体的后缀名根据各个申请可能不一样</span><br><span class="line">gitlab_rails[&apos;smtp_enable&apos;] = true</span><br><span class="line">gitlab_rails[&apos;smtp_address&apos;] = &quot;smtp.mxhichina.com&quot;</span><br><span class="line">gitlab_rails[&apos;smtp_port&apos;] = 25</span><br><span class="line">gitlab_rails[&apos;smtp_user_name&apos;] = &quot;gitlab@ilanni.com&quot;</span><br><span class="line">gitlab_rails[&apos;smtp_password&apos;] = &quot;ilanni6543&quot;</span><br><span class="line">gitlab_rails[&apos;smtp_domain&apos;] = &quot;ilanni.com&quot;</span><br><span class="line">gitlab_rails[&apos;smtp_authentication&apos;] = &quot;login&quot;</span><br><span class="line">gitlab_rails[&apos;smtp_enable_starttls_auto&apos;] = true</span><br><span class="line">gitlab_rails[&apos;smtp_tls&apos;] = false</span><br><span class="line">gitlab_rails[&apos;gitlab_email_from&apos;] = &quot;gitlab@ilanni.com&quot;</span><br><span class="line"></span><br><span class="line">#163邮箱设置, 对于设置了安全码的, 把安全码放在密码的位置</span><br><span class="line">gitlab_rails[&apos;smtp_enable&apos;] = true </span><br><span class="line">gitlab_rails[&apos;smtp_address&apos;] = &quot;smtp.163.com&quot; </span><br><span class="line">gitlab_rails[&apos;smtp_port&apos;] = 25 </span><br><span class="line">gitlab_rails[&apos;smtp_user_name&apos;] = &quot;xxx@163.com&quot; </span><br><span class="line">gitlab_rails[&apos;smtp_password&apos;] = &quot;xxx&quot; </span><br><span class="line">gitlab_rails[&apos;smtp_domain&apos;] = &quot;163.com&quot; </span><br><span class="line">gitlab_rails[&apos;smtp_authentication&apos;] = :login </span><br><span class="line">gitlab_rails[&apos;smtp_enable_starttls_auto&apos;] = true</span><br><span class="line">gitlab_rails[&apos;smtp_tls&apos;] = false</span><br><span class="line">gitlab_rails[&apos;gitlab_email_from&apos;] = &quot;xxx@163.com&quot;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>5.5、设置不能注册(需要管理员账户登录)</p>
-<ul>
+<li>5.1、配置访问host和端口<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">external_url &#x27;192.168.1.188:8888&#x27;</span><br></pre></td></tr></table></figure></li>
+<li>5.2、修改unicorn端口, 默认使用<code>80</code>和<code>8080</code>, 如果被占用可以修改, 也不能修改为9090, 该端口是普罗米修斯监控的默认端口.<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">unicorn[&#x27;listen&#x27;] = &#x27;127.0.0.1&#x27;</span><br><span class="line">unicorn[&#x27;port&#x27;] = 18080</span><br><span class="line">#和上面的端口一样</span><br><span class="line">gitlab_workhorse[&#x27;auth_backend&#x27;] = &quot;http://localhost: 18080&quot;</span><br></pre></td></tr></table></figure></li>
+<li>5.3、修改默认仓库位置<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#简单的设置</span><br><span class="line">git_data_dir &quot;/data/git&quot;</span><br><span class="line">#复杂的设置</span><br><span class="line">git_data_dirs(&#123;</span><br><span class="line">    &quot;default&quot; =&gt; &#123;</span><br><span class="line">        &quot;path&quot; =&gt; &quot;/data/git&quot;,</span><br><span class="line">        &quot;failure_count_threshold&quot; =&gt; 10,</span><br><span class="line">        &quot;failure_wait_time&quot; =&gt; 30,</span><br><span class="line">        &quot;failure_reset_time&quot; =&gt; 1800,</span><br><span class="line">        &quot;storage_timeout&quot; =&gt; 5</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+<li>5.4、配置邮箱提醒, <code>vi /etc/gitlab/gitlab.rb</code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#阿里云邮箱, 具体的后缀名根据各个申请可能不一样</span><br><span class="line">gitlab_rails[&#x27;smtp_enable&#x27;] = true</span><br><span class="line">gitlab_rails[&#x27;smtp_address&#x27;] = &quot;smtp.mxhichina.com&quot;</span><br><span class="line">gitlab_rails[&#x27;smtp_port&#x27;] = 25</span><br><span class="line">gitlab_rails[&#x27;smtp_user_name&#x27;] = &quot;gitlab@ilanni.com&quot;</span><br><span class="line">gitlab_rails[&#x27;smtp_password&#x27;] = &quot;ilanni6543&quot;</span><br><span class="line">gitlab_rails[&#x27;smtp_domain&#x27;] = &quot;ilanni.com&quot;</span><br><span class="line">gitlab_rails[&#x27;smtp_authentication&#x27;] = &quot;login&quot;</span><br><span class="line">gitlab_rails[&#x27;smtp_enable_starttls_auto&#x27;] = true</span><br><span class="line">gitlab_rails[&#x27;smtp_tls&#x27;] = false</span><br><span class="line">gitlab_rails[&#x27;gitlab_email_from&#x27;] = &quot;gitlab@ilanni.com&quot;</span><br><span class="line"></span><br><span class="line">#163邮箱设置, 对于设置了安全码的, 把安全码放在密码的位置</span><br><span class="line">gitlab_rails[&#x27;smtp_enable&#x27;] = true </span><br><span class="line">gitlab_rails[&#x27;smtp_address&#x27;] = &quot;smtp.163.com&quot; </span><br><span class="line">gitlab_rails[&#x27;smtp_port&#x27;] = 25 </span><br><span class="line">gitlab_rails[&#x27;smtp_user_name&#x27;] = &quot;xxx@163.com&quot; </span><br><span class="line">gitlab_rails[&#x27;smtp_password&#x27;] = &quot;xxx&quot; </span><br><span class="line">gitlab_rails[&#x27;smtp_domain&#x27;] = &quot;163.com&quot; </span><br><span class="line">gitlab_rails[&#x27;smtp_authentication&#x27;] = :login </span><br><span class="line">gitlab_rails[&#x27;smtp_enable_starttls_auto&#x27;] = true</span><br><span class="line">gitlab_rails[&#x27;smtp_tls&#x27;] = false</span><br><span class="line">gitlab_rails[&#x27;gitlab_email_from&#x27;] = &quot;xxx@163.com&quot; </span><br></pre></td></tr></table></figure></li>
+<li>5.5、设置不能注册(需要管理员账户登录)<ul>
 <li>设置不能注册后, 可以配置好邮箱设置, 创建用户不设置密码, 那么会自动发送注册邮件到设置的邮箱, 让用户设置密码.</li>
-<li>对于人员想对较多的可以打开注册, 设置注册域的白名单<center><br><img src="http://47.96.147.179/images/java/centos_gitlab_setting.png" alt="进入设置" style="width: 70%; height:100px; text-align: center; display: block;"><br></center><br><center><br><img src="http://47.96.147.179/images/java/centos_gitlab_disableSignUp.png" alt="去掉Sign-up enabled前面的勾" style="width: 70%; text-align: center; display: block;"><br></center></li>
+<li>对于人员想对较多的可以打开注册, 设置注册域的白名单<center><br><img src="/assets/images/java/centos_gitlab_setting.png" alt="进入设置" style="width: 70%; height:100px; text-align: center; display: block;"/><br></center><br><center><br><img src="/assets/images/java/centos_gitlab_disableSignUp.png" alt="去掉Sign-up enabled前面的勾" style="width: 70%; text-align: center; display: block;"/><br></center></li>
 </ul>
 </li>
-<li>5.6、修改配置文件后需要重新加载配置文件和重启<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
+<li>5.6、修改配置文件后需要重新加载配置文件和重启<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl reconfigure</span><br><span class="line">sudo gitlab-ctl restart</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="GitLab的汉化-CentOS-6-x"><a href="#GitLab的汉化-CentOS-6-x" class="headerlink" title="GitLab的汉化, CentOS 6.x"></a><font color="orange">GitLab的汉化, CentOS 6.x</font></h2><ul>
+<h2 id="GitLab的汉化-CentOS-6-x"><a href="#GitLab的汉化-CentOS-6-x" class="headerlink" title="GitLab的汉化, CentOS 6.x"></a><font color=orange>GitLab的汉化, CentOS 6.x</font></h2><ul>
 <li>首先查看GitLab版本</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /opt/gitlab/embedded/service/gitlab-rails/VERSION</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /opt/gitlab/embedded/service/gitlab-rails/VERSION</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>查看是否有该版本的汉化补丁</p>
 <ul>
@@ -285,71 +277,56 @@
 <li><p>新建一个文件夹并进入</p>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /root/gitlab_cn</span><br><span class="line">cd /root/gitlab_cn</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /root/gitlab_cn</span><br><span class="line">cd /root/gitlab_cn</span><br></pre></td></tr></table></figure>
 <ul>
 <li>克隆GitLab仓库, 根据版本选择对应的仓库</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://gitlab.com/larryli/gitlab.git</span><br><span class="line">#或者gitcafe镜像, 速度快点</span><br><span class="line">git clone https://gitcafe.com/larryli/gitlab.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone https://gitlab.com/larryli/gitlab.git</span><br><span class="line">#或者gitcafe镜像, 速度快点</span><br><span class="line">git clone https://gitcafe.com/larryli/gitlab.git</span><br></pre></td></tr></table></figure>
 <ul>
 <li>获取汉化补丁(注意版本)</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#根据分支</span><br><span class="line">git diff origin/8-8-stable origin/8-8-zh &gt; /tmp/8.8.diff</span><br><span class="line"></span><br><span class="line">#根据tag</span><br><span class="line"># 查看tag版本，选择合适的汉化版本</span><br><span class="line">git tag</span><br><span class="line"># 对比不同，这里比较的是tag，v9.3.0为英文原版，v9.3.0-zh为汉化版本。diff结果是汉化补丁。</span><br><span class="line">git diff v9.3.0..v9.3.0-zh &gt; /tmp/9.3.0.diff</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#根据分支</span><br><span class="line">git diff origin/8-8-stable origin/8-8-zh &gt; /tmp/8.8.diff</span><br><span class="line"></span><br><span class="line">#根据tag</span><br><span class="line"># 查看tag版本，选择合适的汉化版本</span><br><span class="line">git tag</span><br><span class="line"># 对比不同，这里比较的是tag，v9.3.0为英文原版，v9.3.0-zh为汉化版本。diff结果是汉化补丁。</span><br><span class="line">git diff v9.3.0..v9.3.0-zh &gt; /tmp/9.3.0.diff</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>停止GitLab并执行汉化</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl stop</span><br><span class="line">cd /opt/gitlab/embedded/service/gitlab-rails</span><br><span class="line">git apply --whitespace=warn /tmp/8.8.diff</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动gitlab</p>
+<li>停止GitLab并执行汉化<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl stop</span><br><span class="line">cd /opt/gitlab/embedded/service/gitlab-rails</span><br><span class="line">git apply --whitespace=warn /tmp/8.8.diff</span><br></pre></td></tr></table></figure></li>
+<li>启动gitlab</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl start</span><br></pre></td></tr></table></figure>
+<h2 id="GitLab的汉化-CentOS-7-x"><a href="#GitLab的汉化-CentOS-7-x" class="headerlink" title="GitLab的汉化, CentOS 7.x"></a><font color=orange>GitLab的汉化, CentOS 7.x</font></h2><ul>
+<li>下载补丁<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://git.oschina.net/qiai365/gitlab-L-zh.git</span><br></pre></td></tr></table></figure></li>
+<li>切换版本<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd gitlab-L-zh</span><br><span class="line">git checkout -b 8-5-zh origin/8-5-zh</span><br><span class="line">cp -r /opt/gitlab/embedded/service/gitlab-rails&#123;,.ori&#125;</span><br></pre></td></tr></table></figure></li>
+<li>汉化操作<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl stop</span><br><span class="line"></span><br><span class="line">yes|cp -rf ../gitlab-L-zh/* /opt/gitlab/embedded/service/gitlab-rails/</span><br><span class="line"></span><br><span class="line">gitlab-ctl start</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl start</span><br></pre></td></tr></table></figure>
-<h2 id="GitLab的汉化-CentOS-7-x"><a href="#GitLab的汉化-CentOS-7-x" class="headerlink" title="GitLab的汉化, CentOS 7.x"></a><font color="orange">GitLab的汉化, CentOS 7.x</font></h2><ul>
-<li><p>下载补丁</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://git.oschina.net/qiai365/gitlab-L-zh.git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd gitlab-L-zh</span><br><span class="line">git checkout -b 8-5-zh origin/8-5-zh</span><br><span class="line">cp -r /opt/gitlab/embedded/service/gitlab-rails&#123;,.ori&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>汉化操作</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl stop</span><br><span class="line"></span><br><span class="line">yes|cp -rf ../gitlab-L-zh/* /opt/gitlab/embedded/service/gitlab-rails/</span><br><span class="line"></span><br><span class="line">gitlab-ctl start</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="GitLab的备份、恢复、卸载和一些问题"><a href="#GitLab的备份、恢复、卸载和一些问题" class="headerlink" title="GitLab的备份、恢复、卸载和一些问题"></a><font color="orange">GitLab的备份、恢复、卸载和一些问题</font></h2><p>待续</p>
-<h3 id="验证码邮箱配置是否正确"><a href="#验证码邮箱配置是否正确" class="headerlink" title="验证码邮箱配置是否正确"></a><font color="orange">验证码邮箱配置是否正确</font></h3><ul>
+<h2 id="GitLab的备份、恢复、卸载和一些问题"><a href="#GitLab的备份、恢复、卸载和一些问题" class="headerlink" title="GitLab的备份、恢复、卸载和一些问题"></a><font color=orange>GitLab的备份、恢复、卸载和一些问题</font></h2><p>待续</p>
+<h3 id="验证码邮箱配置是否正确"><a href="#验证码邮箱配置是否正确" class="headerlink" title="验证码邮箱配置是否正确"></a><font color=orange>验证码邮箱配置是否正确</font></h3><ul>
 <li>进入控制台: 运行<code>gitlab-rails console</code></li>
 <li>出现<code>Loading production environment (Rails 4.2.8)
 irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮箱&#39;, &#39;邮件标题&#39;, &#39;邮件正文&#39;).deliver_now</code></li>
 </ul>
-<h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a><font color="orange">备份</font></h3><ul>
+<h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a><font color=orange>备份</font></h3><ul>
 <li>配置文件<ul>
-<li>运行: <code>sh -c &#39;umask 0077; gitlab_version=$(sudo cat /opt/gitlab/embedded/service/gitlab-rails/VERSION); tar Pcf /var/opt/gitlab/backups/$(date &quot;+etc-gitlab${gitlab_version}-%s.tar&quot;) /etc/gitlab&#39;</code></li>
+<li>运行: <code>sh -c &#39;umask 0077; gitlab_version=$(sudo cat /opt/gitlab/embedded/service/gitlab-rails/VERSION); tar Pcf /var/opt/gitlab/backups/$(date &quot;+etc-gitlab$&#123;gitlab_version&#125;-%s.tar&quot;) /etc/gitlab&#39;</code></li>
 <li>上面命令会把<code>/etc/gitlab</code>中文件、版本号和时间戳备份在: <code>/var/opt/gitlab/backups/etc-gitlabx.x.x-xxxxxx.tar</code>中</li>
 </ul>
 </li>
-<li><p>数据文件</p>
-<ul>
+<li>数据文件<ul>
 <li>默认备份地址是: <code>/var/opt/gitlab/backups</code></li>
 <li>手动创建备份: <code>sudo gitlab-rake gitlab:backup:create</code></li>
-<li><p>日常备份: 添加<code>crontab</code></p>
-<ul>
+<li>日常备份: 添加<code>crontab</code><ul>
 <li>1、运行<code>crontab -e</code></li>
-<li>2、如下配置:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 每天5点执行备份</span><br><span class="line">0 5 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create CRON=1</span><br></pre></td></tr></table></figure>
-</li>
+<li>2、如下配置:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 每天5点执行备份</span><br><span class="line">0 5 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create CRON=1</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li><p>修改备份周期和备份目录</p>
-<ul>
+<li>修改备份周期和备份目录<ul>
 <li>修改配置文件: <code>vi /etc/gitlab/gitlab.rb</code></li>
-<li><p>修改下面配置文件: </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 设置备份周期为7天 - 604800秒</span><br><span class="line">gitlab_rails[&apos;backup_keep_time&apos;] = 604800</span><br><span class="line"># 备份目录</span><br><span class="line">gitlab_rails[&apos;backup_path&apos;] = &apos;/var/opt/gitlab/backups&apos;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改完配置文件后还需要重新加载文件,重启</p>
-</li>
+<li>修改下面配置文件: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 设置备份周期为7天 - 604800秒</span><br><span class="line">gitlab_rails[&#x27;backup_keep_time&#x27;] = 604800</span><br><span class="line"># 备份目录</span><br><span class="line">gitlab_rails[&#x27;backup_path&#x27;] = &#x27;/var/opt/gitlab/backups&#x27;</span><br></pre></td></tr></table></figure></li>
+<li>修改完配置文件后还需要重新加载文件,重启</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a><font color="orange">恢复</font></h3><p>确保备份的Gitlab版本和需要恢复的Gitlab版本一致才能恢复.</p>
+<h3 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a><font color=orange>恢复</font></h3><p>确保备份的Gitlab版本和需要恢复的Gitlab版本一致才能恢复.</p>
 <ul>
 <li><p>恢复配置文件</p>
 <ul>
@@ -359,22 +336,15 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
 </li>
 <li><p>恢复数据文件</p>
 <ul>
-<li><p>停止连接数据库的进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl stop unicorn</span><br><span class="line">sudo gitlab-ctl stop sidekiq</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>恢复备份数据文件, 将覆盖GitLab数据库！</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#1512314152是1512314152_gitlab_backup.tar中的前面时间戳</span><br><span class="line">sudo gitlab-rake gitlab:backup:restore BACKUP= 1512314152</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动GitLab</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl start</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>检查 GitLab</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-rake gitlab:check SANITIZE=true</span><br></pre></td></tr></table></figure>
+<li>停止连接数据库的进程<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl stop unicorn</span><br><span class="line">sudo gitlab-ctl stop sidekiq</span><br></pre></td></tr></table></figure></li>
+<li>恢复备份数据文件, 将覆盖GitLab数据库！<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#1512314152是1512314152_gitlab_backup.tar中的前面时间戳</span><br><span class="line">sudo gitlab-rake gitlab:backup:restore BACKUP= 1512314152</span><br></pre></td></tr></table></figure></li>
+<li>启动GitLab<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl start</span><br></pre></td></tr></table></figure></li>
+<li>检查 GitLab<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-rake gitlab:check SANITIZE=true</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<h3 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a><font color="orange">卸载</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl uninstall</span><br><span class="line">sudo rpm -e gitlab-ce</span><br><span class="line">find / -name gitlab|xargs rm -rf</span><br></pre></td></tr></table></figure>
+<h3 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a><font color=orange>卸载</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo gitlab-ctl uninstall</span><br><span class="line">sudo rpm -e gitlab-ce</span><br><span class="line">find / -name gitlab|xargs rm -rf</span><br></pre></td></tr></table></figure>
 <ul>
 <li>卸载后再次安装会卡在<code>ruby_block[supervise_redis_sleep] action run</code><ul>
 <li>解决方法<ul>
@@ -385,24 +355,20 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
 </ul>
 </li>
 </ul>
-<h3 id="项目的git地址不对问题"><a href="#项目的git地址不对问题" class="headerlink" title="项目的git地址不对问题"></a><font color="orange">项目的git地址不对问题</font></h3><ul>
+<h3 id="项目的git地址不对问题"><a href="#项目的git地址不对问题" class="headerlink" title="项目的git地址不对问题"></a><font color=orange>项目的git地址不对问题</font></h3><ul>
 <li>运行: <code>vi /var/opt/gitlab/gitlab-rails/etc/gitlab.yml</code></li>
 <li>修改里面的host地址为服务器ip地址</li>
 </ul>
-<h2 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a><font color="orange">配置SSH</font></h2><h3 id="Mac新建SSH"><a href="#Mac新建SSH" class="headerlink" title="Mac新建SSH"></a><font color="orange">Mac新建SSH</font></h3><p>1、在终端运行下面的命令: 注意邮箱换成你自己的邮箱<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
-<p>2、会让你输入SSH的存储地方以及安全密钥, 我们使用默认好了, 直接回车下一步<br>3、最后会在<code>/Users/你的用户名/.ssh</code>下生成<code>id_rsa</code>、<code>id_rsa.public</code><br>4、如果你之前运行过上面的命令, 该目录中会存在上诉文件, 可以直接使用<code>id_rsa.public</code>中的内容</p>
-<h3 id="Window新建SSH"><a href="#Window新建SSH" class="headerlink" title="Window新建SSH"></a><font color="orange">Window新建SSH</font></h3><p>1、安装git, Open Git Bash, 运行下面的命令: 注意邮箱换成你自己的邮箱<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure></p>
-<p>2、会让你输入SSH的存储地方以及安全密钥, 我们使用默认好了, 直接回车下一步<br>3、最后会在<code>c:/Users/你的用户名/.ssh</code>下生成<code>id_rsa</code>、<code>id_rsa.public</code><br>4、如果你之前运行过上面的命令, 该目录中会存在上诉文件, 可以直接使用<code>id_rsa.public</code>中的内容</p>
-<h2 id="git用户名和邮箱配置"><a href="#git用户名和邮箱配置" class="headerlink" title="git用户名和邮箱配置"></a><font color="orange">git用户名和邮箱配置</font></h2><h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a><font color="orange">全局配置</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxxx@xx.com&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a><font color=orange>配置SSH</font></h2><h3 id="Mac新建SSH"><a href="#Mac新建SSH" class="headerlink" title="Mac新建SSH"></a><font color=orange>Mac新建SSH</font></h3><p>1、在终端运行下面的命令: 注意邮箱换成你自己的邮箱<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure><br>2、会让你输入SSH的存储地方以及安全密钥, 我们使用默认好了, 直接回车下一步<br>3、最后会在<code>/Users/你的用户名/.ssh</code>下生成<code>id_rsa</code>、<code>id_rsa.public</code><br>4、如果你之前运行过上面的命令, 该目录中会存在上诉文件, 可以直接使用<code>id_rsa.public</code>中的内容</p>
+<h3 id="Window新建SSH"><a href="#Window新建SSH" class="headerlink" title="Window新建SSH"></a><font color=orange>Window新建SSH</font></h3><p>1、安装git, Open Git Bash, 运行下面的命令: 注意邮箱换成你自己的邮箱<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure><br>2、会让你输入SSH的存储地方以及安全密钥, 我们使用默认好了, 直接回车下一步<br>3、最后会在<code>c:/Users/你的用户名/.ssh</code>下生成<code>id_rsa</code>、<code>id_rsa.public</code><br>4、如果你之前运行过上面的命令, 该目录中会存在上诉文件, 可以直接使用<code>id_rsa.public</code>中的内容</p>
+<h2 id="git用户名和邮箱配置"><a href="#git用户名和邮箱配置" class="headerlink" title="git用户名和邮箱配置"></a><font color=orange>git用户名和邮箱配置</font></h2><h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a><font color=orange>全局配置</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxxxx&quot;</span><br><span class="line">git config --global user.email &quot;xxxxx@xx.com&quot;</span><br></pre></td></tr></table></figure>
 <p>Mac会在<code>/Users/你的用户名</code>下生成<code>.gitconfig</code>的文件.</p>
-<h3 id="单个项目配置"><a href="#单个项目配置" class="headerlink" title="单个项目配置"></a><font color="orange">单个项目配置</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;xxxxx&quot;</span><br><span class="line">git config user.email &quot;xxxxx@xx.com&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="查看配置"><a href="#查看配置" class="headerlink" title="查看配置"></a><font color="orange">查看配置</font></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#查看当前配置, 在当前项目下面查看的配置是全局配置+当前项目的配置, 使用的时候会优先使用当前项目的配置</span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
-<h1 id="通过SSH连接gitlab时报如下错误"><a href="#通过SSH连接gitlab时报如下错误" class="headerlink" title="通过SSH连接gitlab时报如下错误"></a><font color="orange">通过SSH连接gitlab时报如下错误</font></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh_exchange_identification: read: Connection reset by peer</span><br></pre></td></tr></table></figure>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a><font color="orange">解决方案</font></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1) 修改/etc/ssh/sshd_config中#MaxStartups 10:30:60，将其改为MaxStartups 1000</span><br><span class="line"></span><br><span class="line">2) 重启SSH服务，/etc/init.d/ssh restart或者service ssh restart</span><br><span class="line"></span><br><span class="line">Centos系统默认连接时间120秒，如果远程终端连接数过多，则会出现超时连接，解决办法如下：</span><br><span class="line"></span><br><span class="line">1) 修改/etc/ssh/sshd_config中LoginGraceTime 120,将其改为LoginGraceTime 0，其中0表示不限制连接时间</span><br><span class="line"></span><br><span class="line">2) 重启SSH服务，/etc/init.d/ssh restart或者service ssh restart</span><br></pre></td></tr></table></figure>
-<h2 id="如果gitlab装在阿里云服务器上面"><a href="#如果gitlab装在阿里云服务器上面" class="headerlink" title="如果gitlab装在阿里云服务器上面"></a><font color="orange">如果gitlab装在阿里云服务器上面</font></h2><p>有的时候阿里云检测到我们的gitlab某个ip流量过大会认为是Web攻击, 所以需要为相应的阿里云ECS添加我们的公网ip地址.<br>或者在阿里云的Linux服务器中, 编辑<code>/etc/hosts.allow</code>和<code>/etc/hosts.deny</code>这两个文件, 出现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">all:all:deny</span><br></pre></td></tr></table></figure></p>
-<p>需要注释掉, 或者直接在<code>/etc/hosts.allow</code>中添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sshd:all</span><br><span class="line">#或者</span><br><span class="line">all:允许的ip地址</span><br></pre></td></tr></table></figure></p>
-<p>在<code>/etc/hosts.deny</code>中添加的ip地址为对应解决的ip地址.</p>
-<h1 id="gitlab服务器占内存过大"><a href="#gitlab服务器占内存过大" class="headerlink" title="gitlab服务器占内存过大"></a><font color="orange">gitlab服务器占内存过大</font></h1><p>可以参考<a href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/unicorn.md" target="_blank" rel="noopener">官网配置</a>, 把进程数改小点, 最低需要2个.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">unicorn[&apos;worker_processes&apos;] = 2</span><br><span class="line">unicorn[&apos;worker_timeout&apos;] = 60</span><br></pre></td></tr></table></figure></p>
+<h3 id="单个项目配置"><a href="#单个项目配置" class="headerlink" title="单个项目配置"></a><font color=orange>单个项目配置</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;xxxxx&quot;</span><br><span class="line">git config user.email &quot;xxxxx@xx.com&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="查看配置"><a href="#查看配置" class="headerlink" title="查看配置"></a><font color=orange>查看配置</font></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#查看当前配置, 在当前项目下面查看的配置是全局配置+当前项目的配置, 使用的时候会优先使用当前项目的配置</span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<h1 id="通过SSH连接gitlab时报如下错误"><a href="#通过SSH连接gitlab时报如下错误" class="headerlink" title="通过SSH连接gitlab时报如下错误"></a><font color=orange>通过SSH连接gitlab时报如下错误</font></h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh_exchange_identification: read: Connection reset by peer</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a><font color=orange>解决方案</font></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1) 修改/etc/ssh/sshd_config中#MaxStartups 10:30:60，将其改为MaxStartups 1000</span><br><span class="line"></span><br><span class="line">2) 重启SSH服务，/etc/init.d/ssh restart或者service ssh restart</span><br><span class="line"></span><br><span class="line">Centos系统默认连接时间120秒，如果远程终端连接数过多，则会出现超时连接，解决办法如下：</span><br><span class="line"></span><br><span class="line">1) 修改/etc/ssh/sshd_config中LoginGraceTime 120,将其改为LoginGraceTime 0，其中0表示不限制连接时间</span><br><span class="line"></span><br><span class="line">2) 重启SSH服务，/etc/init.d/ssh restart或者service ssh restart</span><br></pre></td></tr></table></figure>
+<h2 id="如果gitlab装在阿里云服务器上面"><a href="#如果gitlab装在阿里云服务器上面" class="headerlink" title="如果gitlab装在阿里云服务器上面"></a><font color=orange>如果gitlab装在阿里云服务器上面</font></h2><p>有的时候阿里云检测到我们的gitlab某个ip流量过大会认为是Web攻击, 所以需要为相应的阿里云ECS添加我们的公网ip地址.<br>或者在阿里云的Linux服务器中, 编辑<code>/etc/hosts.allow</code>和<code>/etc/hosts.deny</code>这两个文件, 出现<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">all:all:deny</span><br></pre></td></tr></table></figure><br>需要注释掉, 或者直接在<code>/etc/hosts.allow</code>中添加<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sshd:all</span><br><span class="line">#或者</span><br><span class="line">all:允许的ip地址</span><br></pre></td></tr></table></figure><br>在<code>/etc/hosts.deny</code>中添加的ip地址为对应解决的ip地址.</p>
+<h1 id="gitlab服务器占内存过大"><a href="#gitlab服务器占内存过大" class="headerlink" title="gitlab服务器占内存过大"></a><font color=orange>gitlab服务器占内存过大</font></h1><p>可以参考<a target="_blank" rel="noopener" href="https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/unicorn.md">官网配置</a>, 把进程数改小点, 最低需要2个.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">unicorn[&#x27;worker_processes&#x27;] = 2</span><br><span class="line">unicorn[&#x27;worker_timeout&#x27;] = 60</span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -424,10 +390,6 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">资料整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">CentOS</a>
         		</li>
       		 
@@ -437,6 +399,10 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">资料整理</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -451,57 +417,6 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/07/Java Web/CentOS 7搭建GitLab/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -510,7 +425,7 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
   
 <nav id="article-nav">
   
-    <a href="/2017/04/20/iOS/iOS10更改约束后动画调用layoutIfNeeded没有动画/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/20/iOS/iOS10%E6%9B%B4%E6%94%B9%E7%BA%A6%E6%9D%9F%E5%90%8E%E5%8A%A8%E7%94%BB%E8%B0%83%E7%94%A8layoutIfNeeded%E6%B2%A1%E6%9C%89%E5%8A%A8%E7%94%BB/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -520,7 +435,7 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
     </a>
   
   
-    <a href="/2017/04/03/iOS/iOS使用CAAimation动画更改strokeEnd和其他动画时间不同步的解决方案/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/04/03/iOS/iOS%E4%BD%BF%E7%94%A8CAAimation%E5%8A%A8%E7%94%BB%E6%9B%B4%E6%94%B9strokeEnd%E5%92%8C%E5%85%B6%E4%BB%96%E5%8A%A8%E7%94%BB%E6%97%B6%E9%97%B4%E4%B8%8D%E5%90%8C%E6%AD%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">iOS使用CAAimation动画更改strokeEnd和其他动画时间不同步的解决方案</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -548,8 +463,8 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab"><span class="toc-number">1.</span> <span class="toc-text">GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab的安装"><span class="toc-number">2.</span> <span class="toc-text">GitLab的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CentOS-7安装GitLab"><span class="toc-number">3.</span> <span class="toc-text">CentOS 7安装GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab的汉化-CentOS-6-x"><span class="toc-number">4.</span> <span class="toc-text">GitLab的汉化, CentOS 6.x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab的汉化-CentOS-7-x"><span class="toc-number">5.</span> <span class="toc-text">GitLab的汉化, CentOS 7.x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab的备份、恢复、卸载和一些问题"><span class="toc-number">6.</span> <span class="toc-text">GitLab的备份、恢复、卸载和一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#验证码邮箱配置是否正确"><span class="toc-number">6.1.</span> <span class="toc-text">验证码邮箱配置是否正确</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#备份"><span class="toc-number">6.2.</span> <span class="toc-text">备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#恢复"><span class="toc-number">6.3.</span> <span class="toc-text">恢复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#卸载"><span class="toc-number">6.4.</span> <span class="toc-text">卸载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目的git地址不对问题"><span class="toc-number">6.5.</span> <span class="toc-text">项目的git地址不对问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置SSH"><span class="toc-number">7.</span> <span class="toc-text">配置SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac新建SSH"><span class="toc-number">7.1.</span> <span class="toc-text">Mac新建SSH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Window新建SSH"><span class="toc-number">7.2.</span> <span class="toc-text">Window新建SSH</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git用户名和邮箱配置"><span class="toc-number">8.</span> <span class="toc-text">git用户名和邮箱配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全局配置"><span class="toc-number">8.1.</span> <span class="toc-text">全局配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单个项目配置"><span class="toc-number">8.2.</span> <span class="toc-text">单个项目配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看配置"><span class="toc-number">8.3.</span> <span class="toc-text">查看配置</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#通过SSH连接gitlab时报如下错误"><span class="toc-number"></span> <span class="toc-text">通过SSH连接gitlab时报如下错误</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#解决方案"><span class="toc-number">1.</span> <span class="toc-text">解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如果gitlab装在阿里云服务器上面"><span class="toc-number">2.</span> <span class="toc-text">如果gitlab装在阿里云服务器上面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gitlab服务器占内存过大"><span class="toc-number"></span> <span class="toc-text">gitlab服务器占内存过大</span></a>
-                    </li></div>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab"><span class="toc-number">1.</span> <span class="toc-text">GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">GitLab的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CentOS-7%E5%AE%89%E8%A3%85GitLab"><span class="toc-number">3.</span> <span class="toc-text">CentOS 7安装GitLab</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab%E7%9A%84%E6%B1%89%E5%8C%96-CentOS-6-x"><span class="toc-number">4.</span> <span class="toc-text">GitLab的汉化, CentOS 6.x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab%E7%9A%84%E6%B1%89%E5%8C%96-CentOS-7-x"><span class="toc-number">5.</span> <span class="toc-text">GitLab的汉化, CentOS 7.x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitLab%E7%9A%84%E5%A4%87%E4%BB%BD%E3%80%81%E6%81%A2%E5%A4%8D%E3%80%81%E5%8D%B8%E8%BD%BD%E5%92%8C%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98"><span class="toc-number">6.</span> <span class="toc-text">GitLab的备份、恢复、卸载和一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E7%A0%81%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E6%98%AF%E5%90%A6%E6%AD%A3%E7%A1%AE"><span class="toc-number">6.1.</span> <span class="toc-text">验证码邮箱配置是否正确</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD"><span class="toc-number">6.2.</span> <span class="toc-text">备份</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%81%A2%E5%A4%8D"><span class="toc-number">6.3.</span> <span class="toc-text">恢复</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%B8%E8%BD%BD"><span class="toc-number">6.4.</span> <span class="toc-text">卸载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%9A%84git%E5%9C%B0%E5%9D%80%E4%B8%8D%E5%AF%B9%E9%97%AE%E9%A2%98"><span class="toc-number">6.5.</span> <span class="toc-text">项目的git地址不对问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AESSH"><span class="toc-number">7.</span> <span class="toc-text">配置SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac%E6%96%B0%E5%BB%BASSH"><span class="toc-number">7.1.</span> <span class="toc-text">Mac新建SSH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Window%E6%96%B0%E5%BB%BASSH"><span class="toc-number">7.2.</span> <span class="toc-text">Window新建SSH</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE"><span class="toc-number">8.</span> <span class="toc-text">git用户名和邮箱配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-number">8.1.</span> <span class="toc-text">全局配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E9%A1%B9%E7%9B%AE%E9%85%8D%E7%BD%AE"><span class="toc-number">8.2.</span> <span class="toc-text">单个项目配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%85%8D%E7%BD%AE"><span class="toc-number">8.3.</span> <span class="toc-text">查看配置</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5gitlab%E6%97%B6%E6%8A%A5%E5%A6%82%E4%B8%8B%E9%94%99%E8%AF%AF"><span class="toc-number"></span> <span class="toc-text">通过SSH连接gitlab时报如下错误</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">1.</span> <span class="toc-text">解决方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E6%9E%9Cgitlab%E8%A3%85%E5%9C%A8%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">如果gitlab装在阿里云服务器上面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gitlab%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%8D%A0%E5%86%85%E5%AD%98%E8%BF%87%E5%A4%A7"><span class="toc-number"></span> <span class="toc-text">gitlab服务器占内存过大</span></a>
+                    </div>
                 </span>
             </div>
         </div>
@@ -577,7 +492,7 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -594,7 +509,7 @@ irb(main):001:0&gt;</code>之后执行<code>Notify.test_email(&#39;收件人邮�
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -680,7 +595,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -696,11 +655,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -712,6 +735,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -720,7 +751,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -728,7 +791,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -736,35 +839,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -772,47 +847,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -832,6 +867,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -840,191 +943,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1032,7 +955,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1075,7 +998,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>UITableView的侧滑按钮和多行编辑 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.">
-<meta name="keywords" content="iOS,Swift,Objective-C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UITableView的侧滑按钮和多行编辑">
-<meta property="og:url" content="http://yoursite.com/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/07/19/iOS/UITableViewCell%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BE%A7%E6%BB%91%E5%92%8C%E5%A4%9A%E8%A1%8C%E7%BC%96%E8%BE%91/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/cell_demo1.png">
-<meta property="og:image" content="http://47.96.147.179/images/iOS/cell_demo2.png">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.660Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/cell_demo1.png">
+<meta property="og:image" content="http://yoursite.com/assets/images/iOS/cell_demo2.png">
+<meta property="article:published_time" content="2016-07-19T02:45:34.000Z">
+<meta property="article:modified_time" content="2023-06-25T07:55:30.401Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Swift">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UITableView的侧滑按钮和多行编辑">
-<meta name="twitter:description" content="UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.">
-<meta name="twitter:image" content="http://47.96.147.179/images/iOS/cell_demo1.png">
+<meta name="twitter:image" content="http://yoursite.com/assets/images/iOS/cell_demo1.png">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -40,8 +42,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -51,13 +53,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -67,9 +67,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -107,15 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -139,13 +141,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -172,7 +176,7 @@
   
 
         
-        <a href="/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/" class="archive-article-date">
+        <a href="/2016/07/19/iOS/UITableViewCell%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BE%A7%E6%BB%91%E5%92%8C%E5%A4%9A%E8%A1%8C%E7%BC%96%E8%BE%91/" class="archive-article-date">
   	<time datetime="2016-07-19T02:45:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-19</time>
 </a>
         
@@ -180,22 +184,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.<br><a id="more"></a><br>今天就介绍一下UITableView的侧滑按钮和多行编辑的使用,使用的都是系统自带的API.</p>
-<h1 id="侧滑按钮"><a href="#侧滑按钮" class="headerlink" title="侧滑按钮"></a><font color="orange"><strong>侧滑按钮</strong></font></h1><p>在iOS8.0以前, 实现UITableViewDataSource协议里面下面的方法即可实现Cell向左滑动出现一个按钮,默认样式是UITableViewCellEditingStyleDelete(删除),默认文字是<font color="red" size="5">Delete</font>文字.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, commitEditingStyle </span><br><span class="line">    editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">    //code  你的代码逻辑</span><br><span class="line">    /*</span><br><span class="line">    numbers -= 1</span><br><span class="line">    guard 0 != numbers else &#123;</span><br><span class="line">        numbers = 8</span><br><span class="line">        return</span><br><span class="line">    &#125;</span><br><span class="line">    self.tableView.reloadData()</span><br><span class="line">    */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>默认文字Delete文字使用UITableViewDelegate协议里面下面的方法修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath </span><br><span class="line">    indexPath: NSIndexPath) -&gt; String? &#123;</span><br><span class="line">    return &quot;删除&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>样式使用UITableViewDelegate协议里面的下面的方法修改, 该方法默认使用.Delete(Swift中)或者UITableViewCellEditingStyleDelete(Objective-C中), 可以改为其他枚举值,为none的时候不显示.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView,</span><br><span class="line">    editingStyleForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    return .Delete</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.<br><span id="more"></span><br>今天就介绍一下UITableView的侧滑按钮和多行编辑的使用,使用的都是系统自带的API.</p>
+<h1 id="侧滑按钮"><a href="#侧滑按钮" class="headerlink" title="侧滑按钮"></a><font color=orange><strong>侧滑按钮</strong></font></h1><p>在iOS8.0以前, 实现UITableViewDataSource协议里面下面的方法即可实现Cell向左滑动出现一个按钮,默认样式是UITableViewCellEditingStyleDelete(删除),默认文字是<font color=red size=5>Delete</font>文字.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, commitEditingStyle </span><br><span class="line">    editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) &#123;</span><br><span class="line">    //code  你的代码逻辑</span><br><span class="line">    /*</span><br><span class="line">    numbers -= 1</span><br><span class="line">    guard 0 != numbers else &#123;</span><br><span class="line">        numbers = 8</span><br><span class="line">        return</span><br><span class="line">    &#125;</span><br><span class="line">    self.tableView.reloadData()</span><br><span class="line">    */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>默认文字Delete文字使用UITableViewDelegate协议里面下面的方法修改<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath </span><br><span class="line">    indexPath: NSIndexPath) -&gt; String? &#123;</span><br><span class="line">    return &quot;删除&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>样式使用UITableViewDelegate协议里面的下面的方法修改, 该方法默认使用.Delete(Swift中)或者UITableViewCellEditingStyleDelete(Objective-C中), 可以改为其他枚举值,为none的时候不显示.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView,</span><br><span class="line">    editingStyleForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    return .Delete</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然而在iOS8.0以后出现了一个UITableViewRowAction类,实现UITableViewDataSource协议中下面的方法返回一个或者多个UITableViewRowAction对象即可实现侧滑多个按钮,它的点击方法也是使用block或者闭包来实现,更加方便</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">voerride func tableView(tableView: UITableView,</span><br><span class="line">    editActionsForRowAtIndexPath indexPath: NSIndexPath) -&gt; [UITableViewRowAction]?  &#123;</span><br><span class="line">    let actionDelete = UITableViewRowAction(style: .Default, title: &quot;删除&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;删除了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionDelete.backgroundColor = UIColor.orangeColor()</span><br><span class="line">    let actionHaHa = UITableViewRowAction(style: .Normal, title: &quot;默默转身&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;默默转身了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionHaHa.backgroundColor = UIColor.redColor()</span><br><span class="line">    let actionMark = UITableViewRowAction(style: .Normal, title: &quot;标记&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;标记了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionMark.backgroundEffect = UIBlurEffect(style: .ExtraLight)</span><br><span class="line">    return [actionDelete, actionHaHa, actionMark]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func endEditing() &#123;</span><br><span class="line">    self.tableView.setEditing(false, animated: true)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<font color="red">需要注意的是:当这个方法返回值不为nil的时候,忽略tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:方法, 并且tableView(tableView:, commitEditingStyle editingStyle:,<br>forRowAtIndexPath indexPath:) 方法不会调用,而是使用UITableViewRowAction的handle替代</font>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">voerride func tableView(tableView: UITableView,</span><br><span class="line">    editActionsForRowAtIndexPath indexPath: NSIndexPath) -&gt; [UITableViewRowAction]?  &#123;</span><br><span class="line">    let actionDelete = UITableViewRowAction(style: .Default, title: &quot;删除&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;删除了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionDelete.backgroundColor = UIColor.orangeColor()</span><br><span class="line">    let actionHaHa = UITableViewRowAction(style: .Normal, title: &quot;默默转身&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;默默转身了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionHaHa.backgroundColor = UIColor.redColor()</span><br><span class="line">    let actionMark = UITableViewRowAction(style: .Normal, title: &quot;标记&quot;) &#123; </span><br><span class="line">        (UITableViewRowAction, NSIndexPath) -&gt; Void in</span><br><span class="line">        print(&quot;标记了\(indexPath.row)行&quot;)</span><br><span class="line">        self.endEditing()</span><br><span class="line">    &#125;</span><br><span class="line">    actionMark.backgroundEffect = UIBlurEffect(style: .ExtraLight)</span><br><span class="line">    return [actionDelete, actionHaHa, actionMark]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func endEditing() &#123;</span><br><span class="line">    self.tableView.setEditing(false, animated: true)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<font color=red>需要注意的是:当这个方法返回值不为nil的时候,忽略tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:方法, 并且tableView(tableView:, commitEditingStyle editingStyle:,<br>forRowAtIndexPath indexPath:) 方法不会调用,而是使用UITableViewRowAction的handle替代</font>
 
-<h1 id="当iOS8-0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门-它支持iOS7-0以上"><a href="#当iOS8-0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门-它支持iOS7-0以上" class="headerlink" title="当iOS8.0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门,它支持iOS7.0以上"></a>当iOS8.0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell<a href="https://github.com/CEWendel/SWTableViewCell" target="_blank" rel="noopener">传送门</a>,它支持iOS7.0以上</h1><h1 id="多行编辑"><a href="#多行编辑" class="headerlink" title="多行编辑"></a><font color="orange"><strong>多行编辑</strong></font></h1><p>当下面这个方法返回值是(Swift中)<font color="red"><strong>UITableViewCellEditingStyle(rawValue: 3)</strong>!</font>或者(Objective-C)<font color="red"><strong>UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert</strong></font>的时候,出现的就是选择与否的图标, 但是此时cell的侧滑按钮是不会有效果的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView,</span><br><span class="line">    editingStyleForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    return UITableViewCellEditingStyle(rawValue: 3)!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<font color="red" size="4">注意:这里还有一个小技巧,当<code>Swift中使用retuen UITableViewCellEditingStyle(rawValue: 3)!</code>  <code>Objective-C中使用retuen UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert</code>的时候,当tableView处于编辑状态(editing为true)的时候,左侧出现的是选择与否的按钮,选中cell会出现√图标,不再出现侧滑按钮.而使用除了None时,出现的是对应的删除或者添加图标,点击后会出现侧滑按钮.</font>
+<h1 id="当iOS8-0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门-它支持iOS7-0以上"><a href="#当iOS8-0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门-它支持iOS7-0以上" class="headerlink" title="当iOS8.0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell传送门,它支持iOS7.0以上"></a>当iOS8.0以前版本使用多个侧滑按钮可以使用一个三方库SWTableViewCell<a target="_blank" rel="noopener" href="https://github.com/CEWendel/SWTableViewCell">传送门</a>,它支持iOS7.0以上</h1><h1 id="多行编辑"><a href="#多行编辑" class="headerlink" title="多行编辑"></a><font color=orange><strong>多行编辑</strong></font></h1><p>当下面这个方法返回值是(Swift中)<font color=red><strong>UITableViewCellEditingStyle(rawValue: 3)</strong>!</font>或者(Objective-C)<font color=red><strong>UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert</strong></font>的时候,出现的就是选择与否的图标, 但是此时cell的侧滑按钮是不会有效果的<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView,</span><br><span class="line">    editingStyleForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    return UITableViewCellEditingStyle(rawValue: 3)!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<font color=red size=4>注意:这里还有一个小技巧,当<code>Swift中使用retuen UITableViewCellEditingStyle(rawValue: 3)!</code>  <code>Objective-C中使用retuen UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert</code>的时候,当tableView处于编辑状态(editing为true)的时候,左侧出现的是选择与否的按钮,选中cell会出现√图标,不再出现侧滑按钮.而使用除了None时,出现的是对应的删除或者添加图标,点击后会出现侧滑按钮.</font>
 
 
-<p>所以在这个方法中我加了一个判断:当处于编辑状态的时候,返回UITableViewCellEditingStyle(rawValue: 3)!, 非编辑状态使用.Delete,这样非编辑时候侧滑按钮会出现, 编辑状态可以多选<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath </span><br><span class="line">    indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    if true == self.tableView.editing &#123;</span><br><span class="line">        return UITableViewCellEditingStyle(rawValue: 3)!</span><br><span class="line">    &#125;</span><br><span class="line">    return .Delete</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>当然多行编辑也可以使用自定义cell,cell里面左侧添加一个按钮,当编辑的时候显示该按钮,然后里面控件整体右移,相比而言这个方法相对简单些.</p>
-<h1 id="附上Demo地址-使用Xcode7-2-Swift2-1-1-版本编写"><a href="#附上Demo地址-使用Xcode7-2-Swift2-1-1-版本编写" class="headerlink" title="附上Demo地址, 使用Xcode7.2 Swift2.1.1 版本编写."></a>附上<a href="https://github.com/coppco/UITableViewUesedDemo" target="_blank" rel="noopener">Demo地址</a>, 使用Xcode7.2 Swift2.1.1 版本编写.</h1><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图:"></a>效果图:</h1><p><img src="http://47.96.147.179/images/iOS/cell_demo1.png" alt="效果图"><br><img src="http://47.96.147.179/images/iOS/cell_demo2.png" alt="效果图"></p>
+<p>所以在这个方法中我加了一个判断:当处于编辑状态的时候,返回UITableViewCellEditingStyle(rawValue: 3)!, 非编辑状态使用.Delete,这样非编辑时候侧滑按钮会出现, 编辑状态可以多选<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath </span><br><span class="line">    indexPath: NSIndexPath) -&gt; UITableViewCellEditingStyle &#123;</span><br><span class="line">    if true == self.tableView.editing &#123;</span><br><span class="line">        return UITableViewCellEditingStyle(rawValue: 3)!</span><br><span class="line">    &#125;</span><br><span class="line">    return .Delete</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>当然多行编辑也可以使用自定义cell,cell里面左侧添加一个按钮,当编辑的时候显示该按钮,然后里面控件整体右移,相比而言这个方法相对简单些.</p>
+<h1 id="附上Demo地址-使用Xcode7-2-Swift2-1-1-版本编写"><a href="#附上Demo地址-使用Xcode7-2-Swift2-1-1-版本编写" class="headerlink" title="附上Demo地址, 使用Xcode7.2 Swift2.1.1 版本编写."></a>附上<a target="_blank" rel="noopener" href="https://github.com/coppco/UITableViewUesedDemo">Demo地址</a>, 使用Xcode7.2 Swift2.1.1 版本编写.</h1><h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图:"></a>效果图:</h1><p><img src="/assets/images/iOS/cell_demo1.png" alt="效果图"><br><img src="/assets/images/iOS/cell_demo2.png" alt="效果图"></p>
 
       
 
@@ -213,11 +214,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		
 		</ul>
@@ -228,57 +229,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -287,7 +237,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/07/22/iOS/Swift一些资料记录/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/22/iOS/Swift%E4%B8%80%E4%BA%9B%E8%B5%84%E6%96%99%E8%AE%B0%E5%BD%95/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -297,7 +247,7 @@
     </a>
   
   
-    <a href="/2016/07/18/Java Web/Java Web学习04---jQuery-validate和BootStrap/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/07/18/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A004---jQuery-validate%E5%92%8CBootStrap/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java Web学习04---jQuery_validate和BootStrap</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -341,7 +291,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -358,7 +308,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -444,7 +394,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -460,11 +454,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -476,6 +534,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -484,7 +550,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -492,7 +590,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -500,35 +638,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -536,47 +646,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -596,6 +666,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -604,191 +742,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -796,7 +754,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -839,7 +797,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

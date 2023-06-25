@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,10 +14,9 @@
 <meta property="og:url" content="http://yoursite.com/page/6/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="coppco的博客">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="coppco">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="coppco的博客">
-<meta name="twitter:description" content="coppco的博客">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -35,8 +34,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -46,13 +45,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -62,9 +59,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -102,15 +101,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -134,13 +133,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -157,6 +158,824 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java Web/Java Web学习10---JSP 、Cookie和Seesion" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/21/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A010---JSP%20%E3%80%81Cookie%E5%92%8CSeesion/">Java Web学习10---JSP、Cookie和Seesion</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/21/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A010---JSP%20%E3%80%81Cookie%E5%92%8CSeesion/" class="archive-article-date">
+  	<time datetime="2016-09-21T06:27:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>JSP最大的特点在于，写JSP就像在写html，但它相比html而言，html只能为用户提供静态数据，而JSP技术允许在页面中嵌套java代码，为用户提供动态数据。</p>
+<h2 id="JSP"><a href="#JSP" class="headerlink" title="JSP"></a><font color=orange>JSP</font></h2><p>&emsp;&emsp;JSP全名为Java Server Pages，中文名叫java服务器页面，<font color=red>本质是一个简化的Servlet设计</font>，它是由Sun Microsystems公司倡导、许多公司参与一起建立的一种动态网页技术标准。JSP技术有点类似ASP技术，它是在传统的网页HTML文件(*.htm,*.html)中插入Java程序段(Scriptlet)和JSP标记(tag)，从而形成JSP文件，后缀名为(*.jsp)。 用JSP开发的Web应用是跨平台的，既能在Linux下运行，也能在其他操作系统上运行。</p>
+<p>&emsp;&emsp;它实现了Html语法中的java扩张（以 &lt;%, %&gt;形式）。JSP与Servlet一样，是在服务器端执行的。通常返回给客户端的就是一个HTML文本，因此客户端只要有浏览器就能浏览。</p>
+<p>&emsp;&emsp;使用JSP技术，可以将内容的生成和显示进行分离,Web页面开发人员可以使用HTML或者XML标识来设计和格式化最终页面，并使用JSP标识或者小脚本来生成页面上的动态内容.</p>
+<p>&emsp;&emsp;Tomcat中对应的Java和.class文件存放在<font color=orange><code>work</code></font>目录中, jsp文件后缀名是<font color=orange><code>jsp</code></font>.</p>
+<ul>
+<li><p><font color=orange>JSP执行流程</font></p>
+<ul>
+<li>1.在浏览器中输入: <code>http://localhost/项目名/xxx.jsp</code></li>
+<li>2.服务器得到请求，会通过jsp的<code>servlet</code>查找到xxx.jsp页面.<blockquote>
+<p>   //Tomcat—conf—web.xml文件中.</p>
+</blockquote>
+&lt;servlet-mapping&gt;<br>&emsp;&lt;servlet-name&gt;jsp&lt;/servlet-name&gt;<br>&emsp;&lt;url-pattern&gt;*.jsp&lt;/url-pattern&gt;<br>&emsp;&lt;url-pattern&gt;*.jspx&lt;/url-pattern&gt;<br>&lt;/servlet-mapping&gt;</li>
+<li>3.服务器将查找到的xxx.jsp页面翻译成xxx_jsp.java(其本质就是一个servlet).</li>
+<li>4.jvm会将xxx_jsp.java文件编译成xxx_jsp.class.</li>
+<li>5.服务器运算xxx_jsp.class文件, 生成动态的内容.</li>
+<li>6.服务器生成响应结果.</li>
+<li>7.服务器组成响应信息, 发送给浏览器.</li>
+<li>8.浏览器接受数据, 解析展示.</li>
+</ul>
+</li>
+<li><p><font color=orange>JSP中的脚本, 它的作用是使Java代码可以直接插入到HTML代码中</font></p>
+<ul>
+<li>声明标签<ul>
+<li>作用: 声明的变量在类的成员位置上</li>
+<li>格式: <code>&lt;%! ... %&gt;</code></li>
+</ul>
+</li>
+<li>脚本片断<ul>
+<li>作用: 内容会生成在_jspService()方法中 </li>
+<li>格式: <code>&lt;% ... %&gt;</code></li>
+</ul>
+</li>
+<li>脚本表达式<ul>
+<li>作用: 它就相当于是out.println()将内容直接输出到页面中，注意表达式不能以分号结尾</li>
+<li>格式: <code>&lt;%= ... %&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color=orange>JSP中的注释</font><ul>
+<li>使用html中的注释<ul>
+<li>格式: <code>&lt;--html的注释--&gt;</code></li>
+<li>只在页面上面看不见, 在Java代码和html源代码都有</li>
+</ul>
+</li>
+<li>使用Java中的注释<ul>
+<li>格式1: 单行注释 <code>//单行注释</code></li>
+<li>格式2: 多行注释 <code>/*多行注释*/</code></li>
+<li>只在Java代码中存在</li>
+</ul>
+</li>
+<li>使用JSP中的注释<ul>
+<li>格式: <code>&lt;%--JSP中的注释--%&gt;</code></li>
+<li>只在JSP页面中存在, 翻译成Java文件后就没有了.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color=orange>JSP指令, 一个JSP可以有多个指令, 可以放在任何位置, 但是通常放在jsp文件顶部</font><ul>
+<li>用于指示JSP执行某些步骤</li>
+<li>用于指示JSP表现特定行为</li>
+<li>格式, <blockquote>
+<p>   &lt;%@指令名 属性1=”” 属性2=””%&gt;</p>
+</blockquote>
+</li>
+<li>JSP中有三大指令<ul>
+<li><font color=orange>page</font>: 导入类,编码的设置<ul>
+<li><font color=orange>import</font>属性: 在jsp页面上导包操作</li>
+<li><font color=orange>pageEncoding</font>属性: 指定当前jsp页面的编码,这个编码是给服务器看的，服务器需要知道当前页面的编码，否则服务器无法正确的把jsp翻译成Java文件.</li>
+<li><font color=orange>contentType</font>属性: 默认值是<code>text/html;charset=ISO-8859-1</code>, 设置了之后jsp对应的java文件就会出现<code>response.setContentType(“xxxx”)</code>.</li>
+<li>pageEncoding与contentType都是page指令的属性，它们都是用来设置编码，有如下联系：<ul>
+<li>如果这两个属性只提供了其中一个，那么没有提供的那个属性的编码值就是提供的这个属性的编码值，例如：在jsp页面中设置了contentType=”text/html;charset=utf-8”，那么没有设置的pageEncoding的值就为utf-8，反之亦然；</li>
+<li>如果两个属性都没有提供，那么两者的默认编码就是ISO-8859-1。 </li>
+</ul>
+</li>
+<li>pageEncoding与contentType的区别：<ul>
+<li>pageEncoding是设置当前页面的编码，该编码是给服务器看的，可以让服务器正确的将jsp文件翻译成Java文件；</li>
+<li>contentType有两个作用：一是设置响应字符流的编码，二是设置Content-Type响应头，</li>
+</ul>
+</li>
+<li>language: 代表在jsp脚本中可以写的语言, 只有一个值 java</li>
+<li>extends: 它用于设置jsp翻译后的java类的父类. 要求必须是HttpServlet或其子类.</li>
+<li>session: 面上是否禁用session。可取值为true/false  如果值为false,在页面上不能使用session。</li>
+<li>isELIgnored: 用是否忽略el表达式.可取值为true/false  如果值为true,那么页面上的el表达式就不会被解析.</li>
+<li>autoFlush与buffer: 用于设置jsp中out流的默认缓冲区大小以及是否自动刷新.</li>
+<li>errorPage: 设置错误页面，当jsp中如果出现了异常，会自动跳转到指定的错误页面</li>
+<li>isErrorPage: 指示当前页面是一个错误页面，这时就可以使用一个内置对象 exception，通过这个内置对象就可以获取异常信息.</li>
+</ul>
+</li>
+<li><font color=orange>include</font>: 静态包含,标文件的源码包含过来，一起编译, 只会生成一个.class、.java文件.<ul>
+<li>格式: <code>&lt;%@ include file=“filename” %&gt;</code></li>
+</ul>
+</li>
+<li><font color=orange>taglib</font>: 导入标签库<ul>
+<li>格式: <code>&lt;%@taglib prefix=&quot;&quot; uri=&quot;&quot; %&gt;</code><ul>
+<li>uri: 标签文件的URI地址</li>
+<li>prefix: 标签组的命名空间前缀</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color=orange>JSP中的内置对象, 这些对象我们可以在JSP中直接使用的对象.</font><ul>
+<li><font color=orange>out</font>: javax.servlet.jsp.JspWriter类型，代表输出流的对象。作用域为page（页面执行期）</li>
+<li><font color=orange>request</font>: javax.servlet.ServletRequest的子类型，此对象封装了由WEB浏览器或其它客户端生成地HTTP请求的细节（参数，属性，头标和数据）。作用域为request(用户请求期）。</li>
+<li><font color=orange>response</font>: javax.servlet.ServletResponse的子类型，此对象封装了返回到HTTP客户端的输出，向页面作者提供设置响应头标和状态码的方式。经常用来设置HTTP标题，添加Cookie，设置响应内容的类型和状态，发送HTTP重定向和编码URL。作用域为page（页面执行期）。</li>
+<li><font color=orange>pageContext</font>: javax.servlet.jsp.PageContext（抽象类）类型，作用域为page（页面执行期）。此对象提供所有四个作用域层次的属性查询和修改能力，它也提供了转发请求到其它资源和包含其他资源的方法：该对象的方法都是抽象方法</li>
+<li><font color=orange>session</font>: javax.servlet.http.HttpSession类型，主要用于跟踪对话。作用域session(会话期—）。HttpSession是一个类似哈希表的与单一WEB浏览器会话相关的对象，它存在于HTTP请求之间，可以存储任何类型的命名对象。如果不需要在请求之间跟踪会话对象，可以通过在page指令中指定session=”false”.需要记住的是pageContext对象也可以与session.getAttribute(),session.setAttribute()一样的方式取得并设置会话属性。</li>
+<li><font color=orange>application</font>: javax.servlet.ServletContext类型，servlet的环境通过调用getServletConfig().getContext()方法获得。作用域是application(整个程序运行期）。它提供了关于服务器版本，应用级初始化参数和应用内资源绝对路径，注册信息的方式</li>
+<li><font color=orange>config</font>: javax.servlet.ServletConfig,作用域为page（页面执行期）</li>
+<li><font color=orange>exception</font>: java.lang.Throwable,通过JSP错误页面中一个catch块已经益出但没有捕获的java.lang.Throwable的任意实例，传向了errorPage的URI。作用域为page（页面执行期）. 注意exception只有在page指令中具有属性isErrorPage=”true”时才有效。</li>
+<li><font color=orange>page</font>: java.lang.Object类型，指向页面自身的方式。作用域为page（页面执行期)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">内置对象</th>
+<th style="text-align:center">代表内容</th>
+<th style="text-align:center">范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">request</td>
+<td style="text-align:center">触发服务调用的请求</td>
+<td style="text-align:center">request</td>
+</tr>
+<tr>
+<td style="text-align:center">response</td>
+<td style="text-align:center">对请求的应答</td>
+<td style="text-align:center">page</td>
+</tr>
+<tr>
+<td style="text-align:center">session</td>
+<td style="text-align:center">为请求的用户创建session对象</td>
+<td style="text-align:center">session</td>
+</tr>
+<tr>
+<td style="text-align:center">application</td>
+<td style="text-align:center">从servlet配置对象获得的servlet上下文(如果在getServletConfig(), getContext()中调用中)</td>
+<td style="text-align:center">application</td>
+</tr>
+<tr>
+<td style="text-align:center">out</td>
+<td style="text-align:center">向输出流写入内容的对象</td>
+<td style="text-align:center">page</td>
+</tr>
+<tr>
+<td style="text-align:center">pageContext</td>
+<td style="text-align:center">本JSP的页面上下文</td>
+<td style="text-align:center">page</td>
+</tr>
+<tr>
+<td style="text-align:center">page</td>
+<td style="text-align:center">实现处理本页当前请求的类的实例</td>
+<td style="text-align:center">page</td>
+</tr>
+<tr>
+<td style="text-align:center">config</td>
+<td style="text-align:center">本JSP的ServletConfig</td>
+<td style="text-align:center">page</td>
+</tr>
+<tr>
+<td style="text-align:center">exception</td>
+<td style="text-align:center">表示JSP页面运行时产生的异常</td>
+<td style="text-align:center">page</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><font color=orange>JSP动作标签</font><ul>
+<li><code>&lt;jsp:forward page=&quot;跳转页&quot;&gt;&lt;/jsp:forward&gt;</code>: 请求转发</li>
+<li><code>&lt;jsp:include page=&quot;包含页&quot;&gt;&lt;/jsp: include&gt;</code>: 动态包含, 将被包含页面或者servlet的运行结果包含到当前页面.会生成对个.class、.java文件</li>
+<li><code>&lt;jsp:param value=&quot;&quot; name=&quot;&quot;/&gt;</code>: 它作为<a href="jsp:forward">jsp:forward</a>和<a href="jsp:include">jsp:include</a>的子标签, 作用是往请求转发和包含的网页传递参数.</li>
+</ul>
+</li>
+</ul>
+<h3 id="EL"><a href="#EL" class="headerlink" title="EL"></a><font color=orange>EL</font></h3><p>&emsp;&emsp;EL是Expression Language的缩写，它是jsp内置的表达式语言，从jsp2.0开始，就不让再使用java脚本，而是使用el表达式或动态标签来代替java脚本, 代替的是java脚本中的<code>&lt;%= ... %&gt;</code>。</p>
+<ul>
+<li>EL表达式的格式: <code>$&#123;表达式&#125;</code></li>
+<li>EL表达式的作用<ul>
+<li>获取域中数据<ul>
+<li>例如: <code>$&#123;pageScope|requestScope|sessionScope|applicationScope.属性名&#125;</code>, 其中前面的Scope可以省略, </li>
+<li>简洁写法: <code>$&#123;属性名&#125;</code> , 依次从pageContext、request、session、application查找属性值, 若查找到返回值, 结束该次查找, 若找不到, 则返回””.</li>
+<li>获取数组中的数据: <code>$&#123;域中的名称[index]&#125;</code></li>
+<li>获取数组中的数据: <code>$&#123;域中的名称[index]&#125;</code></li>
+<li>获取数组中的数据: <code>$&#123;域中的名称.键名&#125;</code></li>
+<li>如果属性名中出现<code>.</code>、<code>+</code>、<code>-</code>等特殊符号, 需要使用<code>[&quot;属性名&quot;]</code>来获取, 例如: <code>$&#123;requestScope[&quot;属性名&quot;]&#125;</code></li>
+<li>JavaBean导航<ul>
+<li>如果在域中保存的是javaBean对象，那么也可以使用EL表达式来访问javaBean的属性，因为EL表达式只做读操作，所以javaBean一定要为属性提供get方法，而对set方法没有要求。使用EL表达式获取javaBean属性就是javaBean导航。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>执行运算<ul>
+<li>可以进行四则运算, 逻辑运算, 但是 <code>+</code>只能做加法运算.</li>
+<li><code>$&#123;empty arr&#125;</code>可以判断 数组、set、list、map的长度是否为0, 也可以判断对象是否为空</li>
+<li>JSP中获取项目名: <code>$&#123;pageContext.request.contextPath&#125;</code></li>
+</ul>
+</li>
+<li>获取web开发常用对象</li>
+<li>调用Java方法</li>
+</ul>
+</li>
+</ul>
+<h3 id="jstl"><a href="#jstl" class="headerlink" title="jstl"></a><font color=orange>jstl</font></h3><p>&emsp;&emsp;JSTL(JSP Standard Tag Library，jsp标准标签库)是Apache对EL表达式的扩展，也就是说JSTL依赖EL表达式。JSTL是标签语言，使用起来非常方便。但是它不是jsp内置的标签，所以用的时候需要我们自己导包，以及指定标签库。使用Myeclipse开发JavaWeb项目会自动导入包, 但是Eclipse不会自动导入包.</p>
+<ul>
+<li><p>标签库</p>
+<ul>
+<li><font color=red>core</font>: 核心标签</li>
+<li>fmt: 格式化标签库</li>
+<li>sql: 数据库标签库</li>
+<li>xml: xml标签库</li>
+</ul>
+</li>
+<li><p>使用jstl步骤</p>
+<ul>
+<li>导入<code>jstl-1.2.jar</code>包</li>
+<li>在JSP页面中<code>&lt;%@ taglib prefix=”xxx” uri=”http://java.sun.com/jsp/jstl/core”%&gt;</code><ul>
+<li>prefix=”c”：指定标签库的前缀，这个前缀可以赋任意的值，但大家都会在使用core标签库时指定前缀为c；</li>
+<li>uri=”<a target="_blank" rel="noopener" href="http://java.sun.com/jsp/jstl/core&quot;：指定标签库的uri，它不一定是真实存在的网址，但它可以让JSP找到标签库的描述文件。">http://java.sun.com/jsp/jstl/core&quot;：指定标签库的uri，它不一定是真实存在的网址，但它可以让JSP找到标签库的描述文件。</a></li>
+</ul>
+</li>
+<li>核心标签<ul>
+<li>c:if<ul>
+<li>格式:<br><code>&lt;c:if test=&quot;判断的内容(一般是el表达式)&quot; var=&quot;给前面表达式的结果起个名称&quot; [scope=&quot;page|request|session|application&quot;] /&gt;</code>                <ul>
+<li>scope 用来表达式结果存放的域</li>
+<li>若指定了标签的scope属性，则必须指定var属性</li>
+</ul>
+</li>
+<li>例如: <code>&lt;c:if test=&quot;$&#123;3&gt;4 &#125;&quot; var=&quot;flag&quot;&gt; 三大于四 &lt;/c:if&gt;</code></li>
+</ul>
+</li>
+<li>c:forEach<ul>
+<li>begin属性: 设置循环变量从几开始</li>
+<li>end属性: 设置循环变量到几结束；</li>
+<li>step属性: 设置循环变量的步长</li>
+<li>var属性: 定义一个变量，用于接收循环或把数组或集合中遍历的每一个元素赋值给var指定的变量</li>
+<li>varStatus属性: varStatus属性就是用来记录循环状态的，它可以创建一个循环变量vs，该循环变量有如下属性：<ul>
+<li>count：用来记录循环元素的个数；</li>
+<li>index：用来记录所循环元素的下标；</li>
+<li>first：判断当前循环的元素是否是第一个元素；</li>
+<li>last：判断当前循环的元素是否是最后一个元素；</li>
+<li>current：代表当前循环的元素。</li>
+</ul>
+</li>
+<li>items:属性: 指定要循环的变量，可以是一个数组也可以是一个集合，默认是支持EL表达式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a><font color=orange>会话技术</font></h3><ul>
+<li>会话的作用:<br>&emsp;&emsp;每个用户与服务器进行交互的过程中，各自会有一些数据，程序要想办法保存每个用户的数据。<br>&emsp;&emsp;一般用户登录、验证码、购物车、访问记录等通过绘画技术保存起来.</li>
+<li>会话技术<ul>
+<li>Session: 服务器会话技术</li>
+<li>Cookie: 客户端会话技术</li>
+</ul>
+</li>
+</ul>
+<h2 id="Cookie"><a href="#Cookie" class="headerlink" title=" Cookie "></a><font color=orange> Cookie </font></h2><p>&emsp;&emsp;Cookie是客户端技术，程序把每个用户的数据以Cookie的形式写给用户各自的浏览器。当用户使用浏览器再去访问服务器中的web资源时，就会带着各自的数据去。这样，web资源处理的就是用户各自的数据了。<br>&emsp;&emsp;Cookie是由服务器端生成，发送给User-Agent（一般是浏览器），浏览器会将Cookie的key/value保存到某个目录下的文本文件内，下次请求同一网站时就发送该Cookie给服务器（前提是浏览器设置为启用Cookie）。Cookie名称和值可以由服务器端开发自己定义，对于JSP而言也可以直接写入jsessionid，这样服务器可以知道该用户是否合法用户以及是否需要重新登录等，服务器可以设置或读取Cookies中包含信息，借此维护用户跟服务器会话中的状态。</p>
+<p>&emsp;&emsp;<font color=orange>Cookie是Http协议制定的</font>, 所有使用HTTP技术的都可以使用Cookie技术.需要注意的是: <font color=red>Cookie是不能跨浏览器的, 并且不支持中文</font></p>
+<ul>
+<li><p>Http协议对Cookie做了一些规定,但是实际浏览器可能不会严格按照此规定.</p>
+<ul>
+<li>一个Cookie的大小，最大为4KB；</li>
+<li>一个服务器最多向一个浏览器保存20个Cookie；</li>
+<li>一个浏览器最多可以保存300个Cookie。</li>
+</ul>
+</li>
+<li><p>服务端生成Cookie, 保存到浏览器, 可以添加多个Cookie</p>
+<ul>
+<li>方式1: 通过<code>javax.servlet.http.Cookie</code>实现<ul>
+<li>1.1、创建<code>javax.servlet.http.Cookie</code>对象<blockquote>
+<p>   public Cookie(String name, String value)</p>
+</blockquote>
+</li>
+<li>1.2、通过Response发送给浏览器<blockquote>
+<p>   public void addCookie(Cookie Cookie);</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>方式2: 直接通过给Response添加<code>Set-Cookie</code>响应头来实现<blockquote>
+<p>   response.addHeader(“Set-Cookie”,”key1=value1”)；<br>response.addHeader(“Set-Cookie”,”key2=value2”)；</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>浏览器再次请求时会通过<code>Cookie</code>的请求头将Cookie发送给服务器</p>
+<ul>
+<li>请求头Cookie与响应头Set-Cookie有区别，多个Cookie对应多个Set-Cookie响应头，但是只对应一个Cookie请求头，格式为：key1=value1； key2=key2。即多个Cookie之间用分号和空格隔开。</li>
+</ul>
+</li>
+<li><p><font color=orange>javax.servlet.http.Cookie</font><br>&emsp;&emsp;javax.servlet.http.Cookie类用于创建一个Cookie，response接口也中定义了一个addCookie方法，它用于在其响应头中增加一个相应的Set-Cookie头字段。 同样，request接口中也定义了一个getCookies方法，它用于获取客户端提交的Cookie。</p>
+<ul>
+<li>常用方法<ul>
+<li>构造方法: <code>public Cookie(String name, String value):构造带指定名称和值的 Cookie</code></li>
+<li>获取Cookie的名称: <code>public String getName():返回 Cookie 的名称</code>    </li>
+<li>获取Cookie的值: <code>public String getValue():返回 Cookie 的值。</code></li>
+<li>设置Cookie的生命周期: <code>public void setMaxAge(int expiry):设置 Cookie 的最大生存时间，以秒为单位</code><ul>
+<li>0代表的是删除持久Cookie, 注意，删除Cookie时，path必须一致，否则不会删除</li>
+<li>-1代表的是浏览器关闭后失效.</li>
+</ul>
+</li>
+<li>设置返回Cookie的路径: <code>public void setPath(String uri):指定客户端应该返回 Cookie 的路径。</code><ul>
+<li>默认路径是: 访问Servlet路径从<code>/项目名</code>开始到最后一个<code>/</code>结束, 如访问 <code>/test/a/b/hello</code>, 那么默认路径是 <code>/test/a/b</code></li>
+<li>设置了path之后, 当浏览器访问路径包含设置的路径就会把对应的Cookie传到服务器, 访问其他路径则不会传入.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color=orange>Response相关的Cookie方法</font><ul>
+<li>添加Cookie: <code>public void addCookie(Cookie Cookie);</code></li>
+</ul>
+</li>
+<li><font color=orange>Request相关的Cookie方法</font><ul>
+<li>获取所有Cookie: <code>public Cookie[] getCookies();</code></li>
+</ul>
+</li>
+<li><font color=orange>清空Cookie</font><ul>
+<li>需要设置setMaxAge(0), 并且保持路径(path)和名称(name)一致.<blockquote>
+<p>   Cookie cookie = new Cookie(“name”, “”);<br>cookie.setPath(request.getContextPath() + “/“);<br>cookie.setMaxAge(0);<br>response.addCookie(cookie);</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Session"><a href="#Session" class="headerlink" title=" Session "></a><font color=orange> Session </font></h2><p>&emsp;&emsp;Session是服务器端技术，利用这个技术，服务器在运行时可以为每一个用户的浏览器创建一个其独享的session对象，由于session为用户浏览器独享，所以用户在访问服务器的web资源时，可以把各自的数据放在各自的session中，当用户再去访问服务器中的其它web资源时，其它web资源再从用户各自的session中取出数据为用户服务。它由服务器创建, 并且保存在服务端.</p>
+<p>&emsp;&emsp;HttpSession对象是Servlet的三大域对象之一，其他两个域对象是HttpServletRequest和ServletContext。这三个域中，request的域范围最小，它的域范围是整个请求链，并且只在请求转发和包含时存在；session域对象的域范围是一次会话，而在一次会话中会产生多次请求，因此session的域范围要比request大；application的域范围是最大的，因为一个web应用只有唯一的一个application对象，只有当web应用被移出服务器或服务器关闭它才死亡，它的域范围是整个应用。</p>
+<ul>
+<li>三个域对象都具有的方法<ul>
+<li>void setAttribute(String name,Object value)：向域中添加域属性；</li>
+<li>Object getAttribute(String name)：从域中获取指定名称的属性值；</li>
+<li>void removeAttribute(String name)：移出域中指定名称的域属性</li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp;<font color=orange>Session底层是依赖Cookie的</font>，如果浏览器禁用Cookie则Session会依赖URL重写。详情我们会在后面介绍。如何获取HttpSession对象?在服务器端，例如在Servlet中，我们通过request对象的getSession()方法获取服务器为当前用户创建的session对象，即：HttpSession session=request.getSession()。而在jsp中，session是jsp的内置对象，不用获取就可以直接使用。</p>
+<ul>
+<li><font color=orange>javax.servlet.http. HttpSession </font><ul>
+<li>常用方法<ul>
+<li>域对象具有的方法都有</li>
+</ul>
+</li>
+<li>Request相关的方法<ul>
+<li>从Request中获取: <code>HttpSession session=request.getSession();</code>, 如果没找session, 那么会返回一个新的session.</li>
+</ul>
+</li>
+<li>销毁方式<ul>
+<li>创建: 第一次调用request.getSession()时</li>
+<li>销毁<ul>
+<li>服务器关闭</li>
+<li>请求超时</li>
+<li>设置session超时时间(以秒为单位)<ul>
+<li>Tomcat中在<code>web.xml</code>中有默认设置30分钟 </li>
+<li>手动设置超时时间: <code>void setMaxInactiveInterval(int interval)</code></li>
+</ul>
+</li>
+<li>销毁session: 调用<code>invalidate();</code>方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color=orange>url重写</font><br>&emsp;&emsp;当客户机不接受cookie时，server就使用URL重写作为会话跟踪的基本方式.URL重写，添加了附加数据(会话ID)到请求的URL路径上.<br>会话ID必须被编码作为该URL字符串中的路径参数。该参数的名称为jsessionid,<br>简单说就是cookie禁用了jsessionid就不能携带，那么每次请求，都是一个新的session对象。<ul>
+<li>url重写实现<ul>
+<li>response. encodeRedirectURL(java.lang.String url)用于对sendRedirect方法后的url地址进行重写。</li>
+<li>response. encodeURL(java.lang.String url)用于对表单action和超链接的url地址进行重写</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">JSP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Cookie</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Session</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/21/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A010---JSP%20%E3%80%81Cookie%E5%92%8CSeesion/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="ios-iOS/iOS 10的一些权限设置" class="article article-type-ios  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/18/iOS/iOS%2010%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/">iOS 10的一些权限设置</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/18/iOS/iOS%2010%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2016-09-18T01:00:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>iOS 10出来一段时间了, 小伙伴们发现以前的应用在iOS 10下面各种崩溃, 这是因为iOS 10开始苹果对于各种手机权限要求更加严格,这点从iOS 8的定位功能,需要在Info.plist里面添加对于的Key就可以窥见一斑.<br></hr><br>需要下面权限的同学可以在工程的Info.plist里面添加对应的键值对, 也可以Info.plist右键  —-&gt; Open As —-&gt; Source Code直接拷贝进入对于的键值对,其中字符串可以自己改!<br>
+        
+          <a class="article-more-a" href="/2016/09/18/iOS/iOS%2010%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Xcode</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Swift3.0</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/18/iOS/iOS%2010%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java Web/Java Web学习09---Request和Response" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/">Java Web学习09---Request和Response</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/" class="archive-article-date">
+  	<time datetime="2016-09-10T09:16:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&emsp;&emsp;Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。</p>
+        
+          <a class="article-more-a" href="/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Request</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Response</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-iOS/简单实现导航栏透明" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/07/iOS/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%8F%E6%98%8E/">简单实现导航栏透明</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/07/iOS/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%8F%E6%98%8E/" class="archive-article-date">
+  	<time datetime="2016-09-07T02:26:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>导航栏的颜色可以统一设置</p>
+<pre><code>let navigationBar = UINavigationBar.appearance()
+//是否透明
+navigationBar.isTranslucent = false
+//导航栏颜色
+navigationBar.barTintColor = UIColor.red
+//导航栏文字颜色
+navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+</code></pre>
+        
+          <a class="article-more-a" href="/2016/09/07/iOS/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%8F%E6%98%8E/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/07/iOS/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%8F%E6%98%8E/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Java Web/Java Web学习08---HTTP、Servlet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/01/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A008---HTTP%E3%80%81Servlet/">Java Web学习08---HTTP、Servlet</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/01/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A008---HTTP%E3%80%81Servlet/" class="archive-article-date">
+  	<time datetime="2016-08-31T22:20:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>HTTP协议：超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。<br>Servlet 是在服务器上运行的小程序。Servlet 的主要功能在于交互式地浏览和修改数据，生成动态 Web 内容。<br>
+        
+          <a class="article-more-a" href="/2016/09/01/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A008---HTTP%E3%80%81Servlet/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTTP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Servlet</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/01/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A008---HTTP%E3%80%81Servlet/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-iOS/iOS播放音效、振动以及打开闪光灯" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -164,12 +983,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/29/iOS/iOS播放音效、振动以及打开闪光灯/">iOS播放音效、振动以及打开闪光灯</a>
+      <a class="article-title" href="/2016/08/29/iOS/iOS%E6%92%AD%E6%94%BE%E9%9F%B3%E6%95%88%E3%80%81%E6%8C%AF%E5%8A%A8%E4%BB%A5%E5%8F%8A%E6%89%93%E5%BC%80%E9%97%AA%E5%85%89%E7%81%AF/">iOS播放音效、振动以及打开闪光灯</a>
     </h1>
   
 
         
-        <a href="/2016/08/29/iOS/iOS播放音效、振动以及打开闪光灯/" class="archive-article-date">
+        <a href="/2016/08/29/iOS/iOS%E6%92%AD%E6%94%BE%E9%9F%B3%E6%95%88%E3%80%81%E6%8C%AF%E5%8A%A8%E4%BB%A5%E5%8F%8A%E6%89%93%E5%BC%80%E9%97%AA%E5%85%89%E7%81%AF/" class="archive-article-date">
   	<time datetime="2016-08-29T07:43:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-29</time>
 </a>
         
@@ -180,16 +999,16 @@
         <p>iOS中有一些小的功能, 有的可以提高一下用户体验, 有的是一些使用功能.</p>
 <h2 id="播放音效"><a href="#播放音效" class="headerlink" title="播放音效"></a>播放音效</h2><ul>
 <li>1、导入框架:<code>import &lt;AVFoundation/AVFoundation.h&gt;</code></li>
-<li>2、获取SoundID, 并播放<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- (void)palySoundName:(NSString *)name &#123;</span><br><span class="line">    NSString *audioFile = [[NSBundle mainBundle] pathForResource:name ofType:nil];</span><br><span class="line">    NSURL *fileUrl = [NSURL fileURLWithPath:audioFile];</span><br><span class="line">    </span><br><span class="line">    SystemSoundID soundID = 0;</span><br><span class="line">    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileUrl), &amp;soundID);</span><br><span class="line">    //设置回调函数</span><br><span class="line">    AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, soundCompleteCallback, NULL);</span><br><span class="line">    AudioServicesPlaySystemSound(soundID); // 播放音效</span><br><span class="line">    AudioServicesDisposeSystemSoundID(soundID);//释放</span><br><span class="line">&#125;</span><br><span class="line">void soundCompleteCallback(SystemSoundID soundID, void *clientData)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>2、获取SoundID, 并播放<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">- (void)palySoundName:(NSString *)name &#123;</span><br><span class="line">    NSString *audioFile = [[NSBundle mainBundle] pathForResource:name ofType:nil];</span><br><span class="line">    NSURL *fileUrl = [NSURL fileURLWithPath:audioFile];</span><br><span class="line">    </span><br><span class="line">    SystemSoundID soundID = 0;</span><br><span class="line">    AudioServicesCreateSystemSoundID((__bridge CFURLRef)(fileUrl), &amp;soundID);</span><br><span class="line">    //设置回调函数</span><br><span class="line">    AudioServicesAddSystemSoundCompletion(soundID, NULL, NULL, soundCompleteCallback, NULL);</span><br><span class="line">    AudioServicesPlaySystemSound(soundID); // 播放音效</span><br><span class="line">    AudioServicesDisposeSystemSoundID(soundID);//释放</span><br><span class="line">&#125;</span><br><span class="line">void soundCompleteCallback(SystemSoundID soundID, void *clientData)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="振动"><a href="#振动" class="headerlink" title="振动"></a>振动</h2><ul>
 <li>1、导入框架:<code>AudioToolbox.framework</code></li>
-<li>2、播放系统声音<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);</span><br></pre></td></tr></table></figure>
+<li>2、播放系统声音<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AudioServicesPlaySystemSound(kSystemSoundID_Vibrate); </span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="闪光灯"><a href="#闪光灯" class="headerlink" title="闪光灯"></a>闪光灯</h2><p>需要导入<code>#import &lt;AVFoundation/AVFoundation.h&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">/** 打开手电筒 */</span><br><span class="line">+ (void)openFlashlight &#123;</span><br><span class="line">    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">    NSError *error = nil;</span><br><span class="line">    if ([captureDevice hasTorch]) &#123;</span><br><span class="line">        BOOL locked = [captureDevice lockForConfiguration:&amp;error];</span><br><span class="line">        if (locked) &#123;</span><br><span class="line">            captureDevice.torchMode = AVCaptureTorchModeOn;</span><br><span class="line">            [captureDevice unlockForConfiguration];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">/** 关闭手电筒 */</span><br><span class="line">+ (void)closeFlashlight &#123;</span><br><span class="line">    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">    if ([device hasTorch]) &#123;</span><br><span class="line">        [device lockForConfiguration:nil];</span><br><span class="line">        [device setTorchMode: AVCaptureTorchModeOff];</span><br><span class="line">        [device unlockForConfiguration];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">/** 打开手电筒 */</span><br><span class="line">+ (void)openFlashlight &#123;</span><br><span class="line">    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">    NSError *error = nil;</span><br><span class="line">    if ([captureDevice hasTorch]) &#123;</span><br><span class="line">        BOOL locked = [captureDevice lockForConfiguration:&amp;error];</span><br><span class="line">        if (locked) &#123;</span><br><span class="line">            captureDevice.torchMode = AVCaptureTorchModeOn;</span><br><span class="line">            [captureDevice unlockForConfiguration];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">/** 关闭手电筒 */</span><br><span class="line">+ (void)closeFlashlight &#123;</span><br><span class="line">    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">    if ([device hasTorch]) &#123;</span><br><span class="line">        [device lockForConfiguration:nil];</span><br><span class="line">        [device setTorchMode: AVCaptureTorchModeOff];</span><br><span class="line">        [device unlockForConfiguration];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
 
       
@@ -210,11 +1029,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		
 		</ul>
@@ -224,7 +1043,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/29/iOS/iOS播放音效、振动以及打开闪光灯/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/29/iOS/iOS%E6%92%AD%E6%94%BE%E9%9F%B3%E6%95%88%E3%80%81%E6%8C%AF%E5%8A%A8%E4%BB%A5%E5%8F%8A%E6%89%93%E5%BC%80%E9%97%AA%E5%85%89%E7%81%AF/">展开全文 >></a>
         </p>
       
 
@@ -261,12 +1080,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/22/Java Web/Java Web学习07---XML和Tomcat/">Java Web学习07---XML和Tomcat</a>
+      <a class="article-title" href="/2016/08/22/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A007---XML%E5%92%8CTomcat/">Java Web学习07---XML和Tomcat</a>
     </h1>
   
 
         
-        <a href="/2016/08/22/Java Web/Java Web学习07---XML和Tomcat/" class="archive-article-date">
+        <a href="/2016/08/22/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A007---XML%E5%92%8CTomcat/" class="archive-article-date">
   	<time datetime="2016-08-21T23:02:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-22</time>
 </a>
         
@@ -279,7 +1098,7 @@
 <li>Tomcat<br>&emsp;Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目,Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于轻量级应用服务器，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试JSP 程序的首选,它还是一个Servlet和JSP容器.</li>
 </ul>
         
-          <a class="article-more-a" href="/2016/08/22/Java Web/Java Web学习07---XML和Tomcat/#more">more >></a>
+          <a class="article-more-a" href="/2016/08/22/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A007---XML%E5%92%8CTomcat/#more">more >></a>
         
       
 
@@ -311,7 +1130,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/22/Java Web/Java Web学习07---XML和Tomcat/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/22/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A007---XML%E5%92%8CTomcat/">展开全文 >></a>
         </p>
       
 
@@ -348,12 +1167,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/18/iOS/dispatch-group-t的使用/">小谈dispatch_group_t的使用</a>
+      <a class="article-title" href="/2016/08/18/iOS/dispatch-group-t%E7%9A%84%E4%BD%BF%E7%94%A8/">小谈dispatch_group_t的使用</a>
     </h1>
   
 
         
-        <a href="/2016/08/18/iOS/dispatch-group-t的使用/" class="archive-article-date">
+        <a href="/2016/08/18/iOS/dispatch-group-t%E7%9A%84%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2016-08-18T00:59:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-18</time>
 </a>
         
@@ -365,14 +1184,24 @@
 <ul>
 <li>有一个页面里面分有几个模块</li>
 <li>每个模块都有自己单独的接口,需要分开从服务端请求数据</li>
-<li>每个模块请求时间又不一致,可能有的接口返回数据是有的,有的数据没有,最后页面加载完成后”残缺不全”,影响用户体验<h1 id="dispatch-group-t可以很好的解决这个问题"><a href="#dispatch-group-t可以很好的解决这个问题" class="headerlink" title="dispatch_group_t可以很好的解决这个问题"></a><font color="orange">dispatch_group_t可以很好的解决这个问题</font></h1>
-        
-          <a class="article-more-a" href="/2016/08/18/iOS/dispatch-group-t的使用/#more">more >></a>
-        
+<li>每个模块请求时间又不一致,可能有的接口返回数据是有的,有的数据没有,最后页面加载完成后”残缺不全”,影响用户体验<h1 id="dispatch-group-t可以很好的解决这个问题"><a href="#dispatch-group-t可以很好的解决这个问题" class="headerlink" title="dispatch_group_t可以很好的解决这个问题"></a><font color=orange>dispatch_group_t可以很好的解决这个问题</font></h1><!---more--->
+</li>
+</ul>
+<p>dispatch_group_t是 GCD里面的一部分,它可以实现一些任务在特定的任务完成之后才执行<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)</span><br><span class="line">let group = dispatch_group_create()</span><br><span class="line">dispatch_group_async(group, queue) &#123;</span><br><span class="line">    print(&quot;1&quot;)</span><br><span class="line">&#125;</span><br><span class="line">dispatch_group_async(group, queue) &#123;</span><br><span class="line">    print(&quot;2&quot;)</span><br><span class="line">&#125;</span><br><span class="line">dispatch_group_notify(group, dispatch_get_main_queue()) &#123;</span><br><span class="line">    print(&quot;3&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>在上面的例子中 print(“1”)和print(“2”)因为是异步的可能先后顺序不一致,但是print(“3”)肯定是在print(“1”)和print(“2”)都执行完成之后才会执行</p>
+<h1 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a><font color=red>Warning</font></h1><font color=red>但是上述方法对于dispatch_group_async里面的闭包(OC中叫Block)是异步的网络请求是无效的,意思就是说如果dispatch_group_async里面的闭包(OC中叫Block)是异步的网络请求,dispatch_group_notify执行的时候,前面dispatch_group_async里面的异步网络请求可能还在执行中,导致dispatch_group_notify执行时候需要的数据为nil.</font>
+
+<p>此时下面两个函数(方法)就起到作用了,表示进入到group和离开group,记住它们两个是成对出现的<br>dispatch_group_enter(group)<br>dispatch_group_leave(group)</p>
+<h1 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">let queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)</span><br><span class="line">let group = dispatch_group_create()</span><br><span class="line">dispatch_group_async(group, queue) &#123;</span><br><span class="line">    getData1(group)</span><br><span class="line">&#125;</span><br><span class="line">dispatch_group_async(group, queue) &#123;</span><br><span class="line">    getData2(group)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//这里还可以设置等待时间,设置为永远DISPATCH_TIME_FOREVER, 是永远等待,可能会卡线程</span><br><span class="line">dispatch_group_wait(group, 30)</span><br><span class="line">dispatch_group_notify(group, dispatch_get_main_queue()) &#123;</span><br><span class="line">    //code 根据得到的数据判断是否操作</span><br><span class="line">&#125;</span><br><span class="line">//模拟网络请求1</span><br><span class="line">func getData1(group: dispatch_group_t) &#123;</span><br><span class="line">    dispatch_group_enter(group)</span><br><span class="line">    let request = Alamofire.request(.GET, baseUrl, parameters: nil)</span><br><span class="line">    request.responseData &#123; (respone) in</span><br><span class="line">        switch respone.result &#123;</span><br><span class="line">            case .Success:</span><br><span class="line">                //code</span><br><span class="line">                dispatch_group_leave(group)</span><br><span class="line">            case .Failure:</span><br><span class="line">                //code</span><br><span class="line">            dispatch_group_leave(group)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//模拟网络请求2</span><br><span class="line">func getData2(group: dispatch_group_t) &#123;</span><br><span class="line">    dispatch_group_enter(group)</span><br><span class="line">    let request = Alamofire.request(.GET, baseUrl, parameters: nil)</span><br><span class="line">    request.responseData &#123; (respone) in</span><br><span class="line">        switch respone.result &#123;</span><br><span class="line">            case .Success:</span><br><span class="line">                //code</span><br><span class="line">                dispatch_group_leave(group)</span><br><span class="line">            case .Failure:</span><br><span class="line">                //code</span><br><span class="line">                dispatch_group_leave(group)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这样就可以保证 执行dispatch_group_notify的时候, dispatch_group_asyn里面的异步请求都已经执行完成了.</p>
+<font color=red>最后重复一次:dispatch_group_enter(group)和dispatch_group_leave(group)是成对的—-成对的—–成对的</font>
+
+
+
+
       
 
       
-    </li></ul></div>
+    </div>
     <div class="article-info article-info-index">
       
       
@@ -385,7 +1214,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">坑点</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -393,7 +1222,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">坑点</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -407,7 +1236,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/18/iOS/dispatch-group-t的使用/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/18/iOS/dispatch-group-t%E7%9A%84%E4%BD%BF%E7%94%A8/">展开全文 >></a>
         </p>
       
 
@@ -444,12 +1273,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/">Java Web学习06---JDBC、连接池和dbUtils</a>
+      <a class="article-title" href="/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/">Java Web学习06---JDBC、连接池和dbUtils</a>
     </h1>
   
 
         
-        <a href="/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/" class="archive-article-date">
+        <a href="/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/" class="archive-article-date">
   	<time datetime="2016-08-10T10:14:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-10</time>
 </a>
         
@@ -460,9 +1289,9 @@
         <!--
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27876900&auto=1&height=66"></iframe> 
 -->
-<p>JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.<br>JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法完成数据库连接！<font color="orange">每个数据库厂商都有自己的驱动，用来连接自己公司的数据库。</font></p>
+<p>JDBC（Java Data Base Connectivity  Java数据库连接）,就是用Java语言来操作数据库.它是一种用于执行SQL语句的Java API,可以为多种关系数据库提供统一访问，它由一组用Java语言编写的类和接口组成。JDBC提供了一种基准,据此可以构建更高级的工具和接口，使数据库开发人员能够编写数据库应用程序.<br>JDBC是接口，而JDBC驱动才是接口的实现，没有驱动无法完成数据库连接！<font color=orange>每个数据库厂商都有自己的驱动，用来连接自己公司的数据库。</p>
         
-          <a class="article-more-a" href="/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/#more">more >></a>
+          <a class="article-more-a" href="/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/#more">more >></a>
         
       
 
@@ -490,7 +1319,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/10/Java Web/Java Web学习06---JDBC、连接池和dbUtils/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A006---JDBC%E3%80%81%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%92%8CdbUtils/">展开全文 >></a>
         </p>
       
 
@@ -527,12 +1356,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/08/资料整理/国内镜像站mirror整理/">国内镜像站mirror整理</a>
+      <a class="article-title" href="/2016/08/08/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99mirror%E6%95%B4%E7%90%86/">国内镜像站mirror整理</a>
     </h1>
   
 
         
-        <a href="/2016/08/08/资料整理/国内镜像站mirror整理/" class="archive-article-date">
+        <a href="/2016/08/08/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99mirror%E6%95%B4%E7%90%86/" class="archive-article-date">
   	<time datetime="2016-08-08T06:28:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-08</time>
 </a>
         
@@ -540,10 +1369,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://47.96.147.179/images/others/mirror.jpg" alt="hello" style="width: 70%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"></p>
+        <p><img src="/assets/images/others/mirror.jpg" alt="hello" style="width: 70%; text-align: center; display: block; margin-top:30px; margin-bottom:30px"/></p>
 <p>最近学习JAVA不得不从网外下载一些东西, 但是由于GFW的缘故导致下贼慢, 所有整理了一下目前国内的一些开源Mirror镜像站.</p>
         
-          <a class="article-more-a" href="/2016/08/08/资料整理/国内镜像站mirror整理/#more">more >></a>
+          <a class="article-more-a" href="/2016/08/08/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99mirror%E6%95%B4%E7%90%86/#more">more >></a>
         
       
 
@@ -557,11 +1386,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -591,438 +1420,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/08/资料整理/国内镜像站mirror整理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Java Web/Java Web学习05---SQL语言和数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/02/Java Web/Java Web学习05---SQL语言和数据库/">Java Web学习05---SQL语言、数据库和MySQL</a>
-    </h1>
-  
-
-        
-        <a href="/2016/08/02/Java Web/Java Web学习05---SQL语言和数据库/" class="archive-article-date">
-  	<time datetime="2016-08-02T08:13:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>数据库就是存储数据的仓库，其本质是一个文件系统，数据按照特定的格式将数据存储起来，用户可以通过sql语句对数据库中的数据进行增加，修改，删除及查询操作.</p>
-        
-          <a class="article-more-a" href="/2016/08/02/Java Web/Java Web学习05---SQL语言和数据库/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MySQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据库</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/02/Java Web/Java Web学习05---SQL语言和数据库/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-iOS/Swift中使用runtime进行字典转模型时的一个注意点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/02/iOS/Swift中使用runtime进行字典转模型时的一个注意点/">Swift中使用runtime进行字典转模型时的一个注意点</a>
-    </h1>
-  
-
-        
-        <a href="/2016/08/02/iOS/Swift中使用runtime进行字典转模型时的一个注意点/" class="archive-article-date">
-  	<time datetime="2016-08-02T03:09:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-02</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近使用runtime实现Swift中字典转模型的时候,使用下面获取属性列表的方法无法获取声明为Bool类型的属性, 导致不能正确赋值.</p>
-<pre><code>var count: UInt32 = 0
-let properties = class_copyPropertyList(className, &amp;count) //属性列表
-</code></pre>
-        
-          <a class="article-more-a" href="/2016/08/02/iOS/Swift中使用runtime进行字典转模型时的一个注意点/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂谈</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">坑点</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/08/02/iOS/Swift中使用runtime进行字典转模型时的一个注意点/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-iOS/Swift一些资料记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/22/iOS/Swift一些资料记录/">Swift一些资料记录</a>
-    </h1>
-  
-
-        
-        <a href="/2016/07/22/iOS/Swift一些资料记录/" class="archive-article-date">
-  	<time datetime="2016-07-22T02:42:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近开始使用Swift写项目,这里记录一下一些Swift方面的开源库、学习资料以及小技巧.<br>
-        
-          <a class="article-more-a" href="/2016/07/22/iOS/Swift一些资料记录/#more">more >></a>
-        
-      
-
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">资料整理</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/22/iOS/Swift一些资料记录/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-iOS/UITableViewCell的自定义侧滑和多行编辑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/">UITableView的侧滑按钮和多行编辑</a>
-    </h1>
-  
-
-        
-        <a href="/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/" class="archive-article-date">
-  	<time datetime="2016-07-19T02:45:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>UITableView在iOS开发中是使用最多的控件之一,基本上每个app都会使用到,从设置到一些列表都有它的身影,今天介绍一下UITableView的侧滑按钮和多行编辑.<br>
-        
-          <a class="article-more-a" href="/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/#more">more >></a>
-        
-      
-
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/19/iOS/UITableViewCell的自定义侧滑和多行编辑/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="java-Java Web/Java Web学习04---jQuery-validate和BootStrap" class="article article-type-java  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/18/Java Web/Java Web学习04---jQuery-validate和BootStrap/">Java Web学习04---jQuery_validate和BootStrap</a>
-    </h1>
-  
-
-        
-        <a href="/2016/07/18/Java Web/Java Web学习04---jQuery-validate和BootStrap/" class="archive-article-date">
-  	<time datetime="2016-07-18T08:30:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-07-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>jQuery-validate是jQuery的一个插件, 有助于我们进行表单校验, 而BootStrap是一个HTML+CSS+JavaScript的类库.</p>
-        
-          <a class="article-more-a" href="/2016/07/18/Java Web/Java Web学习04---jQuery-validate和BootStrap/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">BootStrap</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/07/18/Java Web/Java Web学习04---jQuery-validate和BootStrap/">展开全文 >></a>
+          <a class="article-more-a" href="/2016/08/08/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E7%AB%99mirror%E6%95%B4%E7%90%86/">展开全文 >></a>
         </p>
       
 
@@ -1054,7 +1452,7 @@ let properties = class_copyPropertyList(className, &amp;count) //属性列表
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/5/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/7/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1066,7 +1464,7 @@ let properties = class_copyPropertyList(className, &amp;count) //属性列表
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -1083,7 +1481,7 @@ let properties = class_copyPropertyList(className, &amp;count) //属性列表
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -1169,7 +1567,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1185,11 +1627,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1201,6 +1707,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -1209,7 +1723,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1217,7 +1763,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1225,35 +1811,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1261,47 +1819,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1321,6 +1839,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -1329,191 +1915,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1521,7 +1927,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1564,7 +1970,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

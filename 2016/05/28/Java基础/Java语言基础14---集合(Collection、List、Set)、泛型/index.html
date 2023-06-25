@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java语言基础14---集合(Collection、List、Set)、泛型 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="数组的长度是固定的, 当添加的元素超过了数组的长度时,需要重新定义新的数组, Java内部提供了集合类, 可以存储任意类型, 长度是可以改变的, 随着元素的增加而增加, 随着元素的减少而减少.  Objective-C里面字符串(NSString)、数组(NSArray)、字典(NSDictionary)和集合(NSSet)都是不可变的, 而NSMutableString、NSMutableArr">
-<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java语言基础14---集合(Collection、List、Set)、泛型">
-<meta property="og:url" content="http://yoursite.com/2016/05/28/Java基础/Java语言基础14---集合(Collection、List、Set)、泛型/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/05/28/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8014---%E9%9B%86%E5%90%88(Collection%E3%80%81List%E3%80%81Set)%E3%80%81%E6%B3%9B%E5%9E%8B/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="数组的长度是固定的, 当添加的元素超过了数组的长度时,需要重新定义新的数组, Java内部提供了集合类, 可以存储任意类型, 长度是可以改变的, 随着元素的增加而增加, 随着元素的减少而减少.  Objective-C里面字符串(NSString)、数组(NSArray)、字典(NSDictionary)和集合(NSSet)都是不可变的, 而NSMutableString、NSMutableArr">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.655Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-05-28T02:21:32.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java语言基础14---集合(Collection、List、Set)、泛型">
-<meta name="twitter:description" content="数组的长度是固定的, 当添加的元素超过了数组的长度时,需要重新定义新的数组, Java内部提供了集合类, 可以存储任意类型, 长度是可以改变的, 随着元素的增加而增加, 随着元素的减少而减少.  Objective-C里面字符串(NSString)、数组(NSArray)、字典(NSDictionary)和集合(NSSet)都是不可变的, 而NSMutableString、NSMutableArr">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +37,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +48,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +62,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +104,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +136,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +171,7 @@
   
 
         
-        <a href="/2016/05/28/Java基础/Java语言基础14---集合(Collection、List、Set)、泛型/" class="archive-article-date">
+        <a href="/2016/05/28/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8014---%E9%9B%86%E5%90%88(Collection%E3%80%81List%E3%80%81Set)%E3%80%81%E6%B3%9B%E5%9E%8B/" class="archive-article-date">
   	<time datetime="2016-05-28T02:21:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-28</time>
 </a>
         
@@ -180,7 +182,7 @@
         <p>数组的长度是固定的, 当添加的元素超过了数组的长度时,需要重新定义新的数组, Java内部提供了集合类, 可以存储任意类型, 长度是可以改变的, 随着元素的增加而增加, 随着元素的减少而减少.</p>
 <ul>
 <li>Objective-C里面字符串(NSString)、数组(NSArray)、字典(NSDictionary)和集合(NSSet)都是不可变的, 而NSMutableString、NSMutableArray、NSMutableDictionary和NSMutableSet分别对应是可变的.</li>
-<li>Swift里面let声明的是不可变的, var声明的是可变的.<a id="more"></a>
+<li>Swift里面let声明的是不可变的, var声明的是可变的.<span id="more"></span>
 </li>
 </ul>
 <ul>
@@ -197,7 +199,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a><font color="orange">Collection</font></h2><p>Collection是util包下面的一个接口</p>
+<h2 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a><font color=orange>Collection</font></h2><p>Collection是util包下面的一个接口</p>
 <ul>
 <li>List  有序, 有索引, 元素可以重复<ul>
 <li>Vector     被ArrayList替代了, 数组实现</li>
@@ -246,12 +248,12 @@
 <li>如果调用者改变返回true, 未变化返回false</li>
 </ul>
 </li>
-<li>Iterator<e> iterator() 获取迭代器, Iterator是一个接口<ul>
+<li>Iterator<E> iterator() 获取迭代器, Iterator是一个接口<ul>
 <li>boolean hasNext() 是否可以继续迭代</li>
 <li>E next() 获取下一个元素</li>
 <li>void remove() 从迭代器指向的 collection 中移除迭代器返回的最后一个元素（可选操作）</li>
 </ul>
-</e></li>
+</li>
 </ul>
 </li>
 </ul>
@@ -263,14 +265,14 @@
     dd.add(new Student(&quot;熊大&quot;, 53));
     dd.add(1);
     Iterator it = dd.iterator();
-    while (it.hasNext()) {
+    while (it.hasNext()) &#123;
         Object o = it.next();
-        if (o instanceof Student) {
+        if (o instanceof Student) &#123;
             Student s = (Student)o;
             System.err.println(s.getName() + &quot;  &quot; + s.getAge());
-        }
-    }
-</code></pre><h3 id="List"><a href="#List" class="headerlink" title="List"></a><font color="orange">List</font></h3><p>List除了实现了Collection接口里面的方法外, 还有自己的方法</p>
+        &#125;
+    &#125;
+</code></pre><h3 id="List"><a href="#List" class="headerlink" title="List"></a><font color=orange>List</font></h3><p>List除了实现了Collection接口里面的方法外, 还有自己的方法</p>
 <ul>
 <li>void add(int index, E element)  在列表的指定位置插入指定元素（可选操作）。 </li>
 <li>E remove(int index)  移除列表中指定位置的元素（可选操作）。<ul>
@@ -292,9 +294,9 @@
     list.add(14);
     list.add(15);
 
-    for (int i = 0; i &lt; list.size(); i++) {
+    for (int i = 0; i &lt; list.size(); i++) &#123;
         System.out.println(list.get(i));
-    }
+    &#125;
 </code></pre><h3 id="并发修改异常"><a href="#并发修改异常" class="headerlink" title="并发修改异常"></a>并发修改异常</h3><p>ConcurrentModificationException 当方法检测到对象的并发修改，但不允许这种修改时，抛出此异常。 </p>
 <ul>
 <li>例如在遍历集合的同时,增加元素就会抛出此异常 </li>
@@ -303,10 +305,10 @@
     list.add(10);
     list.add(11);
     Iterator it = list.iterator();
-    while (it.hasNext()) {
+    while (it.hasNext()) &#123;
         System.out.println(it.next());
         list.add(&quot;a&quot;);//会抛出异常
-    }
+    &#125;
 </code></pre><ul>
 <li><p>解决方法</p>
 <ul>
@@ -327,7 +329,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="Vector类"><a href="#Vector类" class="headerlink" title="Vector类"></a><font color="orange">Vector类</font></h3><p>它的迭代通过Enumeration<e> elements()  来实现的</e></p>
+<h3 id="Vector类"><a href="#Vector类" class="headerlink" title="Vector类"></a><font color=orange>Vector类</font></h3><p>它的迭代通过Enumeration<E> elements()  来实现的</p>
 <ul>
 <li>Enumeration<ul>
 <li>boolean hasMoreElements()  测试此枚举是否包含更多的元素。 </li>
@@ -369,14 +371,14 @@
 </ul>
 </li>
 </ul>
-<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a><font color="orange">LinkedList</font></h3><p>LinkedList除了实现了Collection和List的接口外, 还有自己的方法.</p>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a><font color=orange>LinkedList</font></h3><p>LinkedList除了实现了Collection和List的接口外, 还有自己的方法.</p>
 <ul>
 <li>addFirst(E e) 和 addLast(E e) 在首尾添加元素</li>
 <li>getFirst() 和 getLast() 获取首尾元素</li>
 <li>removerFirst() 和 removeLast() 移除首尾元素</li>
 <li>get(int index) 根据下标获取元素</li>
 </ul>
-<h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a><font color="orange">泛型</font></h2><ul>
+<h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a><font color=orange>泛型</font></h2><ul>
 <li>泛型好处<ul>
 <li>提高安全性(将运行期的错误转换到编译期) </li>
 <li>省去强转的麻烦</li>
@@ -393,14 +395,14 @@ ArrayList&lt;Person&gt; list = new ArrayList&lt;&gt;();
 list.add(new Person(&quot;张三&quot;, 24));
 list.add(new Person(&quot;李四&quot;, 24));
 Iterator&lt;Person&gt; it = list.iterator();
-while (it.hasNext()) {
+while (it.hasNext()) &#123;
     //注意这里不能多次调用next方法,不然循环会遗漏
     Person person = (Person) it.next();
     System.out.println(person.getName());
-}
+&#125;
 </code></pre><ul>
 <li>泛型类<ul>
-<li>在定义类的时候后面使用<t>修饰, 其中T只是一个符号, 其他字母也可以, 一般使用大写字母.</t></li>
+<li>在定义类的时候后面使用<T>修饰, 其中T只是一个符号, 其他字母也可以, 一般使用大写字母.</li>
 <li>泛型方法<ul>
 <li>实例方法可以使用类的泛型, 如果不一致, 需要在方法名前面添加自己的泛型.</li>
 </ul>
@@ -409,40 +411,40 @@ while (it.hasNext()) {
 </ul>
 </li>
 </ul>
-<pre><code>class Person&lt;T&gt; {
+<pre><code>class Person&lt;T&gt; &#123;
     private String name;
     private int age;
 
-    public void show(T t) {
+    public void show(T t) &#123;
         System.out.println(t);
-    }
+    &#125;
 
-    public&lt;E&gt; void hit(E e) {
+    public&lt;E&gt; void hit(E e) &#123;
         System.out.println(e);
-    }
+    &#125;
 
-    public static&lt;F&gt; void sleep(F f) {
+    public static&lt;F&gt; void sleep(F f) &#123;
 
-    }
+    &#125;
 
-}
+&#125;
 </code></pre><ul>
 <li>泛型接口</li>
 </ul>
-<pre><code>interface Inter&lt;T&gt; {
+<pre><code>interface Inter&lt;T&gt; &#123;
     public abstract void show(T t);
-}
+&#125;
 
 
-class Student implements Inter&lt;String&gt; {
+class Student implements Inter&lt;String&gt; &#123;
 
     @Override
-    public void show(String t) {
+    public void show(String t) &#123;
 
-    }
+    &#125;
 
-}
-</code></pre><h3 id="泛型通配符"><a href="#泛型通配符" class="headerlink" title="泛型通配符"></a><font color="orange">泛型通配符</font></h3><ul>
+&#125;
+</code></pre><h3 id="泛型通配符"><a href="#泛型通配符" class="headerlink" title="泛型通配符"></a><font color=orange>泛型通配符</font></h3><ul>
 <li>&lt;?&gt; <ul>
 <li>表示任意类型, 如果没有明确指定就是Object及其子类</li>
 </ul>
@@ -456,30 +458,30 @@ class Student implements Inter&lt;String&gt; {
 </ul>
 </li>
 </ul>
-<h3 id="增强for循环"><a href="#增强for循环" class="headerlink" title="增强for循环"></a><font color="orange">增强for循环</font></h3><p>底层使用迭代器实现的, 数组和集合通用. Eclipse中可以使用fore来快速提示, JDK1.5新特性.</p>
+<h3 id="增强for循环"><a href="#增强for循环" class="headerlink" title="增强for循环"></a><font color=orange>增强for循环</font></h3><p>底层使用迭代器实现的, 数组和集合通用. Eclipse中可以使用fore来快速提示, JDK1.5新特性.</p>
 <pre><code>ArrayList&lt;String&gt; list = new ArrayList&lt;&gt;();
     list.add(&quot;a&quot;);
     list.add(&quot;a&quot;);
     list.add(&quot;a&quot;);
     list.add(&quot;a&quot;);
-    for (String string : list) {
+    for (String string : list) &#123;
         System.out.println(string);
-    }
+    &#125;
 </code></pre><ul>
 <li>几种循环删除<ul>
 <li>普通for循环, 需要使用集合的删除方法<blockquote>
-<p>   ArrayList<string> list = new ArrayList&lt;&gt;();<br>  list.add(“a”);<br>  list.add(“b”);<br>  list.add(“b”);<br>  list.add(“d”);<br>  for (int i = 0; i &lt; list.size(); i++) {<br>  &#8195;&#8195;if (“b”.equals(list.get(i))) {<br>  &#8195;&#8195;&#8195;&#8195;list.remove(i–);<br>  &#8195;&#8195;}<br>  }</string></p>
+<p>   ArrayList<String> list = new ArrayList&lt;&gt;();<br>  list.add(“a”);<br>  list.add(“b”);<br>  list.add(“b”);<br>  list.add(“d”);<br>  for (int i = 0; i &lt; list.size(); i++) {<br>  &#8195;&#8195;if (“b”.equals(list.get(i))) {<br>  &#8195;&#8195;&#8195;&#8195;list.remove(i–);<br>  &#8195;&#8195;}<br>  }</p>
 </blockquote>
 </li>
 <li>迭代器遍历, 使用迭代器添加删除方法<blockquote>
-<p>   ArrayList<string> list = new ArrayList&lt;&gt;();<br>  list.add(“a”);<br>  list.add(“b”);<br>  list.add(“b”);<br>  list.add(“d”);<br>  Iterator<string> it = list.listIterator();<br>  while (it.hasNext()) {<br>  &#8195;&#8195;String string = (String) it.next();<br>  &#8195;&#8195;if (“b”.equals(string)) {<br>  &#8195;&#8195;&#8195;&#8195;it.remove();<br>  &#8195;&#8195;}<br>  }</string></string></p>
+<p>   ArrayList<String> list = new ArrayList&lt;&gt;();<br>  list.add(“a”);<br>  list.add(“b”);<br>  list.add(“b”);<br>  list.add(“d”);<br>  Iterator<String> it = list.listIterator();<br>  while (it.hasNext()) {<br>  &#8195;&#8195;String string = (String) it.next();<br>  &#8195;&#8195;if (“b”.equals(string)) {<br>  &#8195;&#8195;&#8195;&#8195;it.remove();<br>  &#8195;&#8195;}<br>  }</p>
 </blockquote>
 </li>
 <li>for增强循环, 不能实现删除 </li>
 </ul>
 </li>
 </ul>
-<h3 id="静态导入"><a href="#静态导入" class="headerlink" title="静态导入"></a><font color="orange">静态导入</font></h3><p>静态导入的是类中的静态方法, jdk1.5 新增特性</p>
+<h3 id="静态导入"><a href="#静态导入" class="headerlink" title="静态导入"></a><font color=orange>静态导入</font></h3><p>静态导入的是类中的静态方法, jdk1.5 新增特性</p>
 <ul>
 <li>格式<ul>
 <li>import static 包名.类名.方法名; //一个静态方法</li>
@@ -488,7 +490,7 @@ class Student implements Inter&lt;String&gt; {
 </li>
 <li>导入后, 可以直接使用, 不用加类名, 但是如果多个方法名一样的方法, 反而会搞不清楚, 一般很少使用</li>
 </ul>
-<h3 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a><font color="orange">可变参数</font></h3><p>定义方法的时候不知道该定义多少个参数</p>
+<h3 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a><font color=orange>可变参数</font></h3><p>定义方法的时候不知道该定义多少个参数</p>
 <ul>
 <li>格式<ul>
 <li>修饰符 返回值类型 方法名(数据类型…  变量名){}</li>
@@ -500,7 +502,7 @@ class Student implements Inter&lt;String&gt; {
 </ul>
 </li>
 </ul>
-<h3 id="Array和List转换"><a href="#Array和List转换" class="headerlink" title="Array和List转换"></a><font color="orange">Array和List转换</font></h3><ul>
+<h3 id="Array和List转换"><a href="#Array和List转换" class="headerlink" title="Array和List转换"></a><font color=orange>Array和List转换</font></h3><ul>
 <li>数组转集合<ul>
 <li>Arrays的asList()方法, 可以把数组转为集合<ul>
 <li>基本数据类型数组转为集合, 整个数组作为对象转为集合中元素.</li>
@@ -511,49 +513,49 @@ class Student implements Inter&lt;String&gt; {
 </ul>
 </li>
 <li>集合转数组<ul>
-<li>使用List的<t> T[] toArray(T[] a)  方法, 如果数组a的length小于等于集合的size, 那么转换后的数组长度等于集合的size, 如果数组的length大于集合的size, 那么数组里面的值都是null</t></li>
+<li>使用List的<T> T[] toArray(T[] a)  方法, 如果数组a的length小于等于集合的size, 那么转换后的数组长度等于集合的size, 如果数组的length大于集合的size, 那么数组里面的值都是null</li>
 </ul>
 </li>
 </ul>
 <h2 id="HashSet"><a href="#HashSet" class="headerlink" title="HashSet"></a>HashSet</h2><p>没有特有的方法, 和Collection的方法一样, 只不过往Set里面添加元素的时候, 先判断hashCode值是否一样, 不一样就存储进去, 一样再判断equals是否为true, 当为true时不存储, 为false的时候才会存储进Set.一般自定义类型可以使用Eclipse生成 Alt + Shift + s + h来生成hashCode和equals方法.</p>
 <pre><code>HashSet&lt;Integer&gt; hs = new HashSet&lt;&gt;();
     Random random = new Random();
-    while (hs.size() &lt; 10) {
+    while (hs.size() &lt; 10) &#123;
         hs.add(random.nextInt(20) + 1);
-    }
+    &#125;
 
-    for (Integer integer : hs) {
+    for (Integer integer : hs) &#123;
         System.out.println(integer);
-    }
-</code></pre><h3 id="LinkedHashSet"><a href="#LinkedHashSet" class="headerlink" title="LinkedHashSet"></a><font color="orange">LinkedHashSet</font></h3><p>HashSet的子类, 可以保证存入顺序.</p>
-<h2 id="TreeSet"><a href="#TreeSet" class="headerlink" title="TreeSet"></a><font color="orange">TreeSet</font></h2><p>TreeSet集合是用对象元素进行排序的, 同时也可以保证元素的唯一性.</p>
+    &#125;
+</code></pre><h3 id="LinkedHashSet"><a href="#LinkedHashSet" class="headerlink" title="LinkedHashSet"></a><font color=orange>LinkedHashSet</font></h3><p>HashSet的子类, 可以保证存入顺序.</p>
+<h2 id="TreeSet"><a href="#TreeSet" class="headerlink" title="TreeSet"></a><font color=orange>TreeSet</font></h2><p>TreeSet集合是用对象元素进行排序的, 同时也可以保证元素的唯一性.</p>
 <ul>
 <li>里面的自定义类可以实现Comparable接口, 重写compareTo(E e)方法. TreeSet集合中如何存储元素取决于compareTo()方法的返回值, 当返回0, 那么不会存储, 返回小于0存储子左边, 返回大于1存储在右边.</li>
 <li>或者创建TreeSet的时候, 使用比较器(Comparator)排序</li>
 </ul>
 <pre><code>//使用比较器来实现排序, 可以决定是否保留重复
-public static void sorted(List&lt;String&gt; ls) {
+public static void sorted(List&lt;String&gt; ls) &#123;
     //使用匿名内部类来实现
-    TreeSet&lt;String&gt; ts = new TreeSet&lt;&gt;(new Comparator&lt;String&gt;() {
+    TreeSet&lt;String&gt; ts = new TreeSet&lt;&gt;(new Comparator&lt;String&gt;() &#123;
         @Override
-        public int compare(String o1, String o2) {
-            if (o1.compareTo(o2) == 0) {
+        public int compare(String o1, String o2) &#123;
+            if (o1.compareTo(o2) == 0) &#123;
                 return -1;
-            }
+            &#125;
             return o1.compareTo(o2);
-        }
+        &#125;
         @Override
-        public boolean equals(Object obj) {
+        public boolean equals(Object obj) &#123;
 
             return super.equals(obj);
-        }
-    });
+        &#125;
+    &#125;);
 
 
-    for (String string : ls) {
+    for (String string : ls) &#123;
         ts.add(string);
-    }
-}
+    &#125;
+&#125;
 </code></pre>
       
 
@@ -578,57 +580,6 @@ public static void sorted(List&lt;String&gt; ls) {
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/05/28/Java基础/Java语言基础14---集合(Collection、List、Set)、泛型/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -637,7 +588,7 @@ public static void sorted(List&lt;String&gt; ls) {
   
 <nav id="article-nav">
   
-    <a href="/2016/05/29/iOS/iOS摇一摇的实现/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/29/iOS/iOS%E6%91%87%E4%B8%80%E6%91%87%E7%9A%84%E5%AE%9E%E7%8E%B0/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -647,7 +598,7 @@ public static void sorted(List&lt;String&gt; ls) {
     </a>
   
   
-    <a href="/2016/05/24/Java基础/Java语言基础13---正则表达式、Pattern、Matcher、System、BigInteger、BigDecimal、Date、SimpleFormat、Calendar/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/05/24/Java%E5%9F%BA%E7%A1%80/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%8013---%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E3%80%81Pattern%E3%80%81Matcher%E3%80%81System%E3%80%81BigInteger%E3%80%81BigDecimal%E3%80%81Date%E3%80%81SimpleFormat%E3%80%81Calendar/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java语言基础13---正则表达式、Pattern、Matcher、System、BigInteger、BigDecimal、Date、SimpleFormat、Calendar</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -691,7 +642,7 @@ public static void sorted(List&lt;String&gt; ls) {
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -708,7 +659,7 @@ public static void sorted(List&lt;String&gt; ls) {
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -794,7 +745,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -810,11 +805,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -826,6 +885,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -834,7 +901,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -842,7 +941,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -850,35 +989,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -886,47 +997,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -946,6 +1017,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -954,191 +1093,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1146,7 +1105,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1189,7 +1148,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

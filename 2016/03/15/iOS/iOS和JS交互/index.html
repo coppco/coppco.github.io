@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>iOS和JS交互 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="开发App的过程中，通常为了加快开发进度会遇到在App内部加载网页，通常用UIWebView加载。这个自iOS2开始使用的网页加载器一直是开发的心病：加载速度慢，占用内存多，优化困难。如果加载网页多，还可能因为过量占用内存而给系统kill掉。各种优化的方法效果也不那么明显.而从iOS8.0开始, 苹果推出了新框架Webkit，提供了WKWebView替换UIWebView, 它在速度、内存占用上都">
-<meta name="keywords" content="JavaScript,iOS,资料整理,Swift,Objective-C,iOS和JavaScript交互">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS和JS交互">
-<meta property="og:url" content="http://yoursite.com/2016/03/15/iOS/iOS和JS交互/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/03/15/iOS/iOS%E5%92%8CJS%E4%BA%A4%E4%BA%92/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="开发App的过程中，通常为了加快开发进度会遇到在App内部加载网页，通常用UIWebView加载。这个自iOS2开始使用的网页加载器一直是开发的心病：加载速度慢，占用内存多，优化困难。如果加载网页多，还可能因为过量占用内存而给系统kill掉。各种优化的方法效果也不那么明显.而从iOS8.0开始, 苹果推出了新框架Webkit，提供了WKWebView替换UIWebView, 它在速度、内存占用上都">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.666Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-03-15T09:57:55.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="资料整理">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Objective-C">
+<meta property="article:tag" content="Swift">
+<meta property="article:tag" content="iOS和JavaScript交互">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS和JS交互">
-<meta name="twitter:description" content="开发App的过程中，通常为了加快开发进度会遇到在App内部加载网页，通常用UIWebView加载。这个自iOS2开始使用的网页加载器一直是开发的心病：加载速度慢，占用内存多，优化困难。如果加载网页多，还可能因为过量占用内存而给系统kill掉。各种优化的方法效果也不那么明显.而从iOS8.0开始, 苹果推出了新框架Webkit，提供了WKWebView替换UIWebView, 它在速度、内存占用上都">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +42,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +53,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +67,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +109,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +141,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +176,7 @@
   
 
         
-        <a href="/2016/03/15/iOS/iOS和JS交互/" class="archive-article-date">
+        <a href="/2016/03/15/iOS/iOS%E5%92%8CJS%E4%BA%A4%E4%BA%92/" class="archive-article-date">
   	<time datetime="2016-03-15T09:57:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-15</time>
 </a>
         
@@ -178,24 +185,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>开发App的过程中，通常为了加快开发进度会遇到在App内部加载网页，通常用UIWebView加载。这个自iOS2开始使用的网页加载器一直是开发的心病：加载速度慢，占用内存多，优化困难。如果加载网页多，还可能因为过量占用内存而给系统kill掉。各种优化的方法效果也不那么明显.<br>而从iOS8.0开始, 苹果推出了新框架Webkit，提供了WKWebView替换UIWebView, 它在速度、内存占用上都比UIWebView好很多. 但是为了兼顾iOS8.0以下的系统还是需要使用UIWebView的.</p>
-<font color="orange" size="4">这里主要介绍UIWebView和JavaScript的交互.</font>
+<font color=orange size=4>这里主要介绍UIWebView和JavaScript的交互.</font>
 
-<a id="more"></a>
+<span id="more"></span>
 <blockquote>
 <p>  //首先html中这样写<br><code>&lt;!DOCTYPE html&gt;</code><br><code>&lt;html lang=&quot;en&quot;&gt;</code><br><code>&lt;head&gt;</code><br><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code><br><code>&lt;meta content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot; name=&quot;viewport&quot;&gt;</code><br><code>&lt;title&gt;邀请有礼&lt;/title&gt;</code><br><code>&lt;/head&gt;</code><br><code>&lt;body&gt;</code><br><code>&lt;/br&gt;</code><br><code>&lt;/br&gt;</code><br><code>&lt;/br&gt;</code><br>测试OC和JS相互调用<br><code>&lt;/br&gt;</code><br><code>&lt;/br&gt;</code><br><code>&lt;/br&gt;</code><br>//点击调用弹出框<br><code>&lt;a href=&quot;#&quot;onclick=&quot;JSCallOC(&#39;JS调用原生AlertView&#39;)&quot;&gt;弹出框&lt;/a&gt;</code><br><code>&lt;/body&gt;</code><br><code>&lt;script type=&quot;text/javascript&quot;&gt;</code><br>//定义一个函数, 调用OC方法<br>function JSCallOC(title) {<br>&emsp;&emsp;window.location.href=”OBJC:param=” + title;<br>}<br><!--    JS里面定义了一个方法, 有返回值--><br>function getShareTxt() {<br>&emsp;&emsp;return “{\”name\”: \”苹果手机\”,\”price\”: \”¥5000.0\”}”;<br>}<br><!--    JS里面定义了一个方法, 有返回值有参数--><br>function getShareTxtHasParam(name, price) {<br>&emsp;&emsp;return “{\”name\”: name,\”price\”: price}”;<br>}<br><code>&lt;/script\&gt;</code><br><code>&lt;/html&gt;</code></p>
 </blockquote>
-<p><br></p>
-<font color="orange" size="5">一、iOS7之前的做法</font>
+<p></br></p>
+<font color=orange size=5>一、iOS7之前的做法</font>
 
 <p>在iOS7之前和JavaScript的交互: H5调原生方法时发送虚假的请求, 原生通过拦截这个请求来处理事务, 而原生通过UIWebView的<code>- (nullable NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;</code>方法来调用JavaScript函数.</p>
-<font color="orange" size="4">1、JavaScript调用原生方法</font>
+<font color=orange size=4>1、JavaScript调用原生方法</font>
 
 <p>当我们点击a标签的时候会执行JSCallOC()函数, 传入的参数是当前时间对象, 在JSCallOC()函数中, 改变了当前网页的href, 此时我们在UIWebView的代理方法中<code>-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType</code>进行处理,返回YES就会不拦截, 返回NO就会拦截网络请求, 处理自己的逻辑即可.例如本例中收到消息弹出alert.</p>
 <blockquote>
 <p>  -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {<br>&emsp;&emsp;NSString *urlString = request.URL.absoluteString;<br>&emsp;&emsp;if ([[urlString uppercaseString] containsString:@”OBJC”]) {<br>&emsp;&emsp;&emsp;&emsp;UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@”温馨提示” message:[[urlString URLDecoding] componentsSeparatedByString:@”=”].lastObject delegate:nil cancelButtonTitle:@”知道了” otherButtonTitles:nil, nil];<br>&emsp;&emsp;&emsp;&emsp;[alertView show];<br>&emsp;&emsp;&emsp;&emsp;return false;<br>&emsp;&emsp;}<br>&emsp;&emsp;return true;<br>}</p>
 </blockquote>
 <p>//URLDecoding方法是unicode解码方法, URL中如果有中文会生成unicode编码, 需要解码, 需要了解的同学可以去看看.<a href="/2015/12/26/iOS/iOS中URL编码和URL解码/">传送门</a></p>
-<p><font color="orange" size="4">2、OC调用JavaScript函数</font><br>OC调JavaScript函数也很简单, 只要在合适的位置使用UIWebView的实例方法<code>- (nullable NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;</code>即可.<br>如果不需要触发希望在加载html完成之后执行可以在UIWebView的加载完成的代理方法中执行, 也可以通过按钮点击事件触发.</p>
+<p><font color=orange size=4>2、OC调用JavaScript函数</font><br>OC调JavaScript函数也很简单, 只要在合适的位置使用UIWebView的实例方法<code>- (nullable NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;</code>即可.<br>如果不需要触发希望在加载html完成之后执行可以在UIWebView的加载完成的代理方法中执行, 也可以通过按钮点击事件触发.</p>
 <blockquote>
 <p>  -(IBAction)share:(id)sender {<br>&emsp;&emsp;NSString *jsMethod = @”JSCallOC(‘OC调JS方法, JS又调原生AlertView’)”;<br>&emsp;&emsp;[self.webView stringByEvaluatingJavaScriptFromString:jsMethod];<br>}</p>
 </blockquote>
@@ -204,7 +211,7 @@
 <blockquote>
 <p>  NSString *jsMethod = @”getShareTxtHasParam(‘小米手机2999元’)”;<br>NSString *string = [self.webView stringByEvaluatingJavaScriptFromString:jsMethod];<br>UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@”收到JS返回值” message:string delegate:nil cancelButtonTitle:@”知道了” otherButtonTitles:nil, nil];<br>[alertView show];</p>
 </blockquote>
-<p><font color="orange" size="5">二、iOS7之后的做法</font><br>在iOS7之后, 苹果推出了JavaScriptCore.framework框架, 极大方便了我们处理JavaScript.它可以把JS对象转为OC里面的对象.</p>
+<p><font color=orange size=5>二、iOS7之后的做法</font><br>在iOS7之后, 苹果推出了JavaScriptCore.framework框架, 极大方便了我们处理JavaScript.它可以把JS对象转为OC里面的对象.</p>
 <table>
 <thead>
 <tr>
@@ -255,20 +262,20 @@
 </tr>
 </tbody>
 </table>
-<p><br></p>
-<p><font color="orange" size="3">JSContext对象</font><br>它是JS运行环境, 可以通过<code>JSContext *jsContext = [self.webView valueForKeyPath:@&quot;documentView.webView.mainFrame.javaScriptContext&quot;];</code>获取UIWebView的context上下文环境.<br><br></p>
-<p><font color="orange" size="3">JSValue对象</font><br>获取到上下文环境后可以通过<code>JSValue *value = [jsContext evaluateScript:@&quot;document.title&quot;];</code>方法执行JS代码, 它的返回值是JSValue类型, 它可以转为OC里面的对象、BOOL、NSNumber、NSString、NSArray、NSDictionary、NSDate、int、unsigned int等类型.<br>如果执行了不存在的JS代码, 肯定会报错, 可以在调用前设置异常捕捉, </p>
+<p></br></p>
+<p><font color=orange size=3>JSContext对象</font><br>它是JS运行环境, 可以通过<code>JSContext *jsContext = [self.webView valueForKeyPath:@&quot;documentView.webView.mainFrame.javaScriptContext&quot;];</code>获取UIWebView的context上下文环境.<br></br></p>
+<p><font color=orange size=3>JSValue对象</font><br>获取到上下文环境后可以通过<code>JSValue *value = [jsContext evaluateScript:@&quot;document.title&quot;];</code>方法执行JS代码, 它的返回值是JSValue类型, 它可以转为OC里面的对象、BOOL、NSNumber、NSString、NSArray、NSDictionary、NSDate、int、unsigned int等类型.<br>如果执行了不存在的JS代码, 肯定会报错, 可以在调用前设置异常捕捉, </p>
 <blockquote>
 <p>  [jsContext setExceptionHandler:^(JSContext *context, JSValue *exception){<br>&emsp;&emsp;NSLog(@”%@”, exception);<br>}];<br>JSValue *value = [jsContext evaluateScript:@”document.title”];<br>NSString *title = value.toString;<br>//NSDictionary *dic = value.toDictionary;</p>
 </blockquote>
-<p><br></p>
-<p><font color="orange" size="3">JS调用原生方法, 假如JS里面定义了一个函数JSCallOC(title), 有一个参数, 希望它调用原生的方法</font></p>
+<p></br></p>
+<p><font color=orange size=3>JS调用原生方法, 假如JS里面定义了一个函数JSCallOC(title), 有一个参数, 希望它调用原生的方法</font></p>
 <blockquote>
 <p>  jsContext[@”JSCallOC”] =   ^(NSString *title) {<br>&emsp;&emsp;//title是JS传递过来的<br>&emsp;&emsp;UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@”收到JS返回值” message:title delegate:nil cancelButtonTitle:@”知道了” otherButtonTitles:nil, nil];<br>&emsp;&emsp;[alertView show];<br>};<br>//上面也可以通过在block里面执行: <code>NSArray *args = [JSContext currentArguments];</code> 获取参数<br>//有返回值和参数的写法<br>jsContext[@”add”] =   ^NSInteger(NSInteger a, NSInteger b) {<br>&emsp;&emsp;return a + b;<br>};</p>
 </blockquote>
-<p>参考资料:<br>注意循环引用问题: <a href="http://www.jianshu.com/p/a329cd4a67ee" target="_blank" rel="noopener">JavaScriptCore的使用</a></p>
-<p><font color="orange" size="5">三、使用开源库处理</font><br>大家用得比较多的是WebViewJavascriptBridge和EasyJSWebView这两个开源库.<br><br></p>
-<p><font color="orange" size="6">后记</font><br>从iOS9.0之后, 如果你使用的是https加载的, 那么可以无法获取网络里面的内容, 解决方法<a href="/2016/05/18/iOS/UIWebView使用Https无法获取里面的内容和数字默认成了电话号码/">传送门</a></p>
+<p>参考资料:<br>注意循环引用问题: <a target="_blank" rel="noopener" href="http://www.jianshu.com/p/a329cd4a67ee">JavaScriptCore的使用</a></p>
+<p><font color=orange size=5>三、使用开源库处理</font><br>大家用得比较多的是WebViewJavascriptBridge和EasyJSWebView这两个开源库.<br></br></p>
+<p><font color=orange size=6>后记</font><br>从iOS9.0之后, 如果你使用的是https加载的, 那么可以无法获取网络里面的内容, 解决方法<a href="/2016/05/18/iOS/UIWebView使用Https无法获取里面的内容和数字默认成了电话号码/">传送门</a></p>
 
       
 
@@ -282,10 +289,6 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iOS</a>
         		</li>
       		 
@@ -294,11 +297,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Objective-C</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Swift</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -313,57 +320,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/03/15/iOS/iOS和JS交互/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -372,7 +328,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/03/23/iOS/iOS只弹出系统键盘/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/23/iOS/iOS%E5%8F%AA%E5%BC%B9%E5%87%BA%E7%B3%BB%E7%BB%9F%E9%94%AE%E7%9B%98/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -382,7 +338,7 @@
     </a>
   
   
-    <a href="/2016/03/13/iOS/iOS 应用内版本更新检查/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/03/13/iOS/iOS%20%E5%BA%94%E7%94%A8%E5%86%85%E7%89%88%E6%9C%AC%E6%9B%B4%E6%96%B0%E6%A3%80%E6%9F%A5/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">iOS 应用内版本更新检查</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -426,7 +382,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -443,7 +399,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -529,7 +485,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -545,11 +545,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -561,6 +625,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -569,7 +641,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -577,7 +681,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -585,35 +729,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -621,47 +737,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -681,6 +757,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -689,191 +833,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -881,7 +845,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -924,7 +888,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

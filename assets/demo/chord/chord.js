@@ -71,7 +71,86 @@ ChordBox.prototype.draw = function() {
   var fret_spacing = this.fret_spacing;
 
   // Draw guitar bridge
-  if (this.position <= 1 2 1) { this.paper.vexline(this.x, this.y - this.metrics.bridge_stroke_width 2, this.x + (spacing * (this.num_strings 1)), ). attr("stroke-width", this.metrics.bridge_stroke_width); } else draw position number this.paper.text(this.x (this.spacing 2) this.metrics.text_shift_x, this. y (this.fret_spacing this.metrics.text_shift_y this.position_text), this.position).attr("font-size", this.metrics.font_size); strings for (var i="0;" < this.num_strings; ++i) this.paper.vexline(this.x i), this.y, (fret_spacing (this.num_frets))); frets this.num_frets 1; i)); tuning keys if (this.tuning!="[])" var tuning.length; t="this.paper.text(" ((this.num_frets this.fret_spacing), tuning[i]); t.attr("font-size", chord this.chord.length; this.lightup(this.chord[i][0], this.chord[i][1]); bars this.bars.length; this.lightbar(this.bars[i].from_string, this.bars[i].to_string, this.bars[i].fret); chordbox.prototype.lightup="function(string_num," fret_num) string_num="this.num_strings" string_num; shift_position="0;" (this.position="=" && this.position_text="=" mute="false;" (fret_num="=" "x") fret_num="0;" x="this.x" string_num); (fret_num)) ; 0) (!mute) c="this.paper.circle(x," y-math.floor(this.fret_spacing 2), this.metrics.circle_radius)> 0) c.attr("fill", this.metrics.chord_fill);
+  if (this.position <= 1) {
+    this.paper.vexLine(this.x, this.y - this.metrics.bridge_stroke_width/2,
+                       this.x + (spacing * (this.num_strings - 1)),
+                       this.y - this.metrics.bridge_stroke_width/2 ).
+      attr("stroke-width", this.metrics.bridge_stroke_width);
+  } else {
+    // Draw position number
+    this.paper.text(this.x - (this.spacing / 2) - this.metrics.text_shift_x,
+                    this. y + (this.fret_spacing / 2) +
+                    this.metrics.text_shift_y +
+                    (this.fret_spacing * this.position_text),
+                    this.position).attr("font-size", this.metrics.font_size);
+  }
+
+  // Draw strings
+  for (var i = 0; i < this.num_strings; ++i) {
+    this.paper.vexLine(this.x + (spacing * i), this.y,
+      this.x + (spacing * i),
+      this.y + (fret_spacing * (this.num_frets)));
+  }
+
+  // Draw frets
+  for (var i = 0; i < this.num_frets + 1; ++i) {
+    this.paper.vexLine(this.x, this.y + (fret_spacing * i),
+      this.x + (spacing * (this.num_strings - 1)),
+      this.y + (fret_spacing * i));
+  }
+
+  // Draw tuning keys
+  if (this.tuning!=[]) { 
+      var tuning = this.tuning;
+      for (var i = 0; i < tuning.length; ++i) {
+        var t = this.paper.text(
+          this.x + (this.spacing * i),
+          this.y +
+          ((this.num_frets + 1) * this.fret_spacing),
+          tuning[i]);
+        t.attr("font-size", this.metrics.font_size);
+      }
+  }
+
+  // Draw chord
+  for (var i = 0; i < this.chord.length; ++i) {
+    this.lightUp(this.chord[i][0], this.chord[i][1]);
+  }
+
+  // Draw bars
+  for (var i = 0; i < this.bars.length; ++i) {
+    this.lightBar(this.bars[i].from_string,
+                  this.bars[i].to_string,
+                  this.bars[i].fret);
+  }
+}
+
+ChordBox.prototype.lightUp = function(string_num, fret_num) {
+  string_num = this.num_strings - string_num;
+
+  var shift_position = 0;
+  if (this.position == 1 && this.position_text == 1) {
+    shift_position = this.position_text;
+  }
+
+  var mute = false;
+
+  if (fret_num == "x") {
+    fret_num = 0;
+    mute = true;
+  } 
+  else {
+      fret_num -= shift_position;
+  }
+ 
+  var x = this.x + (this.spacing * string_num);
+  var y = this.y + (this.fret_spacing * (fret_num)) ;
+
+  if (fret_num == 0) y -= this.metrics.bridge_stroke_width;
+ 
+  if (!mute) {
+    var c = this.paper.circle(x, y-Math.floor(this.fret_spacing/2), this.metrics.circle_radius)
+    if (fret_num > 0) c.attr("fill", this.metrics.chord_fill);
   } else {
     c = this.paper.text(x, y-(this.fret_spacing-this.metrics.font_size), "X").attr({"font-size": this.metrics.font_size});
   }
@@ -100,4 +179,3 @@ ChordBox.prototype.lightBar = function(string_from, string_to, fret_num) {
 
   return this;
 }
-</=>

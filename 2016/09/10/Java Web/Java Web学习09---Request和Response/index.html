@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Java Web学习09---Request和Response | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="&amp;emsp;&amp;emsp;Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。">
-<meta name="keywords" content="Java,HTTP,Request,Response">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Web学习09---Request和Response">
-<meta property="og:url" content="http://yoursite.com/2016/09/10/Java Web/Java Web学习09---Request和Response/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/index.html">
 <meta property="og:site_name" content="coppco的博客">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.637Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-09-10T09:16:48.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="HTTP">
+<meta property="article:tag" content="Request">
+<meta property="article:tag" content="Response">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java Web学习09---Request和Response">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +40,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +51,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +65,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +107,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +139,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +174,7 @@
   
 
         
-        <a href="/2016/09/10/Java Web/Java Web学习09---Request和Response/" class="archive-article-date">
+        <a href="/2016/09/10/Java%20Web/Java%20Web%E5%AD%A6%E4%B9%A009---Request%E5%92%8CResponse/" class="archive-article-date">
   	<time datetime="2016-09-10T09:16:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-10</time>
 </a>
         
@@ -178,21 +183,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>&emsp;&emsp;Request 和 Response 对象起到了服务器与客户机之间的信息传递作用。Request 对象用于接收客户端浏览器提交的数据，而 Response 对象的功能则是将服务器端的数据发送到客户端浏览器。</p>
-<a id="more"></a>
-<h2 id="Response"><a href="#Response" class="headerlink" title=" Response "></a><font color="orange"> Response </font></h2><p>&emsp;&emsp;Response对象用于动态响应客户端请示，控制发送给用户的信息，并将动态生成响应。Response对象只提供了一个数据集合cookie，它用于在客户端写入cookie值。若指定的cookie不存在，则创建它。若存在，则将自动进行更新。结果返回给客户端浏览器。</p>
+<span id="more"></span>
+<h2 id="Response"><a href="#Response" class="headerlink" title=" Response "></a><font color=orange> Response </font></h2><p>&emsp;&emsp;Response对象用于动态响应客户端请示，控制发送给用户的信息，并将动态生成响应。Response对象只提供了一个数据集合cookie，它用于在客户端写入cookie值。若指定的cookie不存在，则创建它。若存在，则将自动进行更新。结果返回给客户端浏览器。</p>
 <ul>
 <li><p>Response组成</p>
 <ul>
-<li><font color="orange">响应行</font><ul>
+<li><font color=orange>响应行</font><ul>
 <li>格式: <code>协议/版本 状态码 状态码说明</code></li>
-<li><font color="orange">常见状态码</font><ul>
+<li><font color=orange>常见状态码</font><ul>
 <li>1xx: 已发送请求</li>
 <li>2xx: 已完成响应<ul>
 <li>200: 正常响应</li>
 </ul>
 </li>
 <li>3xx: 还需要浏览器进一步操作<ul>
-<li><font color="red">302</font>: 重定向(用的多), 需要配置响应头:location</li>
+<li><font color=red>302</font>: 重定向(用的多), 需要配置响应头:location</li>
 <li>304: 读缓存 </li>
 </ul>
 </li>
@@ -214,13 +219,13 @@
 </li>
 </ul>
 </li>
-<li><p><font color="orange">响应头</font></p>
+<li><p><font color=orange>响应头</font></p>
 <ul>
-<li>设置响应头格式: <code>set/addHeader(String key, String value)</code>、<code>set/addIntHeader(String key, int value)</code>、<code>set/addDateHeader(String key, long value)</code>等, 其中<font color="orange">一个key可以对应多个value.set是设置, 会覆盖之前设置的响应头; add是添加响应头, 不会覆盖.</font></li>
+<li>设置响应头格式: <code>set/addHeader(String key, String value)</code>、<code>set/addIntHeader(String key, int value)</code>、<code>set/addDateHeader(String key, long value)</code>等, 其中<font color=orange>一个key可以对应多个value.set是设置, 会覆盖之前设置的响应头; add是添加响应头, 不会覆盖.</font></li>
 <li>判断是否包含某个响应头: <code>boolean    containsHeader(String name)</code></li>
 <li><p>常用的响应头</p>
 <ul>
-<li><p><font color="orange">location</font>: 重定向</p>
+<li><p><font color=orange>location</font>: 重定向</p>
 <ul>
 <li><p>方式1</p>
 <ul>
@@ -231,19 +236,19 @@
 </li>
 <li><p>2、设置location</p>
 <blockquote>
-<p>   response.addHeader(“location”, “<a href="https://www.baidu.com&quot;)" target="_blank" rel="noopener">https://www.baidu.com&quot;)</a>;</p>
+<p>   response.addHeader(“location”, “<a target="_blank" rel="noopener" href="https://www.baidu.com&quot;)">https://www.baidu.com&quot;)</a>;</p>
 </blockquote>
 </li>
 </ul>
 </li>
 <li><p>方式２, 常用</p>
 <blockquote>
-<p>   response.sendRedirect(“<a href="https://www.baidu.com&quot;)" target="_blank" rel="noopener">https://www.baidu.com&quot;)</a>;</p>
+<p>   response.sendRedirect(“<a target="_blank" rel="noopener" href="https://www.baidu.com&quot;)">https://www.baidu.com&quot;)</a>;</p>
 </blockquote>
 </li>
 </ul>
 </li>
-<li><font color="orange">refresh</font>: 定时刷新<ul>
+<li><font color=orange>refresh</font>: 定时刷新<ul>
 <li>方式1<ul>
 <li>通过html的meta标签实现<blockquote>
 <p>   &lt;meta http-equiv=”refresh” content=”3;url=/“&gt;</p>
@@ -260,7 +265,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">content-type</font>: 设置文件mime类型, 设置响应流的编码方式,以及浏览器打开是的编码方式.<ul>
+<li><font color=orange>content-type</font>: 设置文件mime类型, 设置响应流的编码方式,以及浏览器打开是的编码方式.<ul>
 <li>方式1<blockquote>
 <p>   response.setContentType(“text/html;charset=utf-8”);</p>
 </blockquote>
@@ -271,14 +276,14 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">content-disposition</font>: 文件下载使用 <ul>
+<li><font color=orange>content-disposition</font>: 文件下载使用 <ul>
 <li>文件下载的方式<ul>
-<li>1、<font color="orange">超链接下载</font>(如果浏览器能处理会直接打开, 不能处理才会下载)<blockquote>
+<li>1、<font color=orange>超链接下载</font>(如果浏览器能处理会直接打开, 不能处理才会下载)<blockquote>
 <p>   &lt;a href=”/ProjectName/download/测试.txt”&gt;超链接下载文本&lt;/a&gt;</p>
 </blockquote>
 </li>
-<li>2、<font color="orange">编码下载, 通过servlet完成</font><blockquote>
-<p>   //获取参数<br>String fileName = request.getParameter(“name”);<br>//获取文件的mime类型<br>ServletContext servletContext = this.getServletContext();<br>String type = servletContext.getMimeType(fileName);<br>//设置mime类型<br>response.setContentType(type);<br>//设置下载头信息<br>response.setHeader(“content-disposition”, “attachment;filename=” + fileName);<br>//输入流和输出流读写<br>InputStream resourceAsStream = servletContext.getResourceAsStream(“/download/“ + fileName);<br>ServletOutputStream outputStream = response.getOutputStream();<br>//这里也可以使用<font color="red">commons-io.jar</font>进行拷贝<code>IOUtils.copy(input, output)</code><br>byte[] arr = new byte[1024 * 8];<br>int length = -1;<br>while ((length = resourceAsStream.read(arr)) != -1) {<br>&emsp;&emsp;outputStream.write(arr, 0, length);<br>}<br>outputStream.close();<br>resourceAsStream.close();</p>
+<li>2、<font color=orange>编码下载, 通过servlet完成</font><blockquote>
+<p>   //获取参数<br>String fileName = request.getParameter(“name”);<br>//获取文件的mime类型<br>ServletContext servletContext = this.getServletContext();<br>String type = servletContext.getMimeType(fileName);<br>//设置mime类型<br>response.setContentType(type);<br>//设置下载头信息<br>response.setHeader(“content-disposition”, “attachment;filename=” + fileName);<br>//输入流和输出流读写<br>InputStream resourceAsStream = servletContext.getResourceAsStream(“/download/“ + fileName);<br>ServletOutputStream outputStream = response.getOutputStream();<br>//这里也可以使用<font color=red>commons-io.jar</font>进行拷贝<code>IOUtils.copy(input, output)</code><br>byte[] arr = new byte[1024 * 8];<br>int length = -1;<br>while ((length = resourceAsStream.read(arr)) != -1) {<br>&emsp;&emsp;outputStream.write(arr, 0, length);<br>}<br>outputStream.close();<br>resourceAsStream.close();</p>
 </blockquote>
 </li>
 </ul>
@@ -289,8 +294,8 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">响应体</font><ul>
-<li>操作响应体(<font color="red">字符流和字节流不可以同时使用, 并且服务器会自动关流</font>)<ul>
+<li><font color=orange>响应体</font><ul>
+<li>操作响应体(<font color=red>字符流和字节流不可以同时使用, 并且服务器会自动关流</font>)<ul>
 <li>获取字符流(测试使用)<ul>
 <li><code>PrintWriter    getWriter()</code></li>
 </ul>
@@ -306,18 +311,18 @@
 </ul>
 </li>
 </ul>
-<h2 id="Request"><a href="#Request" class="headerlink" title=" Request "></a><font color="orange"> Request </font></h2><p>&emsp;&emsp;Request对象的作用是与客户端交互，收集客户端的Form、Cookies、超链接，或者收集服务器端的环境变量。</p>
+<h2 id="Request"><a href="#Request" class="headerlink" title=" Request "></a><font color=orange> Request </font></h2><p>&emsp;&emsp;Request对象的作用是与客户端交互，收集客户端的Form、Cookies、超链接，或者收集服务器端的环境变量。</p>
 <ul>
 <li>Request组成<ul>
-<li><font color="orange">请求行</font><ul>
+<li><font color=orange>请求行</font><ul>
 <li>格式: <code>请求方式 请求资源 协议/版本</code></li>
 <li>常用方法<ul>
-<li><font color="orange">获取请求方式</font>: <code>String method = request.getMethod();</code></li>
-<li><font color="orange">获取请求者的IP地址</font>: <code>String getRemoteAddr()</code></li>
-<li><font color="orange">根据key获取一个请求参数值(★)</font>: <code>String    getParameter(String name)</code> </li>
-<li><font color="orange">根据key获取多个请求参数值(★)</font>: <code>String[] getParameterValues(String name)</code> </li>
-<li><font color="orange">获取所有请求参数的键和值, 返回集合(★)</font>: <code>Map(String, String[]) getParameterMap()</code> </li>
-<li><font color="orange">在Java中获取项目名称(★)</font>: <code>String getContextPath()</code></li>
+<li><font color=orange>获取请求方式</font>: <code>String method = request.getMethod();</code></li>
+<li><font color=orange>获取请求者的IP地址</font>: <code>String getRemoteAddr()</code></li>
+<li><font color=orange>根据key获取一个请求参数值(★)</font>: <code>String    getParameter(String name)</code> </li>
+<li><font color=orange>根据key获取多个请求参数值(★)</font>: <code>String[] getParameterValues(String name)</code> </li>
+<li><font color=orange>获取所有请求参数的键和值, 返回集合(★)</font>: <code>Map(String, String[]) getParameterMap()</code> </li>
+<li><font color=orange>在Java中获取项目名称(★)</font>: <code>String getContextPath()</code></li>
 <li>获取完整的请求路径(不带参数): <code>StringBuffer getRequestURL()</code></li>
 <li>获取从项目名开始到参数之前的内容: <code>String getRequestURI()</code></li>
 <li>获取get请求的所有参数: <code>String    getQueryString()</code></li>
@@ -326,7 +331,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">请求头</font><ul>
+<li><font color=orange>请求头</font><ul>
 <li>格式: <code>key/value</code>的形式,(value可以是多个)</li>
 <li>常用请求头<ul>
 <li>user-agent: 浏览器内核<ul>
@@ -345,17 +350,17 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">请求体</font><ul>
+<li><font color=orange>请求体</font><ul>
 <li>只有post请求才会有请求体</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><font color="orange">中文乱码问题</font><ul>
+<li><font color=orange>中文乱码问题</font><ul>
 <li>获取请求参数时中文乱码<ul>
 <li>get请求: 参数会拼接到地址栏, 使用<code>utf-8</code>编码, 服务器收到参数后使用<code>iso-8859-1</code>编码, 所有会出现乱码</li>
 <li>post请求: 参数放在请求体中, 服务器收到请求体后使用<code>iso-8859-1</code>编码, 也会出现乱码</li>
-<li><font color="orange">解决方法</font><ul>
+<li><font color=orange>解决方法</font><ul>
 <li>通用方法: <code>new String(参数.getBytes(&quot;iso-8859-1&quot;), &quot;utf-8&quot;);</code>, 服务器获取到参数后先使用<code>iso-8859-1</code>解码转为Byte数组, 然后再使用<code>utf-8</code>编码成字符串.<blockquote>
 <p>   String username = new String(request.getParameter(“username”).getBytes(“iso-8859-1”), “utf-8”)</p>
 </blockquote>
@@ -392,7 +397,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">请求转发</font><ul>
+<li><font color=orange>请求转发</font><ul>
 <li>request对象也是<code>域对象</code>, 它在一个请求来的时候创建, 在响应生成时销毁.</li>
 <li>请求转发方法<blockquote>
 <p>   request.getRequestDispatcher(“<code>web.xml中配置的url-pattern路径</code>“).forward(request, response); </p>
@@ -407,7 +412,7 @@
 </blockquote>
 </li>
 <li>获取所有参数<blockquote>
-<p>   public Enumeration<string> getAttributeNames();</string></p>
+<p>   public Enumeration<String> getAttributeNames();</p>
 </blockquote>
 </li>
 <li>移除参数<blockquote>
@@ -416,7 +421,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">请求转发如果是表单时, 重复提交问题</font><ul>
+<li><font color=orange>请求转发如果是表单时, 重复提交问题</font><ul>
 <li>请求转发之后刷新网页会提示重复提交, 解决办法有<ul>
 <li>使用重定向</li>
 <li>使用令牌机制</li>
@@ -424,7 +429,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">BeanUtils的使用</font><ul>
+<li><font color=orange>BeanUtils的使用</font><ul>
 <li>BeanUtils是Apache提供的一个工具类, 它可以快速封装一个对象</li>
 <li>使用步骤<ul>
 <li>导入<code>commons-beanutils-xxx.jar</code>和<code>commons-logging-xxx.jar</code>包</li>
@@ -433,7 +438,7 @@
 </li>
 </ul>
 </li>
-<li><font color="orange">请求转发和重定向的区别</font><ul>
+<li><font color=orange>请求转发和重定向的区别</font><ul>
 <li>重定向发送两次请求, 请求转发只发送一次请求</li>
 <li>重定向地址发起变化, 请求转发地址不会变化</li>
 <li>重定向是客户端发送, 请求转发是服务器内部发送</li>
@@ -479,57 +484,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/09/10/Java Web/Java Web学习09---Request和Response/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -538,7 +492,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/09/18/iOS/iOS 10的一些权限设置/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/18/iOS/iOS%2010%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -548,7 +502,7 @@
     </a>
   
   
-    <a href="/2016/09/07/iOS/简单实现导航栏透明/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/07/iOS/%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%8F%E6%98%8E/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">简单实现导航栏透明</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -592,7 +546,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -609,7 +563,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -695,7 +649,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -711,11 +709,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -727,6 +789,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -735,7 +805,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -743,7 +845,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -751,35 +893,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -787,47 +901,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -847,6 +921,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -855,191 +997,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -1047,7 +1009,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -1090,7 +1052,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     

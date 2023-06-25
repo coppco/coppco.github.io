@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>CentOS 7安装SS服务端以及相关客户端 | coppco的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近入手一个相对便宜的($8.5/年)VPS服务器, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^">
-<meta name="keywords" content="Shadowsocks,VPS,翻墙">
+  <meta name="description" content="最近入手一个相对便宜的($8.5&#x2F;年)VPS服务器, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS 7安装SS服务端以及相关客户端">
-<meta property="og:url" content="http://yoursite.com/2018/04/19/CentOS 7安装Shadowsocks服务端以及相关的客户端使用/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/04/19/CentOS%207%E5%AE%89%E8%A3%85Shadowsocks%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="coppco的博客">
-<meta property="og:description" content="最近入手一个相对便宜的($8.5/年)VPS服务器, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-29T08:39:51.632Z">
+<meta property="og:description" content="最近入手一个相对便宜的($8.5&#x2F;年)VPS服务器, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-04-19T06:40:11.000Z">
+<meta property="article:modified_time" content="2019-04-29T08:39:51.000Z">
+<meta property="article:author" content="coppco">
+<meta property="article:tag" content="Shadowsocks">
+<meta property="article:tag" content="VPS">
+<meta property="article:tag" content="翻墙">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS 7安装SS服务端以及相关客户端">
-<meta name="twitter:description" content="最近入手一个相对便宜的($8.5/年)VPS服务器, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^">
   
     <link rel="alternative" href="/atom.xml" title="coppco的博客" type="application/atom+xml">
   
@@ -37,8 +39,8 @@
 
   
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -48,13 +50,11 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+			<img src="/assets/images/others/logo.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">coppco</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
-		
-		<p class="header-subtitle">记录iOS和Swift的点点滴滴</p>
 		
 
 		<nav class="header-menu">
@@ -64,9 +64,11 @@
 	        
 				<li><a href="/tags/iOS">iOS</a></li>
 	        
+				<li><a href="/tags/Flutter">Flutter</a></li>
+	        
 				<li><a href="/tags/Java">Java</a></li>
 	        
-				<li><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+				<li><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 	        
 			</ul>
 		</nav>
@@ -104,15 +106,15 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://47.96.147.179/images/others/coppco.png" class="js-avatar">
+				<img src="/assets/images/others/logo.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">coppco</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>记录iOS和Swift的点点滴滴<i class="icon icon-quo-right"></i></p>
 			
 			
+				
 			
 				
 			
@@ -136,13 +138,15 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 20%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/iOS">iOS</a></li>
+					<li style="width: 20%"><a href="/tags/iOS">iOS</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/Java">Java</a></li>
+					<li style="width: 20%"><a href="/tags/Flutter">Flutter</a></li>
 		        
-					<li style="width: 25%"><a href="/2015/10/14/博客使用/Markdown的使用和Hexo命令/">Markdown</a></li>
+					<li style="width: 20%"><a href="/tags/Java">Java</a></li>
+		        
+					<li style="width: 20%"><a href="/2015/10/14/%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8/Markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E5%92%8CHexo%E5%91%BD%E4%BB%A4/">Markdown</a></li>
 		        
 				</ul>
 			</nav>
@@ -169,7 +173,7 @@
   
 
         
-        <a href="/2018/04/19/CentOS 7安装Shadowsocks服务端以及相关的客户端使用/" class="archive-article-date">
+        <a href="/2018/04/19/CentOS%207%E5%AE%89%E8%A3%85Shadowsocks%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A5%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BD%BF%E7%94%A8/" class="archive-article-date">
   	<time datetime="2018-04-19T06:40:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-19</time>
 </a>
         
@@ -177,20 +181,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近入手一个相对便宜的($8.5/年)<a href="https://www.neq3host.com" target="_blank" rel="noopener">VPS服务器</a>, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^</p>
-<a id="more"></a>
-<h2 id="安装CentOS服务端ss程序"><a href="#安装CentOS服务端ss程序" class="headerlink" title="安装CentOS服务端ss程序"></a><font color="orange">安装CentOS服务端ss程序</font></h2><ul>
+        <p>最近入手一个相对便宜的($8.5/年)<a target="_blank" rel="noopener" href="https://www.neq3host.com">VPS服务器</a>, 支持支付宝支付, IP是纽约的, 延时大约300ms, 对于我这种要求不是很高的用户来说足够了, 用途么你懂的^.^</p>
+<span id="more"></span>
+<h2 id="安装CentOS服务端ss程序"><a href="#安装CentOS服务端ss程序" class="headerlink" title="安装CentOS服务端ss程序"></a><font color=orange>安装CentOS服务端ss程序</font></h2><ul>
 <li>安装系统<ul>
 <li>购买好之后VPS之后, 我们安装好操作系统, 选择CentOS 7.</li>
 </ul>
 </li>
-<li><p>安装SS服务</p>
-<ul>
-<li><p>修改系统时间</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data -s &apos;19/04/2018 14:40:11&apos; //这里改成当前时间</span><br><span class="line">hwclock -w  //将修改后的时间写入硬件</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装ss服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line"></span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
+<li>安装SS服务<ul>
+<li>修改系统时间<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">data -s &#x27;19/04/2018 14:40:11&#x27; //这里改成当前时间</span><br><span class="line">hwclock -w  //将修改后的时间写入硬件</span><br></pre></td></tr></table></figure></li>
+<li>安装ss服务<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks-libev.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-libev.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocks-libev.sh</span><br><span class="line"></span><br><span class="line">./shadowsocks-libev.sh 2&gt;&amp;1 | tee shadowsocks-libev.log</span><br></pre></td></tr></table></figure>
 <ul>
 <li>安装过程中会提示设置密码、端口和加密方式(加密方式推荐chacha20, 速度快安全).</li>
 </ul>
@@ -205,40 +205,25 @@
 </ul>
 </li>
 </ul>
-<h2 id="安装BBR加速服务"><a href="#安装BBR加速服务" class="headerlink" title="安装BBR加速服务"></a><font color="orange">安装BBR加速服务</font></h2><p>BBR简称TCP-BBR拥塞控制算法，目的是要尽量跑满带宽, 并且尽量不要有排队的情况, 提升VPS网速效果明显。BBR算法出自谷歌.</p>
+<h2 id="安装BBR加速服务"><a href="#安装BBR加速服务" class="headerlink" title="安装BBR加速服务"></a><font color=orange>安装BBR加速服务</font></h2><p>BBR简称TCP-BBR拥塞控制算法，目的是要尽量跑满带宽, 并且尽量不要有排队的情况, 提升VPS网速效果明显。BBR算法出自谷歌.</p>
 <ul>
-<li><p>更新系统&amp;&amp;安装内核</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</span><br><span class="line">yum --enablerepo=elrepo-kernel install kernel-ml</span><br><span class="line">grub2-set-default 0</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重启系统</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置tcp</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#编辑配置文件</span><br><span class="line">vi /etc/sysctl.conf</span><br><span class="line">#加入如下两行配置信息</span><br><span class="line">net.core.default_qdisc = fq</span><br><span class="line">net.ipv4.tcp_congestion_control = bbr</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行BBR服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#运行BBR服务</span><br><span class="line">sysctl -p</span><br><span class="line">#查看BBR服务是否生效</span><br><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<li>更新系统&amp;&amp;安装内核<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum update -y</span><br><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</span><br><span class="line">yum --enablerepo=elrepo-kernel install kernel-ml</span><br><span class="line">grub2-set-default 0</span><br></pre></td></tr></table></figure></li>
+<li>重启系统<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></li>
+<li>配置tcp<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#编辑配置文件</span><br><span class="line">vi /etc/sysctl.conf</span><br><span class="line">#加入如下两行配置信息</span><br><span class="line">net.core.default_qdisc = fq</span><br><span class="line">net.ipv4.tcp_congestion_control = bbr</span><br></pre></td></tr></table></figure></li>
+<li>运行BBR服务<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#运行BBR服务</span><br><span class="line">sysctl -p</span><br><span class="line">#查看BBR服务是否生效</span><br><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="相关客户端"><a href="#相关客户端" class="headerlink" title="相关客户端"></a><font color="orange">相关客户端</font></h2><ul>
+<h2 id="相关客户端"><a href="#相关客户端" class="headerlink" title="相关客户端"></a><font color=orange>相关客户端</font></h2><ul>
 <li>iOS可以使用PP助手下载安装<code>Shadowrocket</code></li>
 <li>Mac和Windows: 使用<code>Shadowsocks客户端</code></li>
 </ul>
-<h3 id="CentOS-7使用ss客户端"><a href="#CentOS-7使用ss客户端" class="headerlink" title="CentOS 7使用ss客户端"></a><font color="orange">CentOS 7使用ss客户端</font></h3><ul>
-<li><p>安装epel源、安装pip包管理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install epel-release</span><br><span class="line">sudo yum -y install python-pip</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装Shadowsocks客户端</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install shadowsocks</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置Shadowsocks连接</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    # Shadowsocks服务器地址</span><br><span class="line">    &quot;server&quot;:&quot;x.x.x.x&quot;,</span><br><span class="line">    # Shadowsocks服务器端口</span><br><span class="line">    &quot;server_port&quot;:1035,</span><br><span class="line">    # 本地IP</span><br><span class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">    # 本地端口</span><br><span class="line">    &quot;local_port&quot;:1080,</span><br><span class="line">    # Shadowsocks连接密码  </span><br><span class="line">    &quot;password&quot;:&quot;password&quot;,</span><br><span class="line">    # 等待超时时间 </span><br><span class="line">    &quot;timeout&quot;:300,  </span><br><span class="line">    # 加密方式</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,  </span><br><span class="line">    # true或false。开启fast_open以降低延迟，但要求Linux内核在3.7+</span><br><span class="line">    &quot;fast_open&quot;: false,  </span><br><span class="line">    #工作线程数 </span><br><span class="line">    &quot;workers&quot;: 1  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置自启动 </p>
-<ul>
+<h3 id="CentOS-7使用ss客户端"><a href="#CentOS-7使用ss客户端" class="headerlink" title="CentOS 7使用ss客户端"></a><font color=orange>CentOS 7使用ss客户端</font></h3><ul>
+<li>安装epel源、安装pip包管理<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install epel-release</span><br><span class="line">sudo yum -y install python-pip</span><br></pre></td></tr></table></figure></li>
+<li>安装Shadowsocks客户端<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install shadowsocks</span><br></pre></td></tr></table></figure></li>
+<li>配置Shadowsocks连接<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    # Shadowsocks服务器地址</span><br><span class="line">    &quot;server&quot;:&quot;x.x.x.x&quot;,</span><br><span class="line">    # Shadowsocks服务器端口</span><br><span class="line">    &quot;server_port&quot;:1035,</span><br><span class="line">    # 本地IP</span><br><span class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">    # 本地端口</span><br><span class="line">    &quot;local_port&quot;:1080,</span><br><span class="line">    # Shadowsocks连接密码  </span><br><span class="line">    &quot;password&quot;:&quot;password&quot;,</span><br><span class="line">    # 等待超时时间 </span><br><span class="line">    &quot;timeout&quot;:300,  </span><br><span class="line">    # 加密方式</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,  </span><br><span class="line">    # true或false。开启fast_open以降低延迟，但要求Linux内核在3.7+</span><br><span class="line">    &quot;fast_open&quot;: false,  </span><br><span class="line">    #工作线程数 </span><br><span class="line">    &quot;workers&quot;: 1  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>配置自启动 <ul>
 <li><code>vi /etc/systemd/system/shadowsocks.service</code></li>
-<li>添加以下内容<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Shadowsocks</span><br><span class="line">[Service]</span><br><span class="line">TimeoutStartSec=0</span><br><span class="line">ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/shadowsocks.json</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
-</li>
+<li>添加以下内容<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Shadowsocks</span><br><span class="line">[Service]</span><br><span class="line">TimeoutStartSec=0</span><br><span class="line">ExecStart=/usr/bin/sslocal -c /etc/shadowsocks/shadowsocks.json</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 <li><p>开机启动、启动、重启、停止、状态</p>
@@ -252,46 +237,21 @@
 </li>
 <li><p>如果加密方式选择的是<code>chacha20</code>, 会启动不成功, 需要编译 libsodium 以支持 chacha20 加密方式</p>
 <ul>
-<li><p>安装相关开发工具</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum groupinstall &quot;Development Tools&quot; -y</span><br><span class="line">yum install wget -y</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>下载 libsodium 最新版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#官网地址</span><br><span class="line">wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>解压</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xzvf LATEST.tar.gz</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>进入解压文件夹, 生成配置文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd libsodium*</span><br><span class="line"></span><br><span class="line">./configure</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编译并安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j8 &amp;&amp; make install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>添加运行库位置并加载运行库</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf</span><br><span class="line"></span><br><span class="line">ldconfig</span><br></pre></td></tr></table></figure>
-</li>
+<li>安装相关开发工具<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum groupinstall &quot;Development Tools&quot; -y</span><br><span class="line">yum install wget -y</span><br></pre></td></tr></table></figure></li>
+<li>下载 libsodium 最新版本<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#官网地址</span><br><span class="line">wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>解压<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xzvf LATEST.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>进入解压文件夹, 生成配置文件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd libsodium*</span><br><span class="line"></span><br><span class="line">./configure</span><br></pre></td></tr></table></figure></li>
+<li>编译并安装<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j8 &amp;&amp; make install</span><br></pre></td></tr></table></figure></li>
+<li>添加运行库位置并加载运行库<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf</span><br><span class="line"></span><br><span class="line">ldconfig</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li><p>验证Shadowsocks客户端服务是否正常运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#会返回你的Shadowsock服务器IP</span><br><span class="line">curl --socks5 127.0.0.1:1080 http://httpbin.org/ip</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装配置privoxy,Shadowsocks使用的socks5协议,而终端很多工具目前只支持http和https等协议，所以我们要用工具把socks5转成http协议。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install privoxy -y</span><br><span class="line">systemctl enable privoxy</span><br><span class="line">systemctl start privoxy</span><br><span class="line">systemctl status privoxy</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置privoxy, <code>vi /etc/privoxy/config</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">listen-address 127.0.0.1:8118 # 8118 是默认端口，不用改</span><br><span class="line">forward-socks5t / 127.0.0.1:1080 . #转发到本地端口，注意最后有个点, 端口是上面ss安装时的本地端口</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置http、https代理, <code>vi /etc/profile</code>在最后添加如下信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PROXY_HOST=127.0.0.1</span><br><span class="line">export http_proxy=http://$PROXY_HOST:8118</span><br><span class="line">export https_proxy=http://$PROXY_HOST:8118</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>重载环境变量</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>测试代理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -I www.google.com </span><br><span class="line">#查看ip信息</span><br><span class="line">curl ip.cn</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>取消使用代理</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while read var; do unset $var; done &lt; &lt;(env | grep -i proxy | awk -F= &apos;&#123;print $1&#125;&apos;)</span><br></pre></td></tr></table></figure></li>
+<li>验证Shadowsocks客户端服务是否正常运行<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#会返回你的Shadowsock服务器IP</span><br><span class="line">curl --socks5 127.0.0.1:1080 http://httpbin.org/ip</span><br></pre></td></tr></table></figure></li>
+<li>安装配置privoxy,Shadowsocks使用的socks5协议,而终端很多工具目前只支持http和https等协议，所以我们要用工具把socks5转成http协议。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install privoxy -y</span><br><span class="line">systemctl enable privoxy</span><br><span class="line">systemctl start privoxy</span><br><span class="line">systemctl status privoxy</span><br></pre></td></tr></table></figure></li>
+<li>配置privoxy, <code>vi /etc/privoxy/config</code><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">listen-address 127.0.0.1:8118 # 8118 是默认端口，不用改</span><br><span class="line">forward-socks5t / 127.0.0.1:1080 . #转发到本地端口，注意最后有个点, 端口是上面ss安装时的本地端口</span><br></pre></td></tr></table></figure></li>
+<li>设置http、https代理, <code>vi /etc/profile</code>在最后添加如下信息<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">PROXY_HOST=127.0.0.1</span><br><span class="line">export http_proxy=http://$PROXY_HOST:8118</span><br><span class="line">export https_proxy=http://$PROXY_HOST:8118</span><br></pre></td></tr></table></figure></li>
+<li>重载环境变量<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></li>
+<li>测试代理<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl -I www.google.com </span><br><span class="line">#查看ip信息</span><br><span class="line">curl ip.cn</span><br></pre></td></tr></table></figure></li>
+<li>取消使用代理<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while read var; do unset $var; done &lt; &lt;(env | grep -i proxy | awk -F= &#x27;&#123;print $1&#125;&#x27;)</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -325,57 +285,6 @@
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/04/19/CentOS 7安装Shadowsocks服务端以及相关的客户端使用/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
       <div class="clearfix"></div>
     </div>
   </div>
@@ -384,7 +293,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/26/iOS/iOS自动编译打包脚本/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/08/26/iOS/iOS%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E6%89%93%E5%8C%85%E8%84%9A%E6%9C%AC/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -394,7 +303,7 @@
     </a>
   
   
-    <a href="/2018/04/16/iOS/Swift中真机模拟器判断/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/04/16/iOS/Swift%E4%B8%AD%E7%9C%9F%E6%9C%BA%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%88%A4%E6%96%AD/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Swift中真机模拟器判断</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -422,7 +331,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装CentOS服务端ss程序"><span class="toc-number">1.</span> <span class="toc-text">安装CentOS服务端ss程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装BBR加速服务"><span class="toc-number">2.</span> <span class="toc-text">安装BBR加速服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关客户端"><span class="toc-number">3.</span> <span class="toc-text">相关客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-7使用ss客户端"><span class="toc-number">3.1.</span> <span class="toc-text">CentOS 7使用ss客户端</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85CentOS%E6%9C%8D%E5%8A%A1%E7%AB%AFss%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">安装CentOS服务端ss程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85BBR%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.</span> <span class="toc-text">安装BBR加速服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">3.</span> <span class="toc-text">相关客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS-7%E4%BD%BF%E7%94%A8ss%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">3.1.</span> <span class="toc-text">CentOS 7使用ss客户端</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -451,7 +360,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 coppco
+    		&copy; 2023 coppco
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -468,7 +377,7 @@
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
-		open_in_new: false,
+		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
@@ -554,7 +463,51 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -570,11 +523,75 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">XML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Request</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Response</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -586,6 +603,14 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">注解</a>
               </li>
              
@@ -594,7 +619,39 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">事务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -602,7 +659,47 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Freemaker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -610,35 +707,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">IDE</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">iOS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Flutter</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">资料整理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -646,47 +715,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Cocoapods</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">math</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -706,6 +735,74 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Objective-C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Xcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Swift</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SwiftUI</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">GCD</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Swift3.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">App瘦身</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">iOS和JavaScript交互</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">AutoLayout</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Masonry</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">SnapKit</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">三方框架的使用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">math</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">逆向工程</a>
               </li>
              
@@ -714,191 +811,11 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">CentOS</a>
+                <a href="javascript:void(0)" class="js-tag color5">Dart</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GitLab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Dubbo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分布式服务架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij IDEA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BootStrap</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">XML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTTP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Request</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Response</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">事务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JavaBean</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">AJAX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JSON</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Struts2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">iOS应用跳转</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Gitlab</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">编程思想</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JDBC</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JSP</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Cookie</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MQ</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">RPM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">JDK</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">MySQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Oracle</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">数据库</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hibernate</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SSM</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">MyBatis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">策略模式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">WebSocket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Spring Boot</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">全文搜索技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Lucene</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Solr</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Spring MVC</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -906,7 +823,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         </div>
         <ul class="search-ul">
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
-            缺失模块。<br>1、请确保node版本大于6.2<br>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br> npm i hexo-generator-json-content --save<br><br>
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
 <pre style="font-size: 12px;" q-show="jsonFail">
   jsonContent:
@@ -949,7 +866,7 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">只是一个小小的程序员。</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">iOS、Objective-C、Swift、Java、Flutter</div>
   	  	
     	</section>
     
